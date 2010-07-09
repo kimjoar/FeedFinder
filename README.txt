@@ -10,4 +10,4 @@ FeedFinder.feeds('http://www.example.com')
 
 Dependencies:
 
-* Hpricot
+* Nokogiri

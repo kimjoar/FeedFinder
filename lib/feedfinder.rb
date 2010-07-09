@@ -1,7 +1,7 @@
 require 'uri'
 require 'open-uri'
 require 'rubygems'
-require 'hpricot'
+require 'nokogiri'
 
 module FeedFinder
   
@@ -33,7 +33,7 @@ module FeedFinder
   
   # Get possible feed links from uri
   def self.find_feed_links(uri)
-    doc = Hpricot(download_from_uri(uri))
+    doc = Nokogiri(download_from_uri(uri))
     feeds = find_autodiscovery_links(uri,doc)
     feeds = find_feed_anchor_links(uri,doc) if feeds.empty?
     feeds.find_all { |f| points_to_feed?(f) }
