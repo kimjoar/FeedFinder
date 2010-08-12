@@ -14,8 +14,10 @@ module FeedFinder
     end
   end
 
+  extend self
+
   # Return array of all feeds at url
-  def self.feeds(url)
+  def feeds(url)
     uri = url_to_uri(url)
     return [url] if feed?(uri)
     feeds = find_feed_links(uri)
@@ -30,23 +32,23 @@ module FeedFinder
 
   private
 
-  def self.feed?(uri)
+  def feed?(uri)
     feed_url?(uri.to_s) and points_to_feed?(uri)
   end
 
   # Check if an url looks like a feed url
-  def self.feed_url?(url)
+  def feed_url?(url)
     not (url =~ /\.xml|atom|rss|rdf|feed|feedproxy|feedburner/).nil?
   end
 
   # Check if an url really points to a proper feed
-  def self.points_to_feed?(uri)
+  def points_to_feed?(uri)
     data = download_from_uri(uri)
     not (data =~ /<rss|<feed|<rdf|<RSS|<FEED|<RDF/).nil?
   end
 
   # Get possible feed links from uri
-  def self.find_feed_links(uri)
+  def find_feed_links(uri)
     doc = Nokogiri(download_from_uri(uri))
     feeds = find_autodiscovery_links(uri, doc)
     feeds = find_feed_anchor_links(uri, doc) if feeds.empty?
@@ -54,7 +56,7 @@ module FeedFinder
   end
 
   # Find feeds through <link>s in <head>
-  def self.find_autodiscovery_links(uri, doc)
+  def find_autodiscovery_links(uri, doc)
     feeds = []
     (doc/:head/:link).each do |e|
       if e['rel'] == 'alternate' and e['type'] =~ /rss|atom|xml|feed/
@@ -65,7 +67,7 @@ module FeedFinder
   end
 
   # Find feeds through <a>s in <body>
-  def self.find_feed_anchor_links(uri, doc)
+  def find_feed_anchor_links(uri, doc)
     feeds = []
     (doc/:body/:a).each do |a|
       if feed_url?(a['href'])
@@ -82,14 +84,14 @@ module FeedFinder
   end
 
   # Download html via url object
-  def self.download_from_uri(uri)
+  def download_from_uri(uri)
     open(uri, "User-Agent" => "Ruby/#{RUBY_VERSION}").read
   rescue Exception => e
     raise UrlError, uri
   end
 
   # Convert any url to an uri object
-  def self.url_to_uri(url)
+  def url_to_uri(url)
     url = ('http://' + url).gsub('///','//') unless url =~ /http:\/\//
     URI.parse(url)
   rescue Exception
