@@ -4,7 +4,16 @@ require 'rubygems'
 require 'nokogiri'
 
 module FeedFinder
-  
+  class UrlError < ArgumentError
+    def initialize(url)
+      @url = url
+    end
+
+    def to_s
+      "Could not parse url: #{@url}"
+    end
+  end
+
   # Return array of all feeds at url
   def self.feeds(url)
     uri = url_to_uri(url)
@@ -66,27 +75,19 @@ module FeedFinder
     end
     feeds.uniq
   end
-  
+
   # Download html via url object
   def self.download_from_uri(uri)
-    begin
-      open(uri, "User-Agent" => "Ruby/#{RUBY_VERSION}").read
-    rescue Exception => e
-      raise ArgumentError.new("Could not get content from url: #{uri} (#{e})")
-    end
-  end  
-  
+    open(uri, "User-Agent" => "Ruby/#{RUBY_VERSION}").read
+  rescue Exception => e
+    raise UrlError, uri
+  end
+
   # Convert any url to an uri object
   def self.url_to_uri(url)
-    begin
-      if url =~ /http:\/\//
-        URI.parse(url)
-      else
-        URI.parse(('http://' + url).gsub('///','//'))
-      end
-    rescue Exception => e
-      raise ArgumentError.new("Could not parse url: #{url} (#{e})")
-    end
+    url = ('http://' + url).gsub('///','//') unless url =~ /http:\/\//
+    URI.parse(url)
+  rescue Exception
+    raise UrlError, url
   end
-  
 end
