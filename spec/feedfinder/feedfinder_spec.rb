@@ -30,6 +30,10 @@ describe "Feedfinder" do
       FeedFinder.feeds(@feeds.first[0]) { |feeds| yielded = true }
       yielded.should be_false
     end
+
+    it "should raise an UrlError if the URL could not be parsed" do
+      lambda { FeedFinder.feeds("test") }.should raise_error(FeedFinder::UrlError)
+    end
   end
-  
+
 end
