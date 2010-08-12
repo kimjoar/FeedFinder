@@ -20,7 +20,12 @@ module FeedFinder
     return [url] if feed?(uri)
     feeds = find_feed_links(uri)
     return nil if feeds.empty?
-    feeds
+
+    if feeds.length > 1 and block_given?
+      yield feeds
+    else
+      feeds
+    end
   end
   
   private

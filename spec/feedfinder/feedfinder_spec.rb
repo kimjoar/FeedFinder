@@ -20,6 +20,16 @@ describe "Feedfinder" do
         FeedFinder.feeds(urls[0]).should == urls[1].to_a
       end
     end
+
+    it "should yield if a block is given and there are more than one feeds" do
+      FeedFinder.feeds(@feeds.last[0]) { |feeds| feeds.length.should > 1 }
+    end
+
+    it "should not yield if a block is given and there are more than one feeds" do
+      yielded = false
+      FeedFinder.feeds(@feeds.first[0]) { |feeds| yielded = true }
+      yielded.should be_false
+    end
   end
   
 end
