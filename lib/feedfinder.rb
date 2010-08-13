@@ -1,6 +1,5 @@
 require 'uri'
 require 'open-uri'
-require 'rubygems'
 require 'nokogiri'
 
 module FeedFinder
