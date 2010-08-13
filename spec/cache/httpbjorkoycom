@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>bjorkoy.com</title>
+  <meta name="author" content="Olav Bjorkoy">
+  <meta name="description" content="Olav Bjorkoy's blog on CSS, Blueprint, HTML, Ruby and anything in-between.">
+  <meta name="keywords" content="HTML, CSS, JS, Blueprint, Ruby, Rails, Olav Bjorkoy, Olav">
+  
+  <!-- atom -->
+  <!-- <link href="/atom.xml" rel="alternate" title="bjorkoy.com" type="application/atom+xml"> -->
+  
+  <!-- feedburner -->
+  <link href="http://feeds.feedburner.com/bjorkoy" rel="alternate" title="bjorkoy.com" type="application/atom+xml">
+  <meta name="google-site-verification" content="7vDyCyvSym2pZLSBnjl1IrtN-hp00gqMfNG8fbHNXyM">
+  
+  <!-- syntax highlighting css -->
+  <link rel="stylesheet" href="/css/syntax.css" type="text/css">
+
+  <!-- standard css -->
+  <link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen, projection">
+  
+  <!-- the freshmaker -->
+  <script src="/mentos/?js" type="text/javascript"></script>
+</head>
+<body id="bjorkoy-com">
+<a href="/" id="logo"><span>home</span></a>
+
+
+
+<div id="content">
+  
+    
+      <h2>
+        <a href="/2010/05/contextual-fluid-grids">Contextual Fluid Grids</a>
+      </h2>
+    
+    <p class="date">25 May 2010</p>
+    <div class="post">
+      <p>While reading A List Apart&#8217;s latest article on <a href='http://www.alistapart.com/articles/responsive-web-design/'>responsive web design</a>, their particular use of <a href='http://www.alistapart.com/articles/fluidgrids/'>fluid grids</a> from a previous article struck me as odd. There seems to be two ways to create such grids &#8211; trying to work around context or using it to your advantage to create contextual fluid grids.</p>
+
+<p>There are two things that may seem difficult about creating fluid grids: how to use context and how to employ margins. The technique in the ALA article computes widths and margins through calculations given the current context, i.e. by using the width of the closest container element in relation to the total page width. In contrast, I prefer embracing context which results in a system that is as powerful yet simpler to use.</p>
+
+<p>Take a look at <a href='/files/fluid/'>this demo page</a> to see what we&#8217;re trying to accomplish. Try resizing the browser window and the text size.</p>
+
+<h3 id='embrace_context'>Embrace context</h3>
+
+<p>Context can be used by letting every container element define its own sub-grid. For instance, if we have a <code>row</code> element, we can divide this element into a number of columns. <strong>Each of the column elements in the container can again define their own grids with the same number of columns as the first container.</strong> The basic insight is that context can be used without any special computations. Consider the following HTML:</p>
+<div class='highlight'><pre><span class='nt'>&lt;div</span> <span class='na'>class=</span><span class='s'>&quot;row&quot;</span><span class='nt'>&gt;</span>
+  <span class='nt'>&lt;div</span> <span class='na'>class=</span><span class='s'>&quot;span12&quot;</span><span class='nt'>&gt;</span>50%<span class='nt'>&lt;/div&gt;</span>
+  <span class='nt'>&lt;div</span> <span class='na'>class=</span><span class='s'>&quot;span12&quot;</span><span class='nt'>&gt;</span>50%<span class='nt'>&lt;/div&gt;</span>
+<span class='nt'>&lt;/div&gt;</span>
+
+<span class='nt'>&lt;div</span> <span class='na'>class=</span><span class='s'>&quot;row&quot;</span><span class='nt'>&gt;</span>
+  <span class='nt'>&lt;div</span> <span class='na'>class=</span><span class='s'>&quot;span12&quot;</span><span class='nt'>&gt;</span>50%<span class='nt'>&lt;/div&gt;</span>
+  <span class='nt'>&lt;div</span> <span class='na'>class=</span><span class='s'>&quot;span12&quot;</span><span class='nt'>&gt;</span>
+    <span class='nt'>&lt;div</span> <span class='na'>class=</span><span class='s'>&quot;row&quot;</span><span class='nt'>&gt;</span>
+      <span class='nt'>&lt;div</span> <span class='na'>class=</span><span class='s'>&quot;span12&quot;</span><span class='nt'>&gt;</span>25%<span class='nt'>&lt;/div&gt;</span>
+      <span class='nt'>&lt;div</span> <span class='na'>class=</span><span class='s'>&quot;span12&quot;</span><span class='nt'>&gt;</span>25%<span class='nt'>&lt;/div&gt;</span>
+    <span class='nt'>&lt;/div&gt;</span>
+  <span class='nt'>&lt;/div&gt;</span>
+<span class='nt'>&lt;/div&gt;</span>
+</pre>
+</div>
+<p>Ignore the lack of semantics, the class names are there for ease of explanation. The first row in this example has two columns spanning 50% of the page width. The second row first has one column spanning half the page width, and then two columns spanning 25% of the page. Pretty simple.</p>
+
+<p>Notice that all spans use the same column numbers. Here, the total number of columns is 24. The second column in the second example spans 50% of the page width, and is divided into 24 new columns. Since the wrapping element is 12 columns wide, 12 columns in the context of this element corresponds to 6 columns, or 25% of the page width. By embracing context, the grid can be as complex as you want without having to calculate precise floats.</p>
+
+<h3 id='programming_the_grid'>Programming the grid</h3>
+
+<p>As I mentioned in a previous post, the task of creating grids lends itself well to CSS extensions such as SASS. This is true both for fixed and fluid setups. By specifying the number of columns each primary and sub-grid should have, creating a semantic and flexible implementation is quite simple. Calculations are done with percentages and EMs to ensure proper fluidity and support for text resizing.</p>
+<div class='highlight'><pre><span class='err'>$</span><span class='nt'>grid_columns</span><span class='o'>:</span> <span class='nt'>24</span><span class='o'>;</span>        <span class='c'>/* number of columns */</span>
+<span class='err'>$</span><span class='nt'>total_max_width</span><span class='o'>:</span> <span class='nt'>950px</span><span class='o'>;</span>  <span class='c'>/* max page width */</span>
+
+<span class='c'>/* compute width of 1 column */</span>
+<span class='err'>$</span><span class='nt'>grid_col_width</span><span class='o'>:</span> <span class='nt'>100</span><span class='o'>%</span> <span class='o'>/</span> <span class='err'>$</span><span class='nt'>grid_columns</span><span class='o'>;</span>
+
+<span class='c'>/* create a div spanning n columns */</span>
+<span class='k'>@mixin</span> <span class='nt'>col</span><span class='o'>(</span><span class='err'>$</span><span class='nt'>n</span><span class='o'>:</span> <span class='nt'>1</span><span class='o'>)</span> <span class='p'>{</span>
+  <span class='nt'>float</span><span class='o'>:</span> <span class='nt'>left</span><span class='o'>;</span>
+  <span class='k'>@include</span> <span class='nt'>span</span><span class='o'>(</span><span class='err'>$</span><span class='nt'>n</span><span class='o'>)</span><span class='p'>;</span>
+<span class='p'>}</span>
+
+<span class='c'>/* make an element span n columns */</span>
+<span class='k'>@mixin</span> <span class='nt'>span</span><span class='o'>(</span><span class='err'>$</span><span class='nt'>n</span><span class='o'>:</span> <span class='nt'>1</span><span class='o'>)</span> <span class='p'>{</span>
+  <span class='nt'>width</span><span class='o'>:</span> <span class='o'>(</span><span class='err'>$</span><span class='nt'>n</span> <span class='o'>*</span> <span class='err'>$</span><span class='nt'>grid_col_width</span><span class='o'>);</span>
+<span class='p'>}</span>
+
+<span class='c'>/* prepend n empty columns */</span>
+<span class='k'>@mixin</span> <span class='nt'>prepend</span><span class='o'>(</span><span class='err'>$</span><span class='nt'>n</span><span class='o'>:</span> <span class='nt'>1</span><span class='o'>)</span> <span class='p'>{</span>
+  <span class='nt'>margin-left</span><span class='o'>:</span> <span class='err'>$</span><span class='nt'>grid_col_width</span> <span class='o'>*</span> <span class='err'>$</span><span class='nt'>n</span>
+<span class='p'>}</span>
+
+<span class='c'>/* append n empty columns */</span>
+<span class='k'>@mixin</span> <span class='nt'>append</span><span class='o'>(</span><span class='err'>$</span><span class='nt'>n</span><span class='o'>:</span> <span class='nt'>1</span><span class='o'>)</span> <span class='p'>{</span>
+  <span class='nt'>margin-right</span><span class='o'>:</span> <span class='err'>$</span><span class='nt'>grid_col_width</span> <span class='o'>*</span> <span class='err'>$</span><span class='nt'>n</span>
+<span class='p'>}</span>
+
+<span class='c'>/* define max width in EMs for proper grid resizing */</span>
+<span class='nt'>body</span> <span class='p'>{</span> 
+  <span class='k'>font-size</span><span class='o'>:</span> <span class='m'>100%</span><span class='p'>;</span> 
+  <span class='k'>max-width</span><span class='o'>:</span> <span class='p'>(</span><span class='err'>$</span><span class='n'>total</span><span class='err'>_</span><span class='n'>max</span><span class='err'>_</span><span class='k'>width</span> <span class='o'>/</span> <span class='m'>16px</span><span class='p'>)</span> <span class='o'>+</span> <span class='n'>em</span><span class='p'>;</span> 
+<span class='p'>}</span> 
+
+<span class='c'>/* a row defines a new grid or subgrid */</span>
+<span class='nc'>.row</span> <span class='p'>{</span> <span class='k'>float</span><span class='o'>:</span> <span class='k'>left</span><span class='p'>;</span> <span class='k'>width</span><span class='o'>:</span> <span class='m'>100%</span><span class='p'>;</span> <span class='p'>}</span>
+
+<span class='c'>/* mixin example usage */</span>
+<span class='nf'>#menu</span> <span class='p'>{</span> <span class='o'>@</span><span class='n'>include</span> <span class='n'>col</span><span class='p'>(</span><span class='m'>5</span><span class='p'>);</span> <span class='p'>}</span>
+<span class='nf'>#side</span> <span class='p'>{</span> <span class='o'>@</span><span class='n'>include</span> <span class='n'>col</span><span class='p'>(</span><span class='m'>5</span><span class='p'>);</span> <span class='p'>}</span>
+<span class='nf'>#main</span> <span class='p'>{</span> 
+  <span class='o'>@</span><span class='n'>include</span> <span class='n'>prepend</span><span class='p'>(</span><span class='m'>1</span><span class='p'>);</span>
+  <span class='o'>@</span><span class='n'>include</span> <span class='n'>col</span><span class='p'>(</span><span class='m'>12</span><span class='p'>);</span> 
+  <span class='o'>@</span><span class='n'>include</span> <span class='n'>append</span><span class='p'>(</span><span class='m'>1</span><span class='p'>);</span>
+<span class='p'>}</span>
+
+<span class='c'>/* For the html example */</span>
+<span class='k'>@for</span> <span class='err'>$</span><span class='nt'>i</span> <span class='nt'>from</span> <span class='nt'>1</span> <span class='nt'>through</span> <span class='err'>$</span><span class='nt'>grid_columns</span> <span class='p'>{</span>
+  <span class='nc'>.span</span><span class='err'>#</span><span class='p'>{</span><span class='err'>$i</span><span class='p'>}</span>    <span class='p'>{</span> <span class='o'>@</span><span class='n'>include</span> <span class='n'>col</span><span class='p'>(</span><span class='err'>$i</span><span class='p'>);</span> <span class='p'>}</span>
+  <span class='nc'>.prepend</span><span class='err'>#</span><span class='p'>{</span><span class='err'>$i</span><span class='p'>}</span> <span class='p'>{</span> <span class='o'>@</span><span class='n'>include</span> <span class='n'>prepend</span><span class='p'>(</span><span class='err'>$i</span><span class='p'>);</span> <span class='p'>}</span>
+  <span class='nc'>.append</span><span class='err'>#</span><span class='p'>{</span><span class='err'>$i</span><span class='p'>}</span>  <span class='p'>{</span> <span class='o'>@</span><span class='n'>include</span> <span class='n'>append</span><span class='p'>(</span><span class='err'>$i</span><span class='p'>);</span> <span class='p'>}</span>
+<span class='p'>}</span>
+</pre>
+</div>
+<h3 id='columns_as_margins'>Columns as margins</h3>
+
+<p>You may have noticed that this example does not consider margins as a part of the column definition. Fluid margins is often the aspect that makes creating such a grid difficult. Ensuring that margins span the same width across context, and that the widths they span don&#8217;t get too small to be rendered, can be a pain.</p>
+
+<p><strong>The proper approach is to see margins between columns as empty columns, not as empty gaps between columns.</strong> That is, the columns themselves do not have specified margins. Instead, empty columns are appended or prepended where margins are needed. This makes sense as margins between columns in fluid layouts almost always span greater widths than that of their fixed counterparts. And, if your require fixed margins, they can always be applied to an inner element of a column (as in the demo page).</p>
+
+<p>However, we often need narrow margins, even in fluid layouts. To accomplish this, a high number of columns is needed, as columns now not only specify the width of a column, but also the negative space between them. As always, choosing a number with a high divisor count is essential. The best approach is to use a <a href='http://en.wikipedia.org/wiki/Highly_composite_number'>highly composite number</a> (a positive integer with more divisors than any positive integer smaller than itself) such as 6, 12, 24, 36 or 48. This gives you the most flexibility in creating grids with applicable divisive features.</p>
+
+<p>The result is a simple fluid grid which, because of the use of contextual sub-grids, can be as complex and specific as you need. By using an extension such as SASS, no complex calculations have to be done, or re-done when the design needs a change.</p>
+    </div>
+  
+</div>
+
+
+<h2 class="section">Previously</h2>
+
+<ul class="posts">
+  
+    <li>
+      
+            
+      <a href="/2010/05/css-grids-with-sass">Semantic CSS Grids With SASS</a>
+    </li>
+  
+    <li>
+      
+            
+      <a href="/2010/05/blogging-with-jekyll-git-and-slicehost">Blogging With Jekyll, Git and a VPS</a>
+    </li>
+  
+    <li>
+      
+            
+      <a href="/2010/05/conways-game-of-life-in-ruby">Conway's Game of Life in Ruby</a>
+    </li>
+  
+    <li>
+      
+            
+      <a href="/2008/10/automatic-compilation-of-sass-and-hss">Automatic compilation of Sass and HSS files</a>
+    </li>
+  
+    <li>
+      
+            
+      <a href="/2008/09/passing-the-torch">Passing the torch</a>
+    </li>
+  
+    <li>
+      
+            
+      <a href="/2008/02/blueprint-07-has-arrived">Blueprint 0.7 has arrived</a>
+    </li>
+  
+    <li>
+      
+            
+      <a href="/2008/01/css-font-shorthand-syntax">CSS font shorthand syntax</a>
+    </li>
+  
+    <li>
+      
+            
+      <a href="/2008/01/bulletproof-protection-against-comment-spam">How to stop comment spam</a>
+    </li>
+  
+    <li>
+      
+            
+      <a href="/2008/01/blueprints-directory-structure-again-again">Blueprint's directory structure</a>
+    </li>
+  
+    <li>
+      
+            
+      <a href="/2008/01/rejoice-the-blog-is-back-again">Rejoice, the blog is back!</a>
+    </li>
+  
+  <li><a href="/archive.html"><em>Peruse the archives</em></a></li>
+</ul>
+
+
+<div id="foot">
+  <ul>
+    <li><a href="/">olav at bjorkoy dot com</a> &bull; </li>
+    <li><a href="http://twitter.com/vandelay">twitter</a> &bull; </li>
+    <li><a href="/about.html">about & contact</a></li>
+  </ul>
+  <p>
+    Despite the lack of a contact form, I appreciate any comments you might have.<br>
+    Use <a href="http://twitter.com/vandelay">twitter</a> or email me at olav at bjorkoy dot com.
+  </p>
+</div>
+
+</body>
+</html>

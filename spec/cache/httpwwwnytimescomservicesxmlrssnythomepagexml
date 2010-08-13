@@ -1,0 +1,240 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="/css/rss20.xsl" type="text/xsl"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:nyt="http://www.nytimes.com/namespaces/rss/2.0" version="2.0" xmlns:pheedo="http://www.pheedo.com/namespace/pheedo">
+	<channel>
+		<title>NYT &gt; Home Page</title>
+		<link>http://www.nytimes.com/pages/index.html?partner=rss&amp;emc=rss</link>
+		<description/>
+		<language>en-us</language>
+		<copyright>Copyright 2010  The New York Times Company</copyright>
+		<lastBuildDate>Fri, 13 Aug 2010 00:05:04 GMT </lastBuildDate>
+		<image>
+			<title>NYT &gt; Home Page</title>
+			<url>http://graphics.nytimes.com/images/section/NytSectionHeader.gif</url>
+			<link>http://www.nytimes.com/pages/index.html?partner=rss&amp;emc=rss</link>
+		</image>
+		<atom:link rel="hub" href="http://www.pheedo.com/api/hub/"/>
+		<atom:link rel="self" href="http://feeds.nytimes.com/nyt/rss/HomePage" type="application/rss+xml"/>
+		<item>
+			<title>No Easy Path for India to Resolve Frozen Conflict in Kashmir</title>
+			<link>http://feeds.nytimes.com/click.phdo?i=98effb404a142978309ffa7303b4b274</link>
+			<pheedo:origLink>http://www.nytimes.com/2010/08/13/world/asia/13kashmir.html?partner=rss&amp;amp;emc=rss</pheedo:origLink>
+			<guid isPermaLink="false">http://www.nytimes.com/2010/08/13/world/asia/13kashmir.html</guid>
+			<media:content url="http://graphics8.nytimes.com/images/2010/08/13/world/13kashmir_337-span/13kashmir_337-span-thumbStandard.jpg" medium="image" height="75" width="75"/>
+			<media:description>Aabid Nabi, 21, right, sat next to his brother Fida Nabi, 17, who was shot in the head during a protest, in a hospital in Srinagar. Mr. Nabi later died from his injury.</media:description>
+			<media:credit>The New York Times</media:credit>
+			<description>Bloody protests in Kashmir have led India to one of its most serious internal crises and signal the failure of decades of Indian efforts to win peace in the region.&lt;br clear=&quot;both&quot; style=&quot;clear: both;&quot;/&gt;
+&lt;br clear=&quot;both&quot; style=&quot;clear: both;&quot;/&gt;
+&lt;a href=&quot;http://ads.pheedo.com/click.phdo?s=98effb404a142978309ffa7303b4b274&amp;p=1&quot;&gt;&lt;img alt=&quot;&quot; style=&quot;border: 0;&quot; border=&quot;0&quot; src=&quot;http://ads.pheedo.com/img.phdo?s=98effb404a142978309ffa7303b4b274&amp;p=1&quot;/&gt;&lt;/a&gt;
+&lt;img alt=&quot;&quot; height=&quot;0&quot; width=&quot;0&quot; border=&quot;0&quot; style=&quot;display:none&quot; src=&quot;http://segment-pixel.invitemedia.com/pixel?code=Business&amp;partnerID=167&amp;key=segment&quot;/&gt;&lt;img alt=&quot;&quot; height=&quot;0&quot; width=&quot;0&quot; border=&quot;0&quot; style=&quot;display:none&quot; src=&quot;http://pixel.quantserve.com/pixel/p-8bUhLiluj0fAw.gif?labels=pub.29518.rss.Business.18272,cat.Business.rss&quot;/&gt;</description>
+			<dc:creator>By LYDIA POLGREEN</dc:creator>
+			<pubDate>Thu, 12 Aug 2010 23:57:46 GMT</pubDate>
+			<category domain="http://www.nytimes.com/namespaces/nyt_geo">Kashmir and Jammu (India)</category>
+			<category domain="http://www.nytimes.com/namespaces/des">Demonstrations, Protests, and Riots</category>
+			<category domain="http://www.nytimes.com/namespaces/nyt_geo">India</category>
+			<category domain="http://www.nytimes.com/namespaces/nyt_geo">Pakistan</category>
+			<category domain="http://www.nytimes.com/namespaces/mdes">Civil War and Guerrilla Warfare</category>
+			<category domain="http://www.nytimes.com/namespaces/des">Civilian Casualties</category>
+			<category domain="http://www.nytimes.com/namespaces/mdes">Terrorism</category>
+		</item>
+		<item>
+			<title>Judge Allows, but Delays, Gay Marriage in California</title>
+			<link>http://feeds.nytimes.com/click.phdo?i=33756cc7f712e565f26791ad10cfcb10</link>
+			<pheedo:origLink>http://www.nytimes.com/2010/08/13/us/13prop.html?partner=rss&amp;amp;emc=rss</pheedo:origLink>
+			<guid isPermaLink="false">http://www.nytimes.com/2010/08/13/us/13prop.html</guid>
+			<media:content url="http://graphics8.nytimes.com/images/2010/08/13/us/13prop_337-span/prop-1-thumbStandard.jpg" medium="image" height="75" width="75"/>
+			<media:description>Mayor Gavin Newsom of San Francisco with a crowd of Prop 8 opponents as he entered city hall prior to the announcement of the court&#x2019;s ruling on Thursday.</media:description>
+			<media:credit>Jim Wilson/The New York Times</media:credit>
+			<description>A federal district judge lifted a stay on his decision on same-sex marriage on Thursday, but he delayed implementation of the order until Aug. 18.&lt;br clear=&quot;both&quot; style=&quot;clear: both;&quot;/&gt;
+&lt;br clear=&quot;both&quot; style=&quot;clear: both;&quot;/&gt;
+&lt;a href=&quot;http://ads.pheedo.com/click.phdo?s=33756cc7f712e565f26791ad10cfcb10&amp;p=1&quot;&gt;&lt;img alt=&quot;&quot; style=&quot;border: 0;&quot; border=&quot;0&quot; src=&quot;http://ads.pheedo.com/img.phdo?s=33756cc7f712e565f26791ad10cfcb10&amp;p=1&quot;/&gt;&lt;/a&gt;
+&lt;img alt=&quot;&quot; height=&quot;0&quot; width=&quot;0&quot; border=&quot;0&quot; style=&quot;display:none&quot; src=&quot;http://segment-pixel.invitemedia.com/pixel?code=Business&amp;partnerID=167&amp;key=segment&quot;/&gt;&lt;img alt=&quot;&quot; height=&quot;0&quot; width=&quot;0&quot; border=&quot;0&quot; style=&quot;display:none&quot; src=&quot;http://pixel.quantserve.com/pixel/p-8bUhLiluj0fAw.gif?labels=pub.29518.rss.Business.18272,cat.Business.rss&quot;/&gt;</description>
+			<dc:creator>By JESSE McKINLEY</dc:creator>
+			<pubDate>Thu, 12 Aug 2010 22:50:03 GMT</pubDate>
+			<category domain="http://www.nytimes.com/namespaces/des">Same-Sex Marriage, Civil Unions and Domestic Partnerships</category>
+			<category domain="http://www.nytimes.com/namespaces/des">Decisions and Verdicts</category>
+			<category domain="http://www.nytimes.com/namespaces/nyt_per">Walker, Vaughn R</category>
+		</item>
+		<item>
+			<title>Whitacre Plans to Step Down as Chief of G.M.</title>
+			<link>http://feeds.nytimes.com/click.phdo?i=ba05fa4f4f65c32a6ffaf8b3c075a142</link>
+			<pheedo:origLink>http://www.nytimes.com/2010/08/13/business/13auto.html?partner=rss&amp;amp;emc=rss</pheedo:origLink>
+			<guid isPermaLink="false">http://www.nytimes.com/2010/08/13/business/13auto.html</guid>
+			<media:content url="http://graphics8.nytimes.com/images/2010/08/13/business/13auto-195/13auto-195-thumbStandard.jpg" medium="image" height="75" width="75"/>
+			<media:description>Edward E. Whitacre Jr., a former chief of AT&amp;T who came out of retirement to lead G.M., had said he would leave once the company stabilized its finances.</media:description>
+			<media:credit>Jeff Kowalsky/Bloomberg News</media:credit>
+			<description>Edward Whitacre Jr. announced the move after G.M. reported earnings of $1.3 billion, its strongest quarter since 2004.&lt;br clear=&quot;both&quot; style=&quot;clear: both;&quot;/&gt;
+&lt;br clear=&quot;both&quot; style=&quot;clear: both;&quot;/&gt;
+&lt;a href=&quot;http://ads.pheedo.com/click.phdo?s=ba05fa4f4f65c32a6ffaf8b3c075a142&amp;p=1&quot;&gt;&lt;img alt=&quot;&quot; style=&quot;border: 0;&quot; border=&quot;0&quot; src=&quot;http://ads.pheedo.com/img.phdo?s=ba05fa4f4f65c32a6ffaf8b3c075a142&amp;p=1&quot;/&gt;&lt;/a&gt;
+&lt;img alt=&quot;&quot; height=&quot;0&quot; width=&quot;0&quot; border=&quot;0&quot; style=&quot;display:none&quot; src=&quot;http://segment-pixel.invitemedia.com/pixel?code=Business&amp;partnerID=167&amp;key=segment&quot;/&gt;&lt;img alt=&quot;&quot; height=&quot;0&quot; width=&quot;0&quot; border=&quot;0&quot; style=&quot;display:none&quot; src=&quot;http://pixel.quantserve.com/pixel/p-8bUhLiluj0fAw.gif?labels=pub.29518.rss.Business.18272,cat.Business.rss&quot;/&gt;</description>
+			<dc:creator>By BILL VLASIC</dc:creator>
+			<pubDate>Thu, 12 Aug 2010 23:35:05 GMT</pubDate>
+			<category domain="http://www.nytimes.com/namespaces/nyt_org_all">General Motors</category>
+			<category domain="http://www.nytimes.com/namespaces/des">Automobiles</category>
+			<category domain="http://www.nytimes.com/namespaces/des">Company Reports</category>
+			<category domain="http://www.nytimes.com/namespaces/mdes">Credit and Debt</category>
+		</item>
+		<item>
+			<title>Showcase Afghan Army Mission Turns Into Debacle</title>
+			<link>http://feeds.nytimes.com/click.phdo?i=8f129c936ed2037b7ee0eca2178d81c0</link>
+			<pheedo:origLink>http://www.nytimes.com/2010/08/13/world/asia/13afghan.html?partner=rss&amp;amp;emc=rss</pheedo:origLink>
+			<guid isPermaLink="false">http://www.nytimes.com/2010/08/13/world/asia/13afghan.html</guid>
+			<description>Red Cross officials are still unable to reach the battlefield in Laghman Province, where Taliban fighters drove back the Afghan Army.&lt;br clear=&quot;both&quot; style=&quot;clear: both;&quot;/&gt;
+&lt;br clear=&quot;both&quot; style=&quot;clear: both;&quot;/&gt;
+&lt;a href=&quot;http://ads.pheedo.com/click.phdo?s=8f129c936ed2037b7ee0eca2178d81c0&amp;p=1&quot;&gt;&lt;img alt=&quot;&quot; style=&quot;border: 0;&quot; border=&quot;0&quot; src=&quot;http://ads.pheedo.com/img.phdo?s=8f129c936ed2037b7ee0eca2178d81c0&amp;p=1&quot;/&gt;&lt;/a&gt;
+&lt;img alt=&quot;&quot; height=&quot;0&quot; width=&quot;0&quot; border=&quot;0&quot; style=&quot;display:none&quot; src=&quot;http://segment-pixel.invitemedia.com/pixel?code=Business&amp;partnerID=167&amp;key=segment&quot;/&gt;&lt;img alt=&quot;&quot; height=&quot;0&quot; width=&quot;0&quot; border=&quot;0&quot; style=&quot;display:none&quot; src=&quot;http://pixel.quantserve.com/pixel/p-8bUhLiluj0fAw.gif?labels=pub.29518.rss.Business.18272,cat.Business.rss&quot;/&gt;</description>
+			<dc:creator>By ROD NORDLAND</dc:creator>
+			<pubDate>Thu, 12 Aug 2010 23:55:40 GMT</pubDate>
+			<category domain="http://www.nytimes.com/namespaces/des">Afghanistan War (2001- )</category>
+			<category domain="http://www.nytimes.com/namespaces/nyt_org_all">Taliban</category>
+			<category domain="http://www.nytimes.com/namespaces/des">Defense and Military Forces</category>
+			<category domain="http://www.nytimes.com/namespaces/nyt_org_all">North Atlantic Treaty Organization</category>
+			<category domain="http://www.nytimes.com/namespaces/nyt_org_all">American Red Cross</category>
+			<category domain="http://www.nytimes.com/namespaces/nyt_geo">Kabul (Afghanistan)</category>
+			<category domain="http://www.nytimes.com/namespaces/des">United States Defense and Military Forces</category>
+			<category domain="http://www.nytimes.com/namespaces/nyt_geo">France</category>
+		</item>
+		<item>
+			<title>Dell Accused of Concealing Evidence in PC Suit</title>
+			<link>http://feeds.nytimes.com/click.phdo?i=d300edd25c882c51a1b67aac02742d96</link>
+			<pheedo:origLink>http://www.nytimes.com/2010/08/13/technology/13dell.html?partner=rss&amp;amp;emc=rss</pheedo:origLink>
+			<guid isPermaLink="false">http://www.nytimes.com/2010/08/13/technology/13dell.html</guid>
+			<description>Dell deliberately violated a court order by failing to hand over documents from top executives, a court filing said.&lt;br clear=&quot;both&quot; style=&quot;clear: both;&quot;/&gt;
+&lt;br clear=&quot;both&quot; style=&quot;clear: both;&quot;/&gt;
+&lt;a href=&quot;http://ads.pheedo.com/click.phdo?s=d300edd25c882c51a1b67aac02742d96&amp;p=1&quot;&gt;&lt;img alt=&quot;&quot; style=&quot;border: 0;&quot; border=&quot;0&quot; src=&quot;http://ads.pheedo.com/img.phdo?s=d300edd25c882c51a1b67aac02742d96&amp;p=1&quot;/&gt;&lt;/a&gt;
+&lt;img alt=&quot;&quot; height=&quot;0&quot; width=&quot;0&quot; border=&quot;0&quot; style=&quot;display:none&quot; src=&quot;http://segment-pixel.invitemedia.com/pixel?code=Business&amp;partnerID=167&amp;key=segment&quot;/&gt;&lt;img alt=&quot;&quot; height=&quot;0&quot; width=&quot;0&quot; border=&quot;0&quot; style=&quot;display:none&quot; src=&quot;http://pixel.quantserve.com/pixel/p-8bUhLiluj0fAw.gif?labels=pub.29518.rss.Business.18272,cat.Business.rss&quot;/&gt;</description>
+			<dc:creator>By ASHLEE VANCE</dc:creator>
+			<pubDate>Thu, 12 Aug 2010 23:47:09 GMT</pubDate>
+			<category domain="http://www.nytimes.com/namespaces/nyt_org_all">Dell Inc|DELL|NASDAQ</category>
+			<category domain="http://www.nytimes.com/namespaces/des">Computers and the Internet</category>
+			<category domain="http://www.nytimes.com/namespaces/des">Customer Relations</category>
+			<category domain="http://www.nytimes.com/namespaces/des">Executives and Management</category>
+			<category domain="http://www.nytimes.com/namespaces/mdes">Suits and Litigation</category>
+		</item>
+		<item>
+			<title>Past Errors to Blame for Russia&#x2019;s Peat Fires</title>
+			<link>http://feeds.nytimes.com/click.phdo?i=5bf5329c727cbef8811e0d4679279bc8</link>
+			<pheedo:origLink>http://www.nytimes.com/2010/08/13/world/europe/13russia.html?partner=rss&amp;amp;emc=rss</pheedo:origLink>
+			<guid isPermaLink="false">http://www.nytimes.com/2010/08/13/world/europe/13russia.html</guid>
+			<media:content url="http://graphics8.nytimes.com/images/2010/08/12/world/europe/12-russia-cnd/12-russia-cnd-thumbStandard.jpg" medium="image" height="75" width="75"/>
+			<media:description>Firemen and soldiers tried to put out a smoldering fire in a forest planted in a peat field near the town of Elektrogorsk.</media:description>
+			<media:credit>James Hill for The New York Times</media:credit>
+			<description>The fires are fed by bogs that were created by draining swamps; at one time, they supplied the fuel for power stations.&lt;br clear=&quot;both&quot; style=&quot;clear: both;&quot;/&gt;
+&lt;br clear=&quot;both&quot; style=&quot;clear: both;&quot;/&gt;
+&lt;a href=&quot;http://ads.pheedo.com/click.phdo?s=5bf5329c727cbef8811e0d4679279bc8&amp;p=1&quot;&gt;&lt;img alt=&quot;&quot; style=&quot;border: 0;&quot; border=&quot;0&quot; src=&quot;http://ads.pheedo.com/img.phdo?s=5bf5329c727cbef8811e0d4679279bc8&amp;p=1&quot;/&gt;&lt;/a&gt;
+&lt;img alt=&quot;&quot; height=&quot;0&quot; width=&quot;0&quot; border=&quot;0&quot; style=&quot;display:none&quot; src=&quot;http://segment-pixel.invitemedia.com/pixel?code=Business&amp;partnerID=167&amp;key=segment&quot;/&gt;&lt;img alt=&quot;&quot; height=&quot;0&quot; width=&quot;0&quot; border=&quot;0&quot; style=&quot;display:none&quot; src=&quot;http://pixel.quantserve.com/pixel/p-8bUhLiluj0fAw.gif?labels=pub.29518.rss.Business.18272,cat.Business.rss&quot;/&gt;</description>
+			<dc:creator>By ANDREW E. KRAMER</dc:creator>
+			<pubDate>Thu, 12 Aug 2010 23:40:40 GMT</pubDate>
+			<category domain="http://www.nytimes.com/namespaces/nyt_geo">Russia</category>
+			<category domain="http://www.nytimes.com/namespaces/des">Forest and Brush Fires</category>
+			<category domain="http://www.nytimes.com/namespaces/des">Fires and Firefighters</category>
+			<category domain="http://www.nytimes.com/namespaces/nyt_keyword">peat bogs</category>
+			<category domain="http://www.nytimes.com/namespaces/nyt_per">Putin, Vladimir V</category>
+		</item>
+		<item>
+			<title>BP to Pay Record $50.6 Million Safety Fine Over Texas Refinery</title>
+			<link>http://feeds.nytimes.com/click.phdo?i=91e7b8f89eac504b4742747dfe4b77e5</link>
+			<pheedo:origLink>http://www.nytimes.com/2010/08/13/business/13bp.html?partner=rss&amp;amp;emc=rss</pheedo:origLink>
+			<guid isPermaLink="false">http://www.nytimes.com/2010/08/13/business/13bp.html</guid>
+			<media:content url="http://graphics8.nytimes.com/images/2010/08/13/business/13BP/13BP-thumbStandard.jpg" medium="image" height="75" width="75"/>
+			<media:description>The wreckage after an explosion in March of 2005 at the BP facility in Texas City, which killed 15 workers and injured more than 170 people.</media:description>
+			<media:credit>William Philpott/Agence France-Presse &#x2014; Getty Images</media:credit>
+			<description>BP has agreed to pay a record $50.6 million fine for safety violations found last year at its troubled refinery.&lt;br clear=&quot;both&quot; style=&quot;clear: both;&quot;/&gt;
+&lt;br clear=&quot;both&quot; style=&quot;clear: both;&quot;/&gt;
+&lt;a href=&quot;http://ads.pheedo.com/click.phdo?s=91e7b8f89eac504b4742747dfe4b77e5&amp;p=1&quot;&gt;&lt;img alt=&quot;&quot; style=&quot;border: 0;&quot; border=&quot;0&quot; src=&quot;http://ads.pheedo.com/img.phdo?s=91e7b8f89eac504b4742747dfe4b77e5&amp;p=1&quot;/&gt;&lt;/a&gt;
+&lt;img alt=&quot;&quot; height=&quot;0&quot; width=&quot;0&quot; border=&quot;0&quot; style=&quot;display:none&quot; src=&quot;http://segment-pixel.invitemedia.com/pixel?code=Business&amp;partnerID=167&amp;key=segment&quot;/&gt;&lt;img alt=&quot;&quot; height=&quot;0&quot; width=&quot;0&quot; border=&quot;0&quot; style=&quot;display:none&quot; src=&quot;http://pixel.quantserve.com/pixel/p-8bUhLiluj0fAw.gif?labels=pub.29518.rss.Business.18272,cat.Business.rss&quot;/&gt;</description>
+			<dc:creator>By STEVEN GREENHOUSE</dc:creator>
+			<pubDate>Thu, 12 Aug 2010 22:57:25 GMT</pubDate>
+			<category domain="http://www.nytimes.com/namespaces/nyt_org_all">BP Plc|BP|NYSE</category>
+			<category domain="http://www.nytimes.com/namespaces/nyt_org_all">Occupational Safety and Health Administration</category>
+			<category domain="http://www.nytimes.com/namespaces/des">Accidents and Safety</category>
+			<category domain="http://www.nytimes.com/namespaces/des">Oil (Petroleum) and Gasoline</category>
+			<category domain="http://www.nytimes.com/namespaces/mdes">Offshore Drilling and Exploration</category>
+			<category domain="http://www.nytimes.com/namespaces/des">Fines (Penalties)</category>
+			<category domain="http://www.nytimes.com/namespaces/nyt_geo">Texas</category>
+		</item>
+		<item>
+			<title>Tiger Woods Got Off to Quick Start at P.G.A. Championship</title>
+			<link>http://feeds.nytimes.com/click.phdo?i=88a475de9c0f388d712a72c8191c0725</link>
+			<pheedo:origLink>http://www.nytimes.com/2010/08/13/sports/golf/13golf.html?partner=rss&amp;amp;emc=rss</pheedo:origLink>
+			<guid isPermaLink="false">http://www.nytimes.com/2010/08/13/sports/golf/13golf.html</guid>
+			<media:content url="http://graphics8.nytimes.com/images/2010/08/13/sports/golf/13tiger/13tiger-thumbStandard.jpg" medium="image" height="75" width="75"/>
+			<media:description>Tiger Woods made par on the 12th hole at Whistling Straits in the first round of the P.G.A. Championship.</media:description>
+			<media:credit>Tannen Maury/European Pressphoto Agency</media:credit>
+			<description>Tiger Woods got off to a quick start but lost momentum as Bubba Watson and Francesco Molinari shared the first-round lead.&lt;br clear=&quot;both&quot; style=&quot;clear: both;&quot;/&gt;
+&lt;br clear=&quot;both&quot; style=&quot;clear: both;&quot;/&gt;
+&lt;a href=&quot;http://ads.pheedo.com/click.phdo?s=88a475de9c0f388d712a72c8191c0725&amp;p=1&quot;&gt;&lt;img alt=&quot;&quot; style=&quot;border: 0;&quot; border=&quot;0&quot; src=&quot;http://ads.pheedo.com/img.phdo?s=88a475de9c0f388d712a72c8191c0725&amp;p=1&quot;/&gt;&lt;/a&gt;
+&lt;img alt=&quot;&quot; height=&quot;0&quot; width=&quot;0&quot; border=&quot;0&quot; style=&quot;display:none&quot; src=&quot;http://segment-pixel.invitemedia.com/pixel?code=Business&amp;partnerID=167&amp;key=segment&quot;/&gt;&lt;img alt=&quot;&quot; height=&quot;0&quot; width=&quot;0&quot; border=&quot;0&quot; style=&quot;display:none&quot; src=&quot;http://pixel.quantserve.com/pixel/p-8bUhLiluj0fAw.gif?labels=pub.29518.rss.Business.18272,cat.Business.rss&quot;/&gt;</description>
+			<dc:creator>By LYNN ZINSER</dc:creator>
+			<pubDate>Thu, 12 Aug 2010 23:35:05 GMT</pubDate>
+			<category domain="http://www.nytimes.com/namespaces/des">PGA Championship</category>
+			<category domain="http://www.nytimes.com/namespaces/des">Golf</category>
+			<category domain="http://www.nytimes.com/namespaces/nyt_org_all">Professional Golfers Assn</category>
+			<category domain="http://www.nytimes.com/namespaces/nyt_per">Woods, Tiger</category>
+			<category domain="http://www.nytimes.com/namespaces/nyt_per">Yang, Y E</category>
+			<category domain="http://www.nytimes.com/namespaces/nyt_per">Mickelson, Phil</category>
+			<category domain="http://www.nytimes.com/namespaces/nyt_per">Westwood, Lee</category>
+		</item>
+		<item>
+			<title>Produce by Prescription Seeks to Address Childhood Obesity</title>
+			<link>http://feeds.nytimes.com/click.phdo?i=28670d984d82bb4f003ffa1d73de829c</link>
+			<pheedo:origLink>http://www.nytimes.com/2010/08/13/business/13veggies.html?partner=rss&amp;amp;emc=rss</pheedo:origLink>
+			<guid isPermaLink="false">http://www.nytimes.com/2010/08/13/business/13veggies.html</guid>
+			<media:content url="http://graphics8.nytimes.com/images/2010/08/13/business/13veggies-span/13veggies-1281644910222-thumbStandard.jpg" medium="image" height="75" width="75"/>
+			<media:description>Makael Constance, 9, and his mother, Leslie-Ann Ogiste at the Codman Square Farmers Market, following the inauguration of the Fruit and Veggie RX program.</media:description>
+			<media:credit>Jodi Hilton for The New York Times</media:credit>
+			<description>Some doctors in Massachusetts are handing out coupons for use at farmers&#x2019; markets in an effort to promote healthy eating and combat childhood obesity.&lt;br clear=&quot;both&quot; style=&quot;clear: both;&quot;/&gt;
+&lt;br clear=&quot;both&quot; style=&quot;clear: both;&quot;/&gt;
+&lt;a href=&quot;http://ads.pheedo.com/click.phdo?s=28670d984d82bb4f003ffa1d73de829c&amp;p=1&quot;&gt;&lt;img alt=&quot;&quot; style=&quot;border: 0;&quot; border=&quot;0&quot; src=&quot;http://ads.pheedo.com/img.phdo?s=28670d984d82bb4f003ffa1d73de829c&amp;p=1&quot;/&gt;&lt;/a&gt;
+&lt;img alt=&quot;&quot; height=&quot;0&quot; width=&quot;0&quot; border=&quot;0&quot; style=&quot;display:none&quot; src=&quot;http://segment-pixel.invitemedia.com/pixel?code=Business&amp;partnerID=167&amp;key=segment&quot;/&gt;&lt;img alt=&quot;&quot; height=&quot;0&quot; width=&quot;0&quot; border=&quot;0&quot; style=&quot;display:none&quot; src=&quot;http://pixel.quantserve.com/pixel/p-8bUhLiluj0fAw.gif?labels=pub.29518.rss.Business.18272,cat.Business.rss&quot;/&gt;</description>
+			<dc:creator>By NATASHA SINGER</dc:creator>
+			<pubDate>Thu, 12 Aug 2010 21:50:02 GMT</pubDate>
+			<category domain="http://www.nytimes.com/namespaces/des">Children and Youth</category>
+			<category domain="http://www.nytimes.com/namespaces/des">Vegetables</category>
+			<category domain="http://www.nytimes.com/namespaces/des">Medicine and Health</category>
+			<category domain="http://www.nytimes.com/namespaces/mdes">Farmers' Markets</category>
+			<category domain="http://www.nytimes.com/namespaces/mdes">Vouchers</category>
+			<category domain="http://www.nytimes.com/namespaces/nyt_org_all">Agriculture Department</category>
+			<category domain="http://www.nytimes.com/namespaces/nyt_org_all">Health Affairs</category>
+			<category domain="http://www.nytimes.com/namespaces/nyt_geo">Massachusetts</category>
+		</item>
+		<item>
+			<title>Francisco Rodriguez Heads to Court as Mets Win</title>
+			<link>http://feeds.nytimes.com/click.phdo?i=15e1521a3610adf01a01089ec84b2a5c</link>
+			<pheedo:origLink>http://www.nytimes.com/2010/08/13/sports/baseball/13Rodriguez.html?partner=rss&amp;amp;emc=rss</pheedo:origLink>
+			<guid isPermaLink="false">http://www.nytimes.com/2010/08/13/sports/baseball/13Rodriguez.html</guid>
+			<media:content url="http://graphics8.nytimes.com/images/2010/08/13/sports/baseball/13rodriguez2/13rodriguez2-thumbStandard.jpg" medium="image" height="75" width="75"/>
+			<media:description>Officers escorted Mets pitcher Francisco Rodriguez to an arraignment at Queens Criminal Court on Thursday.</media:description>
+			<media:credit>Daniel Barry for The New York Times</media:credit>
+			<description>Francisco Rodriguez was released without bail and ordered not to have any contact with his wife or her father.&lt;br clear=&quot;both&quot; style=&quot;clear: both;&quot;/&gt;
+&lt;br clear=&quot;both&quot; style=&quot;clear: both;&quot;/&gt;
+&lt;a href=&quot;http://ads.pheedo.com/click.phdo?s=15e1521a3610adf01a01089ec84b2a5c&amp;p=1&quot;&gt;&lt;img alt=&quot;&quot; style=&quot;border: 0;&quot; border=&quot;0&quot; src=&quot;http://ads.pheedo.com/img.phdo?s=15e1521a3610adf01a01089ec84b2a5c&amp;p=1&quot;/&gt;&lt;/a&gt;
+&lt;img alt=&quot;&quot; height=&quot;0&quot; width=&quot;0&quot; border=&quot;0&quot; style=&quot;display:none&quot; src=&quot;http://segment-pixel.invitemedia.com/pixel?code=Business&amp;partnerID=167&amp;key=segment&quot;/&gt;&lt;img alt=&quot;&quot; height=&quot;0&quot; width=&quot;0&quot; border=&quot;0&quot; style=&quot;display:none&quot; src=&quot;http://pixel.quantserve.com/pixel/p-8bUhLiluj0fAw.gif?labels=pub.29518.rss.Business.18272,cat.Business.rss&quot;/&gt;</description>
+			<dc:creator>By DAVID WALDSTEIN</dc:creator>
+			<pubDate>Thu, 12 Aug 2010 22:45:07 GMT</pubDate>
+			<category domain="http://www.nytimes.com/namespaces/nyt_per">Rodriguez, Francisco</category>
+			<category domain="http://www.nytimes.com/namespaces/nyt_org_all">New York Mets</category>
+			<category domain="http://www.nytimes.com/namespaces/des">Baseball</category>
+			<category domain="http://www.nytimes.com/namespaces/mdes">Assaults</category>
+			<category domain="http://www.nytimes.com/namespaces/nyt_org_all">Citi Field (NYC)</category>
+		</item>
+		<item>
+			<title>Governors Island as Playground for the Arts</title>
+			<link>http://feeds.nytimes.com/click.phdo?i=f844b5dc287cf01ddce0a310afc37523</link>
+			<pheedo:origLink>http://www.nytimes.com/2010/08/13/arts/13governors.html?partner=rss&amp;amp;emc=rss</pheedo:origLink>
+			<guid isPermaLink="false">http://www.nytimes.com/2010/08/13/arts/13governors.html</guid>
+			<media:content url="http://graphics8.nytimes.com/images/2010/08/13/arts/13governors-span/13governors-span-thumbStandard.jpg" medium="image" height="75" width="75"/>
+			<media:description>Governors Island&#x2019;s cultural identity is shaping up as eccentric and surprising, with artsy miniature golf, avant-garde theater and whimsical sculpture. Jayne Freeman, center, came to see a show.</media:description>
+			<media:credit>Piotr Redlinski for The New York Times</media:credit>
+			<description>Governors Island has been shaping its own cultural identity, which is eccentric, surprising and fanciful.&lt;br clear=&quot;both&quot; style=&quot;clear: both;&quot;/&gt;
+&lt;br clear=&quot;both&quot; style=&quot;clear: both;&quot;/&gt;
+&lt;a href=&quot;http://ads.pheedo.com/click.phdo?s=f844b5dc287cf01ddce0a310afc37523&amp;p=1&quot;&gt;&lt;img alt=&quot;&quot; style=&quot;border: 0;&quot; border=&quot;0&quot; src=&quot;http://ads.pheedo.com/img.phdo?s=f844b5dc287cf01ddce0a310afc37523&amp;p=1&quot;/&gt;&lt;/a&gt;
+&lt;img alt=&quot;&quot; height=&quot;0&quot; width=&quot;0&quot; border=&quot;0&quot; style=&quot;display:none&quot; src=&quot;http://segment-pixel.invitemedia.com/pixel?code=Business&amp;partnerID=167&amp;key=segment&quot;/&gt;&lt;img alt=&quot;&quot; height=&quot;0&quot; width=&quot;0&quot; border=&quot;0&quot; style=&quot;display:none&quot; src=&quot;http://pixel.quantserve.com/pixel/p-8bUhLiluj0fAw.gif?labels=pub.29518.rss.Business.18272,cat.Business.rss&quot;/&gt;</description>
+			<dc:creator>By EDWARD ROTHSTEIN</dc:creator>
+			<pubDate>Thu, 12 Aug 2010 23:30:08 GMT</pubDate>
+			<category domain="http://www.nytimes.com/namespaces/des">Culture</category>
+			<category domain="http://www.nytimes.com/namespaces/nyt_geo">Governors Island (NYC)</category>
+			<category domain="http://www.nytimes.com/namespaces/des">Art</category>
+		</item>
+	</channel>
+</rss>
