@@ -22,6 +22,10 @@ describe "Feedfinder" do
     it "should raise an UrlError if the URL could not be parsed" do
       lambda { FeedFinder.feeds("test") }.should raise_error(FeedFinder::UrlError)
     end
+
+    it "should find feeds when scheme is missing" do
+      FeedFinder.feeds(missing_scheme[0]).should == missing_scheme[1].to_a
+    end
   end
 
 end

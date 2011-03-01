@@ -8,6 +8,12 @@ def several_feeds
   feeds.last
 end
 
+def missing_scheme
+  feed = feeds.first
+  feed[0].slice!(0..6)
+  feed
+end
+
 def feeds
   [
     ['http://bjorkoy.com', ['http://feeds.feedburner.com/bjorkoy']],
