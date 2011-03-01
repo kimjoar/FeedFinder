@@ -47,14 +47,14 @@ def cache_url!(url)
 end
 
 def cached?
-  Dir.entries(cache_dir).length > 0 rescue false
+  Dir.entries(cache_dir).length > 2 rescue false
 end
 
 def fake_it!
+  cache! unless cached?
   feeds.flatten.each do |f|
     FakeWeb.register_uri :get, f, :body => File.read(File.join(cache_dir, f.slugify))
   end
 end
 
-cache! unless cached?
 fake_it!
