@@ -7,6 +7,8 @@ module FeedFinder
     end
 
     def feed?
+      return true if feed_content_type?
+
       not (content =~ /<rss|<feed|<rdf|<RSS|<FEED|<RDF/).nil?
     end
 
@@ -32,6 +34,15 @@ module FeedFinder
     end
 
     private
+
+    CONTENT_TYPES = ['application/rss+xml', 'application/rdf+xml', 'application/atom+xml', 'application/xml', 'text/xml']
+
+    def feed_content_type?
+      uri.open do |feed|
+        return true if CONTENT_TYPES.include?(feed.content_type.downcase)
+      end
+      false
+    end
 
     def uri
       @uri ||= URI.parse(url)
