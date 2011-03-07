@@ -1,0 +1,725 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" media="screen" href="/~d/styles/atom10full.xsl"?><?xml-stylesheet type="text/css" media="screen" href="http://feeds.feedburner.com/~d/styles/itemcontent.css"?><feed xmlns="http://www.w3.org/2005/Atom" xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0">
+ 
+ <title>bjorkoy.com</title>
+ 
+ <link href="http://bjorkoy.com/" />
+ 
+ <updated>2010-09-03T16:45:04+02:00</updated>
+ <id>http://bjorkoy.com/</id>
+ <author>
+   <name>Olav Bjorkoy</name>
+   <email>olav@bjorkoy.com</email>
+ </author>
+
+ 
+ <atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="self" type="application/atom+xml" href="http://feeds.feedburner.com/bjorkoy" /><feedburner:info uri="bjorkoy" /><atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="hub" href="http://pubsubhubbub.appspot.com/" /><entry>
+   <title>Page Width and Device Independence</title>
+   <link href="http://feedproxy.google.com/~r/bjorkoy/~3/bGXxpZyFZ2g/page-width-and-device-independence" />
+   <updated>2010-09-03T00:00:00+02:00</updated>
+   <id>http://bjorkoy.com/2010/09/page-width-and-device-independence</id>
+   <content type="html">&lt;p&gt;Page width has to be one of the most debated aspects of web design. The discussion used to revolve around fixed versus fluid layouts, and in the case of fixed layouts, the maximum width a website could use without invoking the dreaded horizontal scrollbar.&lt;/p&gt;
+
+&lt;p&gt;Recently the notion of device-specific layouts and page widths has been all the rage, through the use of media queries, user agent matching and dynamic layouts with Javascript. For instance, by using CSS media queries, a site can serve up different layouts to phones, tablets and computers based on their respective screen sizes.&lt;/p&gt;
+
+&lt;p&gt;Altering content based on screen width is a wonderful and powerful feature, but there&amp;#8217;s a few caveats to remember. If you&amp;#8217;re designing a typical website, but have a specific device in mind, you might be doing something wrong.&lt;/p&gt;
+
+&lt;p&gt;There&amp;#8217;s an ever increasing spectrum of device screen sizes, and while some devices are more popular than others, using exact matching to customize a layout to a specific device brings back memories of &amp;#8220;this site can only be viewed through IE6 or newer&amp;#8221;. Common sense dictates that the spectrum will become more homogenous over time. Right now, there seems to be three main screen width steps represented by phones, tablets and computers, but new devices will surely pop up in between these ill-defined plateaus.&lt;/p&gt;
+
+&lt;p&gt;In designers terms, this means that a site should work fine with any screen width, just as it should work fine with any screen height. We can expect users to scroll vertically, but expecting users to continuously scroll in two dimensions is no solution. Page width has to be device independent, not device-specific.&lt;/p&gt;
+
+&lt;p&gt;The ideal solution then seems to be to use a fluid layout, with tools such as media queries to fluidly add, move or remove elements as the screen width changes, but not to identify the actual device in use. This way, the layout is not dependent on any one device or window size, but usable on any current or future device screen.&lt;/p&gt;</content>
+ <feedburner:origLink>http://bjorkoy.com/2010/09/page-width-and-device-independence</feedburner:origLink></entry>
+ 
+ <entry>
+   <title>Contextual Fluid Grids</title>
+   <link href="http://feedproxy.google.com/~r/bjorkoy/~3/GX1JVQQp8jk/contextual-fluid-grids" />
+   <updated>2010-05-25T00:00:00+02:00</updated>
+   <id>http://bjorkoy.com/2010/05/contextual-fluid-grids</id>
+   <content type="html">&lt;p&gt;While reading A List Apart&amp;#8217;s latest article on &lt;a href='http://www.alistapart.com/articles/responsive-web-design/'&gt;responsive web design&lt;/a&gt;, their particular use of &lt;a href='http://www.alistapart.com/articles/fluidgrids/'&gt;fluid grids&lt;/a&gt; from a previous article struck me as odd. There seems to be two ways to create such grids &amp;#8211; trying to work around context or using it to your advantage to create contextual fluid grids.&lt;/p&gt;
+
+&lt;p&gt;There are two things that may seem difficult about creating fluid grids: how to use context and how to employ margins. The technique in the ALA article computes widths and margins through calculations given the current context, i.e. by using the width of the closest container element in relation to the total page width. In contrast, I prefer embracing context which results in a system that is as powerful yet simpler to use.&lt;/p&gt;
+
+&lt;p&gt;Take a look at &lt;a href='/files/fluid/'&gt;this demo page&lt;/a&gt; to see what we&amp;#8217;re trying to accomplish. Try resizing the browser window and the text size.&lt;/p&gt;
+
+&lt;h3 id='embrace_context'&gt;Embrace context&lt;/h3&gt;
+
+&lt;p&gt;Context can be used by letting every container element define its own sub-grid. For instance, if we have a &lt;code&gt;row&lt;/code&gt; element, we can divide this element into a number of columns. &lt;strong&gt;Each of the column elements in the container can again define their own grids with the same number of columns as the first container.&lt;/strong&gt; The basic insight is that context can be used without any special computations. Consider the following HTML:&lt;/p&gt;
+&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='html'&gt;&lt;span class='nt'&gt;&amp;lt;div&lt;/span&gt; &lt;span class='na'&gt;class=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;row&amp;quot;&lt;/span&gt;&lt;span class='nt'&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class='nt'&gt;&amp;lt;div&lt;/span&gt; &lt;span class='na'&gt;class=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;span12&amp;quot;&lt;/span&gt;&lt;span class='nt'&gt;&amp;gt;&lt;/span&gt;50%&lt;span class='nt'&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+  &lt;span class='nt'&gt;&amp;lt;div&lt;/span&gt; &lt;span class='na'&gt;class=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;span12&amp;quot;&lt;/span&gt;&lt;span class='nt'&gt;&amp;gt;&lt;/span&gt;50%&lt;span class='nt'&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;span class='nt'&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+
+&lt;span class='nt'&gt;&amp;lt;div&lt;/span&gt; &lt;span class='na'&gt;class=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;row&amp;quot;&lt;/span&gt;&lt;span class='nt'&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class='nt'&gt;&amp;lt;div&lt;/span&gt; &lt;span class='na'&gt;class=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;span12&amp;quot;&lt;/span&gt;&lt;span class='nt'&gt;&amp;gt;&lt;/span&gt;50%&lt;span class='nt'&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+  &lt;span class='nt'&gt;&amp;lt;div&lt;/span&gt; &lt;span class='na'&gt;class=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;span12&amp;quot;&lt;/span&gt;&lt;span class='nt'&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class='nt'&gt;&amp;lt;div&lt;/span&gt; &lt;span class='na'&gt;class=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;row&amp;quot;&lt;/span&gt;&lt;span class='nt'&gt;&amp;gt;&lt;/span&gt;
+      &lt;span class='nt'&gt;&amp;lt;div&lt;/span&gt; &lt;span class='na'&gt;class=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;span12&amp;quot;&lt;/span&gt;&lt;span class='nt'&gt;&amp;gt;&lt;/span&gt;25%&lt;span class='nt'&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+      &lt;span class='nt'&gt;&amp;lt;div&lt;/span&gt; &lt;span class='na'&gt;class=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;span12&amp;quot;&lt;/span&gt;&lt;span class='nt'&gt;&amp;gt;&lt;/span&gt;25%&lt;span class='nt'&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+    &lt;span class='nt'&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+  &lt;span class='nt'&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;span class='nt'&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;Ignore the lack of semantics, the class names are there for ease of explanation. The first row in this example has two columns spanning 50% of the page width. The second row first has one column spanning half the page width, and then two columns spanning 25% of the page. Pretty simple.&lt;/p&gt;
+
+&lt;p&gt;Notice that all spans use the same column numbers. Here, the total number of columns is 24. The second column in the second example spans 50% of the page width, and is divided into 24 new columns. Since the wrapping element is 12 columns wide, 12 columns in the context of this element corresponds to 6 columns, or 25% of the page width. By embracing context, the grid can be as complex as you want without having to calculate precise floats.&lt;/p&gt;
+
+&lt;h3 id='programming_the_grid'&gt;Programming the grid&lt;/h3&gt;
+
+&lt;p&gt;As I mentioned in a previous post, the task of creating grids lends itself well to CSS extensions such as SASS. This is true both for fixed and fluid setups. By specifying the number of columns each primary and sub-grid should have, creating a semantic and flexible implementation is quite simple. Calculations are done with percentages and EMs to ensure proper fluidity and support for text resizing.&lt;/p&gt;
+&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='css'&gt;&lt;span class='err'&gt;$&lt;/span&gt;&lt;span class='nt'&gt;grid_columns&lt;/span&gt;&lt;span class='o'&gt;:&lt;/span&gt; &lt;span class='nt'&gt;24&lt;/span&gt;&lt;span class='o'&gt;;&lt;/span&gt;        &lt;span class='c'&gt;/* number of columns */&lt;/span&gt;
+&lt;span class='err'&gt;$&lt;/span&gt;&lt;span class='nt'&gt;total_max_width&lt;/span&gt;&lt;span class='o'&gt;:&lt;/span&gt; &lt;span class='nt'&gt;950px&lt;/span&gt;&lt;span class='o'&gt;;&lt;/span&gt;  &lt;span class='c'&gt;/* max page width */&lt;/span&gt;
+
+&lt;span class='c'&gt;/* compute width of 1 column */&lt;/span&gt;
+&lt;span class='err'&gt;$&lt;/span&gt;&lt;span class='nt'&gt;grid_col_width&lt;/span&gt;&lt;span class='o'&gt;:&lt;/span&gt; &lt;span class='nt'&gt;100&lt;/span&gt;&lt;span class='o'&gt;%&lt;/span&gt; &lt;span class='o'&gt;/&lt;/span&gt; &lt;span class='err'&gt;$&lt;/span&gt;&lt;span class='nt'&gt;grid_columns&lt;/span&gt;&lt;span class='o'&gt;;&lt;/span&gt;
+
+&lt;span class='c'&gt;/* create a div spanning n columns */&lt;/span&gt;
+&lt;span class='k'&gt;@mixin&lt;/span&gt; &lt;span class='nt'&gt;col&lt;/span&gt;&lt;span class='o'&gt;(&lt;/span&gt;&lt;span class='err'&gt;$&lt;/span&gt;&lt;span class='nt'&gt;n&lt;/span&gt;&lt;span class='o'&gt;:&lt;/span&gt; &lt;span class='nt'&gt;1&lt;/span&gt;&lt;span class='o'&gt;)&lt;/span&gt; &lt;span class='p'&gt;{&lt;/span&gt;
+  &lt;span class='nt'&gt;float&lt;/span&gt;&lt;span class='o'&gt;:&lt;/span&gt; &lt;span class='nt'&gt;left&lt;/span&gt;&lt;span class='o'&gt;;&lt;/span&gt;
+  &lt;span class='k'&gt;@include&lt;/span&gt; &lt;span class='nt'&gt;span&lt;/span&gt;&lt;span class='o'&gt;(&lt;/span&gt;&lt;span class='err'&gt;$&lt;/span&gt;&lt;span class='nt'&gt;n&lt;/span&gt;&lt;span class='o'&gt;)&lt;/span&gt;&lt;span class='p'&gt;;&lt;/span&gt;
+&lt;span class='p'&gt;}&lt;/span&gt;
+
+&lt;span class='c'&gt;/* make an element span n columns */&lt;/span&gt;
+&lt;span class='k'&gt;@mixin&lt;/span&gt; &lt;span class='nt'&gt;span&lt;/span&gt;&lt;span class='o'&gt;(&lt;/span&gt;&lt;span class='err'&gt;$&lt;/span&gt;&lt;span class='nt'&gt;n&lt;/span&gt;&lt;span class='o'&gt;:&lt;/span&gt; &lt;span class='nt'&gt;1&lt;/span&gt;&lt;span class='o'&gt;)&lt;/span&gt; &lt;span class='p'&gt;{&lt;/span&gt;
+  &lt;span class='nt'&gt;width&lt;/span&gt;&lt;span class='o'&gt;:&lt;/span&gt; &lt;span class='o'&gt;(&lt;/span&gt;&lt;span class='err'&gt;$&lt;/span&gt;&lt;span class='nt'&gt;n&lt;/span&gt; &lt;span class='o'&gt;*&lt;/span&gt; &lt;span class='err'&gt;$&lt;/span&gt;&lt;span class='nt'&gt;grid_col_width&lt;/span&gt;&lt;span class='o'&gt;);&lt;/span&gt;
+&lt;span class='p'&gt;}&lt;/span&gt;
+
+&lt;span class='c'&gt;/* prepend n empty columns */&lt;/span&gt;
+&lt;span class='k'&gt;@mixin&lt;/span&gt; &lt;span class='nt'&gt;prepend&lt;/span&gt;&lt;span class='o'&gt;(&lt;/span&gt;&lt;span class='err'&gt;$&lt;/span&gt;&lt;span class='nt'&gt;n&lt;/span&gt;&lt;span class='o'&gt;:&lt;/span&gt; &lt;span class='nt'&gt;1&lt;/span&gt;&lt;span class='o'&gt;)&lt;/span&gt; &lt;span class='p'&gt;{&lt;/span&gt;
+  &lt;span class='nt'&gt;margin-left&lt;/span&gt;&lt;span class='o'&gt;:&lt;/span&gt; &lt;span class='err'&gt;$&lt;/span&gt;&lt;span class='nt'&gt;grid_col_width&lt;/span&gt; &lt;span class='o'&gt;*&lt;/span&gt; &lt;span class='err'&gt;$&lt;/span&gt;&lt;span class='nt'&gt;n&lt;/span&gt;
+&lt;span class='p'&gt;}&lt;/span&gt;
+
+&lt;span class='c'&gt;/* append n empty columns */&lt;/span&gt;
+&lt;span class='k'&gt;@mixin&lt;/span&gt; &lt;span class='nt'&gt;append&lt;/span&gt;&lt;span class='o'&gt;(&lt;/span&gt;&lt;span class='err'&gt;$&lt;/span&gt;&lt;span class='nt'&gt;n&lt;/span&gt;&lt;span class='o'&gt;:&lt;/span&gt; &lt;span class='nt'&gt;1&lt;/span&gt;&lt;span class='o'&gt;)&lt;/span&gt; &lt;span class='p'&gt;{&lt;/span&gt;
+  &lt;span class='nt'&gt;margin-right&lt;/span&gt;&lt;span class='o'&gt;:&lt;/span&gt; &lt;span class='err'&gt;$&lt;/span&gt;&lt;span class='nt'&gt;grid_col_width&lt;/span&gt; &lt;span class='o'&gt;*&lt;/span&gt; &lt;span class='err'&gt;$&lt;/span&gt;&lt;span class='nt'&gt;n&lt;/span&gt;
+&lt;span class='p'&gt;}&lt;/span&gt;
+
+&lt;span class='c'&gt;/* define max width in EMs for proper grid resizing */&lt;/span&gt;
+&lt;span class='nt'&gt;body&lt;/span&gt; &lt;span class='p'&gt;{&lt;/span&gt; 
+  &lt;span class='k'&gt;font-size&lt;/span&gt;&lt;span class='o'&gt;:&lt;/span&gt; &lt;span class='m'&gt;100%&lt;/span&gt;&lt;span class='p'&gt;;&lt;/span&gt; 
+  &lt;span class='k'&gt;max-width&lt;/span&gt;&lt;span class='o'&gt;:&lt;/span&gt; &lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='err'&gt;$&lt;/span&gt;&lt;span class='n'&gt;total&lt;/span&gt;&lt;span class='err'&gt;_&lt;/span&gt;&lt;span class='n'&gt;max&lt;/span&gt;&lt;span class='err'&gt;_&lt;/span&gt;&lt;span class='k'&gt;width&lt;/span&gt; &lt;span class='o'&gt;/&lt;/span&gt; &lt;span class='m'&gt;16px&lt;/span&gt;&lt;span class='p'&gt;)&lt;/span&gt; &lt;span class='o'&gt;+&lt;/span&gt; &lt;span class='n'&gt;em&lt;/span&gt;&lt;span class='p'&gt;;&lt;/span&gt; 
+&lt;span class='p'&gt;}&lt;/span&gt; 
+
+&lt;span class='c'&gt;/* a row defines a new grid or subgrid */&lt;/span&gt;
+&lt;span class='nc'&gt;.row&lt;/span&gt; &lt;span class='p'&gt;{&lt;/span&gt; &lt;span class='k'&gt;float&lt;/span&gt;&lt;span class='o'&gt;:&lt;/span&gt; &lt;span class='k'&gt;left&lt;/span&gt;&lt;span class='p'&gt;;&lt;/span&gt; &lt;span class='k'&gt;width&lt;/span&gt;&lt;span class='o'&gt;:&lt;/span&gt; &lt;span class='m'&gt;100%&lt;/span&gt;&lt;span class='p'&gt;;&lt;/span&gt; &lt;span class='p'&gt;}&lt;/span&gt;
+
+&lt;span class='c'&gt;/* mixin example usage */&lt;/span&gt;
+&lt;span class='nf'&gt;#menu&lt;/span&gt; &lt;span class='p'&gt;{&lt;/span&gt; &lt;span class='o'&gt;@&lt;/span&gt;&lt;span class='n'&gt;include&lt;/span&gt; &lt;span class='n'&gt;col&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='m'&gt;5&lt;/span&gt;&lt;span class='p'&gt;);&lt;/span&gt; &lt;span class='p'&gt;}&lt;/span&gt;
+&lt;span class='nf'&gt;#side&lt;/span&gt; &lt;span class='p'&gt;{&lt;/span&gt; &lt;span class='o'&gt;@&lt;/span&gt;&lt;span class='n'&gt;include&lt;/span&gt; &lt;span class='n'&gt;col&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='m'&gt;5&lt;/span&gt;&lt;span class='p'&gt;);&lt;/span&gt; &lt;span class='p'&gt;}&lt;/span&gt;
+&lt;span class='nf'&gt;#main&lt;/span&gt; &lt;span class='p'&gt;{&lt;/span&gt; 
+  &lt;span class='o'&gt;@&lt;/span&gt;&lt;span class='n'&gt;include&lt;/span&gt; &lt;span class='n'&gt;prepend&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='m'&gt;1&lt;/span&gt;&lt;span class='p'&gt;);&lt;/span&gt;
+  &lt;span class='o'&gt;@&lt;/span&gt;&lt;span class='n'&gt;include&lt;/span&gt; &lt;span class='n'&gt;col&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='m'&gt;12&lt;/span&gt;&lt;span class='p'&gt;);&lt;/span&gt; 
+  &lt;span class='o'&gt;@&lt;/span&gt;&lt;span class='n'&gt;include&lt;/span&gt; &lt;span class='n'&gt;append&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='m'&gt;1&lt;/span&gt;&lt;span class='p'&gt;);&lt;/span&gt;
+&lt;span class='p'&gt;}&lt;/span&gt;
+
+&lt;span class='c'&gt;/* For the html example */&lt;/span&gt;
+&lt;span class='k'&gt;@for&lt;/span&gt; &lt;span class='err'&gt;$&lt;/span&gt;&lt;span class='nt'&gt;i&lt;/span&gt; &lt;span class='nt'&gt;from&lt;/span&gt; &lt;span class='nt'&gt;1&lt;/span&gt; &lt;span class='nt'&gt;through&lt;/span&gt; &lt;span class='err'&gt;$&lt;/span&gt;&lt;span class='nt'&gt;grid_columns&lt;/span&gt; &lt;span class='p'&gt;{&lt;/span&gt;
+  &lt;span class='nc'&gt;.span&lt;/span&gt;&lt;span class='err'&gt;#&lt;/span&gt;&lt;span class='p'&gt;{&lt;/span&gt;&lt;span class='err'&gt;$i&lt;/span&gt;&lt;span class='p'&gt;}&lt;/span&gt;    &lt;span class='p'&gt;{&lt;/span&gt; &lt;span class='o'&gt;@&lt;/span&gt;&lt;span class='n'&gt;include&lt;/span&gt; &lt;span class='n'&gt;col&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='err'&gt;$i&lt;/span&gt;&lt;span class='p'&gt;);&lt;/span&gt; &lt;span class='p'&gt;}&lt;/span&gt;
+  &lt;span class='nc'&gt;.prepend&lt;/span&gt;&lt;span class='err'&gt;#&lt;/span&gt;&lt;span class='p'&gt;{&lt;/span&gt;&lt;span class='err'&gt;$i&lt;/span&gt;&lt;span class='p'&gt;}&lt;/span&gt; &lt;span class='p'&gt;{&lt;/span&gt; &lt;span class='o'&gt;@&lt;/span&gt;&lt;span class='n'&gt;include&lt;/span&gt; &lt;span class='n'&gt;prepend&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='err'&gt;$i&lt;/span&gt;&lt;span class='p'&gt;);&lt;/span&gt; &lt;span class='p'&gt;}&lt;/span&gt;
+  &lt;span class='nc'&gt;.append&lt;/span&gt;&lt;span class='err'&gt;#&lt;/span&gt;&lt;span class='p'&gt;{&lt;/span&gt;&lt;span class='err'&gt;$i&lt;/span&gt;&lt;span class='p'&gt;}&lt;/span&gt;  &lt;span class='p'&gt;{&lt;/span&gt; &lt;span class='o'&gt;@&lt;/span&gt;&lt;span class='n'&gt;include&lt;/span&gt; &lt;span class='n'&gt;append&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='err'&gt;$i&lt;/span&gt;&lt;span class='p'&gt;);&lt;/span&gt; &lt;span class='p'&gt;}&lt;/span&gt;
+&lt;span class='p'&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;h3 id='columns_as_margins'&gt;Columns as margins&lt;/h3&gt;
+
+&lt;p&gt;You may have noticed that this example does not consider margins as a part of the column definition. Fluid margins is often the aspect that makes creating such a grid difficult. Ensuring that margins span the same width across context, and that the widths they span don&amp;#8217;t get too small to be rendered, can be a pain.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;The proper approach is to see margins between columns as empty columns, not as empty gaps between columns.&lt;/strong&gt; That is, the columns themselves do not have specified margins. Instead, empty columns are appended or prepended where margins are needed. This makes sense as margins between columns in fluid layouts almost always span greater widths than that of their fixed counterparts. And, if your require fixed margins, they can always be applied to an inner element of a column (as in the demo page).&lt;/p&gt;
+
+&lt;p&gt;However, we often need narrow margins, even in fluid layouts. To accomplish this, a high number of columns is needed, as columns now not only specify the width of a column, but also the negative space between them. As always, choosing a number with a high divisor count is essential. The best approach is to use a &lt;a href='http://en.wikipedia.org/wiki/Highly_composite_number'&gt;highly composite number&lt;/a&gt; (a positive integer with more divisors than any positive integer smaller than itself) such as 6, 12, 24, 36 or 48. This gives you the most flexibility in creating grids with applicable divisive features.&lt;/p&gt;
+
+&lt;p&gt;The result is a simple fluid grid which, because of the use of contextual sub-grids, can be as complex and specific as you need. By using an extension such as SASS, no complex calculations have to be done, or re-done when the design needs a change.&lt;/p&gt;</content>
+ <feedburner:origLink>http://bjorkoy.com/2010/05/contextual-fluid-grids</feedburner:origLink></entry>
+ 
+ <entry>
+   <title>Semantic CSS Grids With SASS</title>
+   <link href="http://feedproxy.google.com/~r/bjorkoy/~3/sqFnZdORbh4/css-grids-with-sass" />
+   <updated>2010-05-22T00:00:00+02:00</updated>
+   <id>http://bjorkoy.com/2010/05/css-grids-with-sass</id>
+   <content type="html">&lt;p&gt;You design websites, and since you&amp;#8217;re brimming with empathy, you want to use a grid-based layout to ensure a minimum amount of confused users. Great! However, you also design a lot of websites, and find yourself doing the same operations for setting up a basic grid at each ⌘+N. Not good.&lt;/p&gt;
+
+&lt;p&gt;The way to fix this is a sort of design framework. The problem with such a framework has often been mixing presentational logic with your sweet HTML hierarchy. Nuts to that, you say, I&amp;#8217;d like both my CSS and HTML clean and semantically correct. Well, here&amp;#8217;s a way to get the best of both worlds.&lt;/p&gt;
+
+&lt;p&gt;Using &lt;a href='http://sass-lang.com/'&gt;SASS&lt;/a&gt;, or any other equivalent CSS extensions, defining functions and variables lets you set up a grid while you stay away from anything less than semantically correct. Here&amp;#8217;s a setup of variables and mixins I&amp;#8217;ve been using lately:&lt;/p&gt;
+&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='css'&gt;&lt;span class='c'&gt;/*&lt;/span&gt;
+&lt;span class='c'&gt;  Choose a grid width, the number of columns and the margin between columns.&lt;/span&gt;
+&lt;span class='c'&gt;  The result of the following equation has to be an integer, not a fraction:&lt;/span&gt;
+&lt;span class='c'&gt;  &lt;/span&gt;
+&lt;span class='c'&gt;  (width - (columns - 1) * col_margin) / columns = N&lt;/span&gt;
+&lt;span class='c'&gt;*/&lt;/span&gt;
+
+&lt;span class='err'&gt;$&lt;/span&gt;&lt;span class='nt'&gt;width&lt;/span&gt;&lt;span class='o'&gt;:&lt;/span&gt; &lt;span class='nt'&gt;960px&lt;/span&gt;&lt;span class='o'&gt;;&lt;/span&gt;   &lt;span class='c'&gt;/* total with of page */&lt;/span&gt;
+&lt;span class='err'&gt;$&lt;/span&gt;&lt;span class='nt'&gt;columns&lt;/span&gt;&lt;span class='o'&gt;:&lt;/span&gt; &lt;span class='nt'&gt;24&lt;/span&gt;&lt;span class='o'&gt;;&lt;/span&gt;    &lt;span class='c'&gt;/* number of columns */&lt;/span&gt;
+&lt;span class='err'&gt;$&lt;/span&gt;&lt;span class='nt'&gt;col_margin&lt;/span&gt;&lt;span class='o'&gt;:&lt;/span&gt; &lt;span class='nt'&gt;0&lt;/span&gt;&lt;span class='o'&gt;;&lt;/span&gt;  &lt;span class='c'&gt;/* margin between columns */&lt;/span&gt;
+
+&lt;span class='c'&gt;/* math magic */&lt;/span&gt;
+&lt;span class='err'&gt;$&lt;/span&gt;&lt;span class='nt'&gt;col_width&lt;/span&gt;&lt;span class='o'&gt;:&lt;/span&gt; &lt;span class='o'&gt;(&lt;/span&gt;&lt;span class='err'&gt;$&lt;/span&gt;&lt;span class='nt'&gt;width&lt;/span&gt; &lt;span class='nt'&gt;-&lt;/span&gt; &lt;span class='o'&gt;(&lt;/span&gt;&lt;span class='err'&gt;$&lt;/span&gt;&lt;span class='nt'&gt;col_margin&lt;/span&gt; &lt;span class='o'&gt;*&lt;/span&gt; &lt;span class='o'&gt;(&lt;/span&gt;&lt;span class='err'&gt;$&lt;/span&gt;&lt;span class='nt'&gt;columns&lt;/span&gt; &lt;span class='nt'&gt;-&lt;/span&gt; &lt;span class='nt'&gt;1&lt;/span&gt;&lt;span class='o'&gt;)))&lt;/span&gt; &lt;span class='o'&gt;/&lt;/span&gt; &lt;span class='err'&gt;$&lt;/span&gt;&lt;span class='nt'&gt;columns&lt;/span&gt;&lt;span class='o'&gt;;&lt;/span&gt;
+&lt;span class='err'&gt;$&lt;/span&gt;&lt;span class='nt'&gt;col_total_width&lt;/span&gt;&lt;span class='o'&gt;:&lt;/span&gt; &lt;span class='err'&gt;$&lt;/span&gt;&lt;span class='nt'&gt;col_width&lt;/span&gt; &lt;span class='o'&gt;+&lt;/span&gt; &lt;span class='err'&gt;$&lt;/span&gt;&lt;span class='nt'&gt;col_margin&lt;/span&gt;&lt;span class='o'&gt;;&lt;/span&gt;  
+
+&lt;span class='c'&gt;/* create row div */&lt;/span&gt;
+&lt;span class='k'&gt;@mixin&lt;/span&gt; &lt;span class='nt'&gt;row&lt;/span&gt;&lt;span class='o'&gt;()&lt;/span&gt; &lt;span class='p'&gt;{&lt;/span&gt;
+  &lt;span class='nt'&gt;float&lt;/span&gt;&lt;span class='o'&gt;:&lt;/span&gt; &lt;span class='nt'&gt;left&lt;/span&gt;&lt;span class='o'&gt;;&lt;/span&gt;
+  &lt;span class='nt'&gt;clear&lt;/span&gt;&lt;span class='o'&gt;:&lt;/span&gt; &lt;span class='nt'&gt;both&lt;/span&gt;&lt;span class='o'&gt;;&lt;/span&gt;
+  &lt;span class='nt'&gt;width&lt;/span&gt;&lt;span class='o'&gt;:&lt;/span&gt; &lt;span class='err'&gt;$&lt;/span&gt;&lt;span class='nt'&gt;width&lt;/span&gt;&lt;span class='o'&gt;;&lt;/span&gt;
+&lt;span class='p'&gt;}&lt;/span&gt;
+
+&lt;span class='c'&gt;/* create a column div */&lt;/span&gt;
+&lt;span class='k'&gt;@mixin&lt;/span&gt; &lt;span class='nt'&gt;col&lt;/span&gt;&lt;span class='o'&gt;(&lt;/span&gt;&lt;span class='err'&gt;$&lt;/span&gt;&lt;span class='nt'&gt;n&lt;/span&gt;&lt;span class='o'&gt;:&lt;/span&gt; &lt;span class='nt'&gt;1&lt;/span&gt;&lt;span class='o'&gt;)&lt;/span&gt; &lt;span class='p'&gt;{&lt;/span&gt;
+  &lt;span class='nt'&gt;float&lt;/span&gt;&lt;span class='o'&gt;:&lt;/span&gt; &lt;span class='nt'&gt;left&lt;/span&gt;&lt;span class='o'&gt;;&lt;/span&gt;
+  &lt;span class='k'&gt;@include&lt;/span&gt; &lt;span class='nt'&gt;span&lt;/span&gt;&lt;span class='o'&gt;(&lt;/span&gt;&lt;span class='err'&gt;$&lt;/span&gt;&lt;span class='nt'&gt;n&lt;/span&gt;&lt;span class='o'&gt;)&lt;/span&gt;&lt;span class='p'&gt;;&lt;/span&gt;
+&lt;span class='p'&gt;}&lt;/span&gt;
+
+&lt;span class='c'&gt;/* make an element span n columns */&lt;/span&gt;
+&lt;span class='k'&gt;@mixin&lt;/span&gt; &lt;span class='nt'&gt;span&lt;/span&gt;&lt;span class='o'&gt;(&lt;/span&gt;&lt;span class='err'&gt;$&lt;/span&gt;&lt;span class='nt'&gt;n&lt;/span&gt;&lt;span class='o'&gt;:&lt;/span&gt; &lt;span class='nt'&gt;1&lt;/span&gt;&lt;span class='o'&gt;)&lt;/span&gt; &lt;span class='p'&gt;{&lt;/span&gt;
+  &lt;span class='nt'&gt;width&lt;/span&gt;&lt;span class='o'&gt;:&lt;/span&gt; &lt;span class='o'&gt;(&lt;/span&gt;&lt;span class='err'&gt;$&lt;/span&gt;&lt;span class='nt'&gt;n&lt;/span&gt; &lt;span class='o'&gt;*&lt;/span&gt; &lt;span class='err'&gt;$&lt;/span&gt;&lt;span class='nt'&gt;col_width&lt;/span&gt;&lt;span class='o'&gt;)&lt;/span&gt; &lt;span class='o'&gt;+&lt;/span&gt; &lt;span class='o'&gt;((&lt;/span&gt;&lt;span class='err'&gt;$&lt;/span&gt;&lt;span class='nt'&gt;n&lt;/span&gt; &lt;span class='nt'&gt;-&lt;/span&gt; &lt;span class='nt'&gt;1&lt;/span&gt;&lt;span class='o'&gt;)&lt;/span&gt; &lt;span class='o'&gt;*&lt;/span&gt; &lt;span class='err'&gt;$&lt;/span&gt;&lt;span class='nt'&gt;col_margin&lt;/span&gt;&lt;span class='o'&gt;);&lt;/span&gt;
+  &lt;span class='k'&gt;@if&lt;/span&gt; &lt;span class='err'&gt;$&lt;/span&gt;&lt;span class='nt'&gt;n&lt;/span&gt; &lt;span class='o'&gt;==&lt;/span&gt; &lt;span class='err'&gt;$&lt;/span&gt;&lt;span class='nt'&gt;columns&lt;/span&gt; &lt;span class='p'&gt;{&lt;/span&gt;
+    &lt;span class='nt'&gt;margin-right&lt;/span&gt;&lt;span class='o'&gt;:&lt;/span&gt; &lt;span class='nt'&gt;0&lt;/span&gt;&lt;span class='o'&gt;;&lt;/span&gt;
+  &lt;span class='p'&gt;}&lt;/span&gt; &lt;span class='k'&gt;@else&lt;/span&gt; &lt;span class='p'&gt;{&lt;/span&gt;
+    &lt;span class='nt'&gt;margin-right&lt;/span&gt;&lt;span class='o'&gt;:&lt;/span&gt; &lt;span class='err'&gt;$&lt;/span&gt;&lt;span class='nt'&gt;col_margin&lt;/span&gt;&lt;span class='o'&gt;;&lt;/span&gt;
+  &lt;span class='p'&gt;}&lt;/span&gt;
+&lt;span class='p'&gt;}&lt;/span&gt;
+
+&lt;span class='c'&gt;/* the last column in a row needs this */&lt;/span&gt;
+&lt;span class='k'&gt;@mixin&lt;/span&gt; &lt;span class='nt'&gt;last&lt;/span&gt;&lt;span class='o'&gt;()&lt;/span&gt; &lt;span class='p'&gt;{&lt;/span&gt;
+  &lt;span class='nt'&gt;margin-right&lt;/span&gt;&lt;span class='o'&gt;:&lt;/span&gt; &lt;span class='nt'&gt;0&lt;/span&gt;&lt;span class='o'&gt;;&lt;/span&gt;
+&lt;span class='p'&gt;}&lt;/span&gt;
+
+&lt;span class='c'&gt;/* prepend n blank columns  */&lt;/span&gt;
+&lt;span class='k'&gt;@mixin&lt;/span&gt; &lt;span class='nt'&gt;prepend&lt;/span&gt;&lt;span class='o'&gt;(&lt;/span&gt;&lt;span class='err'&gt;$&lt;/span&gt;&lt;span class='nt'&gt;n&lt;/span&gt;&lt;span class='o'&gt;:&lt;/span&gt; &lt;span class='nt'&gt;1&lt;/span&gt;&lt;span class='o'&gt;)&lt;/span&gt; &lt;span class='p'&gt;{&lt;/span&gt;
+  &lt;span class='nt'&gt;margin-left&lt;/span&gt;&lt;span class='o'&gt;:&lt;/span&gt; &lt;span class='err'&gt;$&lt;/span&gt;&lt;span class='nt'&gt;col_total_width&lt;/span&gt; &lt;span class='o'&gt;*&lt;/span&gt; &lt;span class='err'&gt;$&lt;/span&gt;&lt;span class='nt'&gt;n&lt;/span&gt;
+&lt;span class='p'&gt;}&lt;/span&gt;
+
+&lt;span class='c'&gt;/* append n blank columns */&lt;/span&gt;
+&lt;span class='k'&gt;@mixin&lt;/span&gt; &lt;span class='nt'&gt;append&lt;/span&gt;&lt;span class='o'&gt;(&lt;/span&gt;&lt;span class='err'&gt;$&lt;/span&gt;&lt;span class='nt'&gt;n&lt;/span&gt;&lt;span class='o'&gt;:&lt;/span&gt; &lt;span class='nt'&gt;1&lt;/span&gt;&lt;span class='o'&gt;)&lt;/span&gt; &lt;span class='p'&gt;{&lt;/span&gt;
+  &lt;span class='nt'&gt;margin-right&lt;/span&gt;&lt;span class='o'&gt;:&lt;/span&gt; &lt;span class='err'&gt;$&lt;/span&gt;&lt;span class='nt'&gt;col_total_width&lt;/span&gt; &lt;span class='o'&gt;*&lt;/span&gt; &lt;span class='err'&gt;$&lt;/span&gt;&lt;span class='nt'&gt;n&lt;/span&gt; &lt;span class='o'&gt;+&lt;/span&gt; &lt;span class='err'&gt;$&lt;/span&gt;&lt;span class='nt'&gt;col_margin&lt;/span&gt;
+&lt;span class='p'&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;The attentive reader will note I&amp;#8217;m using the new &lt;a href='http://sass-lang.com/docs/yardoc/file.SASS_CHANGELOG.html#scss_sassy_css'&gt;SCSS&lt;/a&gt; syntax found in SASS 3. This is great, since the syntax is completely compatible with CSS (at least CSS 3), ensuring sweet validation of your files. Because these are mixins, your CSS classes and ID&amp;#8217;s can still retain semantic names, and the presentation logic remains where it should be:&lt;/p&gt;
+
+&lt;p&gt;&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='css'&gt;&lt;span class='nc'&gt;.section&lt;/span&gt; &lt;span class='p'&gt;{&lt;/span&gt; &lt;span class='o'&gt;@&lt;/span&gt;&lt;span class='n'&gt;include&lt;/span&gt; &lt;span class='n'&gt;row&lt;/span&gt;&lt;span class='p'&gt;;&lt;/span&gt; &lt;span class='p'&gt;}&lt;/span&gt;
+&lt;span class='nc'&gt;.section&lt;/span&gt; &lt;span class='nc'&gt;.main&lt;/span&gt; &lt;span class='p'&gt;{&lt;/span&gt; &lt;span class='o'&gt;@&lt;/span&gt;&lt;span class='n'&gt;include&lt;/span&gt; &lt;span class='n'&gt;col&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='m'&gt;18&lt;/span&gt;&lt;span class='p'&gt;);&lt;/span&gt; &lt;span class='p'&gt;}&lt;/span&gt;
+&lt;span class='nc'&gt;.section&lt;/span&gt; &lt;span class='nc'&gt;.sidebar&lt;/span&gt; &lt;span class='p'&gt;{&lt;/span&gt; &lt;span class='o'&gt;@&lt;/span&gt;&lt;span class='n'&gt;include&lt;/span&gt; &lt;span class='n'&gt;col&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='m'&gt;6&lt;/span&gt;&lt;span class='p'&gt;);&lt;/span&gt; &lt;span class='o'&gt;@&lt;/span&gt;&lt;span class='n'&gt;include&lt;/span&gt; &lt;span class='n'&gt;last&lt;/span&gt;&lt;span class='p'&gt;;&lt;/span&gt; &lt;span class='p'&gt;}&lt;/span&gt;
+&lt;span class='nc'&gt;.section&lt;/span&gt; &lt;span class='nc'&gt;.promo&lt;/span&gt; &lt;span class='p'&gt;{&lt;/span&gt; 
+  &lt;span class='o'&gt;@&lt;/span&gt;&lt;span class='n'&gt;include&lt;/span&gt; &lt;span class='n'&gt;col&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='m'&gt;12&lt;/span&gt;&lt;span class='p'&gt;);&lt;/span&gt; 
+  &lt;span class='o'&gt;@&lt;/span&gt;&lt;span class='n'&gt;include&lt;/span&gt; &lt;span class='n'&gt;prepend&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='m'&gt;6&lt;/span&gt;&lt;span class='p'&gt;);&lt;/span&gt; 
+  &lt;span class='o'&gt;@&lt;/span&gt;&lt;span class='n'&gt;include&lt;/span&gt; &lt;span class='n'&gt;append&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='m'&gt;6&lt;/span&gt;&lt;span class='p'&gt;);&lt;/span&gt; 
+  &lt;span class='o'&gt;@&lt;/span&gt;&lt;span class='n'&gt;include&lt;/span&gt; &lt;span class='n'&gt;last&lt;/span&gt;&lt;span class='p'&gt;;&lt;/span&gt;
+&lt;span class='p'&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;If you&amp;#8217;re making an extensive site from scratch, or rarely doing new projects, I would suggest using the manual approach. This technique is more for those of us that sometimes needs a conveyor-belt type of web design output. Either way, the point to remember is that a lot of CSS logic lends itself well to programming, and by using an extension such as SASS, much manual labour can be offset by functions and variables.&lt;/p&gt;</content>
+ <feedburner:origLink>http://bjorkoy.com/2010/05/css-grids-with-sass</feedburner:origLink></entry>
+ 
+ <entry>
+   <title>Blogging With Jekyll, Git and a VPS</title>
+   <link href="http://feedproxy.google.com/~r/bjorkoy/~3/mb_LMg5tP74/blogging-with-jekyll-git-and-slicehost" />
+   <updated>2010-05-15T00:00:00+02:00</updated>
+   <id>http://bjorkoy.com/2010/05/blogging-with-jekyll-git-and-slicehost</id>
+   <content type="html">&lt;p&gt;Welcome to another installment in the never-ending story of my quest for the perfect blogging setup. This time, we stray far from the conventional use of content management systems, shared hosts and database storage.&lt;/p&gt;
+
+&lt;p&gt;Yes, like so many others, I&amp;#8217;m jumping on the bandwagon of using a local setup for generating blog posts, and then publishing the final HTML to my server using Git. Here&amp;#8217;s the setup:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Every blog post is a new file on my machine, ensuring great portability and an easy transition to future systems (yes, it will happen). Post files can be anything from markdown and textile, to html and plain source code.&lt;/li&gt;
+
+&lt;li&gt;To generate the final site, each post and page is processed by &lt;a href='http://github.com/mojombo/jekyll'&gt;Jekyll&lt;/a&gt;, which has support for layouts, partials, syntax highlighting, automatic regeneration and so forth.&lt;/li&gt;
+
+&lt;li&gt;The finished HTML is pushed to a git repository on my &lt;a href='http://www.slicehost.com/'&gt;Slicehost&lt;/a&gt; VPS, which gives me full control over the final result.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;You can probably see the benefits and drawbacks of this system, so instead of listing pros and cons, I&amp;#8217;ll show you how to set it up.&lt;/p&gt;
+
+&lt;p&gt;Jekyll has a great &lt;a href='http://wiki.github.com/mojombo/jekyll/'&gt;wiki&lt;/a&gt; describing its many features. You&amp;#8217;ll also find examples of how others have customized their installations in the &amp;#8220;sites&amp;#8221; section. The only mildly interesting thing I did was to make a script for quickly creating new blog post files:&lt;/p&gt;
+&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='ruby'&gt;&lt;span class='c1'&gt;# Create new jekyll post and open in textmate&lt;/span&gt;
+&lt;span class='c1'&gt;# $ ruby _new.rb This is the title&lt;/span&gt;
+
+&lt;span class='c1'&gt;# The arguments form the title&lt;/span&gt;
+&lt;span class='k'&gt;unless&lt;/span&gt; &lt;span class='no'&gt;ARGV&lt;/span&gt;&lt;span class='o'&gt;[&lt;/span&gt;&lt;span class='mi'&gt;0&lt;/span&gt;&lt;span class='o'&gt;]&lt;/span&gt;
+  &lt;span class='k'&gt;raise&lt;/span&gt; &lt;span class='s2'&gt;&amp;quot;Please provide a post title.&amp;quot;&lt;/span&gt;
+&lt;span class='k'&gt;end&lt;/span&gt;
+
+&lt;span class='c1'&gt;# Create a URL slug from the title&lt;/span&gt;
+&lt;span class='k'&gt;def&lt;/span&gt; &lt;span class='nf'&gt;slugify&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='n'&gt;title&lt;/span&gt;&lt;span class='p'&gt;)&lt;/span&gt;
+    &lt;span class='n'&gt;str&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='n'&gt;title&lt;/span&gt;&lt;span class='o'&gt;.&lt;/span&gt;&lt;span class='n'&gt;dup&lt;/span&gt;
+    &lt;span class='n'&gt;str&lt;/span&gt;&lt;span class='o'&gt;.&lt;/span&gt;&lt;span class='n'&gt;gsub!&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='sr'&gt;/[^a-zA-Z0-9 ]/&lt;/span&gt;&lt;span class='p'&gt;,&lt;/span&gt;&lt;span class='s2'&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class='p'&gt;)&lt;/span&gt;
+    &lt;span class='n'&gt;str&lt;/span&gt;&lt;span class='o'&gt;.&lt;/span&gt;&lt;span class='n'&gt;gsub!&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='sr'&gt;/[ ]+/&lt;/span&gt;&lt;span class='p'&gt;,&lt;/span&gt;&lt;span class='s2'&gt;&amp;quot; &amp;quot;&lt;/span&gt;&lt;span class='p'&gt;)&lt;/span&gt;
+    &lt;span class='n'&gt;str&lt;/span&gt;&lt;span class='o'&gt;.&lt;/span&gt;&lt;span class='n'&gt;gsub!&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='sr'&gt;/ /&lt;/span&gt;&lt;span class='p'&gt;,&lt;/span&gt;&lt;span class='s2'&gt;&amp;quot;-&amp;quot;&lt;/span&gt;&lt;span class='p'&gt;)&lt;/span&gt;
+    &lt;span class='n'&gt;str&lt;/span&gt;&lt;span class='o'&gt;.&lt;/span&gt;&lt;span class='n'&gt;downcase!&lt;/span&gt;
+    &lt;span class='n'&gt;str&lt;/span&gt;
+&lt;span class='k'&gt;end&lt;/span&gt;
+
+&lt;span class='c1'&gt;# Create parameters&lt;/span&gt;
+&lt;span class='n'&gt;title&lt;/span&gt;  &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='no'&gt;ARGV&lt;/span&gt;&lt;span class='o'&gt;.&lt;/span&gt;&lt;span class='n'&gt;join&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='s1'&gt;&amp;#39; &amp;#39;&lt;/span&gt;&lt;span class='p'&gt;)&lt;/span&gt;
+&lt;span class='n'&gt;slug&lt;/span&gt;   &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='n'&gt;slugify&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='n'&gt;title&lt;/span&gt;&lt;span class='p'&gt;)&lt;/span&gt;
+&lt;span class='n'&gt;prefix&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='no'&gt;Time&lt;/span&gt;&lt;span class='o'&gt;.&lt;/span&gt;&lt;span class='n'&gt;new&lt;/span&gt;&lt;span class='o'&gt;.&lt;/span&gt;&lt;span class='n'&gt;strftime&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='s2'&gt;&amp;quot;%Y-%m-%d&amp;quot;&lt;/span&gt;&lt;span class='p'&gt;)&lt;/span&gt;
+&lt;span class='n'&gt;file&lt;/span&gt;   &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='s2'&gt;&amp;quot;&lt;/span&gt;&lt;span class='si'&gt;#{&lt;/span&gt;&lt;span class='n'&gt;prefix&lt;/span&gt;&lt;span class='si'&gt;}&lt;/span&gt;&lt;span class='s2'&gt;-&lt;/span&gt;&lt;span class='si'&gt;#{&lt;/span&gt;&lt;span class='n'&gt;slug&lt;/span&gt;&lt;span class='si'&gt;}&lt;/span&gt;&lt;span class='s2'&gt;.markdown&amp;quot;&lt;/span&gt;
+&lt;span class='n'&gt;path&lt;/span&gt;   &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='no'&gt;File&lt;/span&gt;&lt;span class='o'&gt;.&lt;/span&gt;&lt;span class='n'&gt;join&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='no'&gt;File&lt;/span&gt;&lt;span class='o'&gt;.&lt;/span&gt;&lt;span class='n'&gt;dirname&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='bp'&gt;__FILE__&lt;/span&gt;&lt;span class='p'&gt;),&lt;/span&gt; &lt;span class='s2'&gt;&amp;quot;_posts/&lt;/span&gt;&lt;span class='si'&gt;#{&lt;/span&gt;&lt;span class='n'&gt;year&lt;/span&gt;&lt;span class='si'&gt;}&lt;/span&gt;&lt;span class='s2'&gt;/&lt;/span&gt;&lt;span class='si'&gt;#{&lt;/span&gt;&lt;span class='n'&gt;filename&lt;/span&gt;&lt;span class='si'&gt;}&lt;/span&gt;&lt;span class='s2'&gt;&amp;quot;&lt;/span&gt;&lt;span class='p'&gt;)&lt;/span&gt;
+&lt;span class='n'&gt;text&lt;/span&gt;   &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='o'&gt;&amp;lt;&amp;lt;-&lt;/span&gt;&lt;span class='no'&gt;eos&lt;/span&gt;
+&lt;span class='sh'&gt;---&lt;/span&gt;
+&lt;span class='sh'&gt;title: #{title}&lt;/span&gt;
+&lt;span class='sh'&gt;layout: post&lt;/span&gt;
+&lt;span class='sh'&gt;---&lt;/span&gt;
+
+&lt;span class='no'&gt;eos&lt;/span&gt;
+
+&lt;span class='c1'&gt;# Create a new file and open it in textmate&lt;/span&gt;
+&lt;span class='no'&gt;File&lt;/span&gt;&lt;span class='o'&gt;.&lt;/span&gt;&lt;span class='n'&gt;open&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='n'&gt;path&lt;/span&gt;&lt;span class='p'&gt;,&lt;/span&gt; &lt;span class='s1'&gt;&amp;#39;w&amp;#39;&lt;/span&gt;&lt;span class='p'&gt;)&lt;/span&gt; &lt;span class='p'&gt;{&lt;/span&gt; &lt;span class='o'&gt;|&lt;/span&gt;&lt;span class='n'&gt;f&lt;/span&gt;&lt;span class='o'&gt;|&lt;/span&gt; &lt;span class='n'&gt;f&lt;/span&gt;&lt;span class='o'&gt;.&lt;/span&gt;&lt;span class='n'&gt;write&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='n'&gt;text&lt;/span&gt;&lt;span class='p'&gt;)&lt;/span&gt; &lt;span class='p'&gt;}&lt;/span&gt;
+&lt;span class='nb'&gt;system&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='s2'&gt;&amp;quot;mate &lt;/span&gt;&lt;span class='si'&gt;#{&lt;/span&gt;&lt;span class='n'&gt;path&lt;/span&gt;&lt;span class='si'&gt;}&lt;/span&gt;&lt;span class='s2'&gt;&amp;quot;&lt;/span&gt;&lt;span class='p'&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;By the way: Jekyll has built in support for using &lt;a href='http://en.wikipedia.org/wiki/Latent_semantic_indexing'&gt;latent semantic indexing&lt;/a&gt; to create lists of related posts. It&amp;#8217;s a slow implementation of a computationally demanding technique, but at the same time, very cool.&lt;/p&gt;
+
+&lt;p&gt;When jekyll has generated the html in its &amp;#8220;_site&amp;#8221; folder, it&amp;#8217;s time to upload the new post to the web server.&lt;/p&gt;
+
+&lt;p&gt;To upload new content to the server, I use the setup described in &lt;a href='http://matedriven.com.ar/2009/04/28/using-git-to-maintain-your-blog.html'&gt;this guide&lt;/a&gt;. Three distinct git repositories are established to provide the perfect workflow, where publishing a post is as easy as committing and pushing the new post to the server.&lt;/p&gt;
+
+&lt;p&gt;My local copy is stored in the first repo. On the server, there is a &amp;#8220;live&amp;#8221; repo, which is the site served by apache, and a &amp;#8220;base&amp;#8221; repo which facilitates synchronization between the two other repos. My local changes are pushed to the base repo, which tells the live repo to update its content. The point is to avoid pushing content to a repo containing a working copy - using three repos is way easier. The guide has all the details if you wan&amp;#8217;t more on this setup.&lt;/p&gt;
+
+&lt;p&gt;All that&amp;#8217;s left is creating a virtual host in apache, it&amp;#8217;s document root pointing to the &amp;#8220;_site&amp;#8221; folder in the live repo. My server also have PHP and MySQL installed, so that my &lt;a href='http://haveamint.com/'&gt;Mint&lt;/a&gt; installation can reside in the same repo as the rest of the jekyll files. Sweet!&lt;/p&gt;
+
+&lt;p&gt;There&amp;#8217;s something greatly reassuring about having a separate markdown file for each blog post, a point underlined by the annoying xml-parsing I did to migrate my old posts into this new system. My posts are safer than ever and can be written in any environment I see fit. In the end, this is a system only a programmer would love, but also the only system I, as a programmer, do love.&lt;/p&gt;</content>
+ <feedburner:origLink>http://bjorkoy.com/2010/05/blogging-with-jekyll-git-and-slicehost</feedburner:origLink></entry>
+ 
+ <entry>
+   <title>Conway's Game of Life in Ruby</title>
+   <link href="http://feedproxy.google.com/~r/bjorkoy/~3/fUjiDFUs5RU/conways-game-of-life-in-ruby" />
+   <updated>2010-05-14T00:00:00+02:00</updated>
+   <id>http://bjorkoy.com/2010/05/conways-game-of-life-in-ruby</id>
+   <content type="html">&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='ruby'&gt;&lt;span class='c1'&gt;#&lt;/span&gt;
+&lt;span class='c1'&gt;# Conway&amp;#39;s Game of Life in Ruby&lt;/span&gt;
+&lt;span class='c1'&gt;# http://en.wikipedia.org/wiki/Conway&amp;#39;s_Game_of_Life&lt;/span&gt;
+&lt;span class='c1'&gt;# &lt;/span&gt;
+&lt;span class='c1'&gt;# Some code from this excellent article:&lt;/span&gt;
+&lt;span class='c1'&gt;# http://rubyquiz.strd6.com/quizzes/193-game-of-life&lt;/span&gt;
+&lt;span class='c1'&gt;#&lt;/span&gt;
+
+&lt;span class='k'&gt;class&lt;/span&gt; &lt;span class='nc'&gt;Cell&lt;/span&gt;
+  &lt;span class='kp'&gt;attr_writer&lt;/span&gt; &lt;span class='ss'&gt;:neighbors&lt;/span&gt;
+  
+  &lt;span class='k'&gt;def&lt;/span&gt; &lt;span class='nf'&gt;initialize&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='n'&gt;seed_probability&lt;/span&gt;&lt;span class='p'&gt;)&lt;/span&gt;
+    &lt;span class='vi'&gt;@alive&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='n'&gt;seed_probability&lt;/span&gt; &lt;span class='o'&gt;&amp;gt;&lt;/span&gt; &lt;span class='nb'&gt;rand&lt;/span&gt;
+  &lt;span class='k'&gt;end&lt;/span&gt;
+  
+  &lt;span class='k'&gt;def&lt;/span&gt; &lt;span class='nf'&gt;next!&lt;/span&gt;
+    &lt;span class='vi'&gt;@alive&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='vi'&gt;@alive&lt;/span&gt; &lt;span class='p'&gt;?&lt;/span&gt; &lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='mi'&gt;2&lt;/span&gt;&lt;span class='o'&gt;.&lt;/span&gt;&lt;span class='n'&gt;.&lt;/span&gt;&lt;span class='mi'&gt;3&lt;/span&gt;&lt;span class='p'&gt;)&lt;/span&gt; &lt;span class='o'&gt;===&lt;/span&gt; &lt;span class='vi'&gt;@neighbors&lt;/span&gt; &lt;span class='p'&gt;:&lt;/span&gt; &lt;span class='mi'&gt;3&lt;/span&gt; &lt;span class='o'&gt;==&lt;/span&gt; &lt;span class='vi'&gt;@neighbors&lt;/span&gt;
+  &lt;span class='k'&gt;end&lt;/span&gt;
+  
+  &lt;span class='k'&gt;def&lt;/span&gt; &lt;span class='nf'&gt;to_i&lt;/span&gt;
+    &lt;span class='vi'&gt;@alive&lt;/span&gt; &lt;span class='p'&gt;?&lt;/span&gt; &lt;span class='mi'&gt;1&lt;/span&gt; &lt;span class='p'&gt;:&lt;/span&gt; &lt;span class='mi'&gt;0&lt;/span&gt;
+  &lt;span class='k'&gt;end&lt;/span&gt;
+  
+  &lt;span class='k'&gt;def&lt;/span&gt; &lt;span class='nf'&gt;to_s&lt;/span&gt;
+    &lt;span class='vi'&gt;@alive&lt;/span&gt; &lt;span class='p'&gt;?&lt;/span&gt; &lt;span class='s1'&gt;&amp;#39;o&amp;#39;&lt;/span&gt; &lt;span class='p'&gt;:&lt;/span&gt; &lt;span class='s1'&gt;&amp;#39; &amp;#39;&lt;/span&gt;
+  &lt;span class='k'&gt;end&lt;/span&gt;
+&lt;span class='k'&gt;end&lt;/span&gt;
+
+&lt;span class='k'&gt;class&lt;/span&gt; &lt;span class='nc'&gt;Game&lt;/span&gt;
+  
+  &lt;span class='k'&gt;def&lt;/span&gt; &lt;span class='nf'&gt;initialize&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='n'&gt;width&lt;/span&gt;&lt;span class='p'&gt;,&lt;/span&gt; &lt;span class='n'&gt;height&lt;/span&gt;&lt;span class='p'&gt;,&lt;/span&gt; &lt;span class='n'&gt;seed_probability&lt;/span&gt;&lt;span class='p'&gt;,&lt;/span&gt; &lt;span class='n'&gt;steps&lt;/span&gt;&lt;span class='p'&gt;)&lt;/span&gt;
+    &lt;span class='vi'&gt;@width&lt;/span&gt;&lt;span class='p'&gt;,&lt;/span&gt; &lt;span class='vi'&gt;@height&lt;/span&gt;&lt;span class='p'&gt;,&lt;/span&gt; &lt;span class='vi'&gt;@steps&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='n'&gt;width&lt;/span&gt;&lt;span class='p'&gt;,&lt;/span&gt; &lt;span class='n'&gt;height&lt;/span&gt;&lt;span class='p'&gt;,&lt;/span&gt; &lt;span class='n'&gt;steps&lt;/span&gt;
+    &lt;span class='vi'&gt;@cells&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='nb'&gt;Array&lt;/span&gt;&lt;span class='o'&gt;.&lt;/span&gt;&lt;span class='n'&gt;new&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='n'&gt;height&lt;/span&gt;&lt;span class='p'&gt;)&lt;/span&gt; &lt;span class='p'&gt;{&lt;/span&gt; 
+      &lt;span class='nb'&gt;Array&lt;/span&gt;&lt;span class='o'&gt;.&lt;/span&gt;&lt;span class='n'&gt;new&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='n'&gt;width&lt;/span&gt;&lt;span class='p'&gt;)&lt;/span&gt; &lt;span class='p'&gt;{&lt;/span&gt; &lt;span class='no'&gt;Cell&lt;/span&gt;&lt;span class='o'&gt;.&lt;/span&gt;&lt;span class='n'&gt;new&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='n'&gt;seed_probability&lt;/span&gt;&lt;span class='p'&gt;)&lt;/span&gt; &lt;span class='p'&gt;}&lt;/span&gt; &lt;span class='p'&gt;}&lt;/span&gt;
+  &lt;span class='k'&gt;end&lt;/span&gt;
+  
+  &lt;span class='k'&gt;def&lt;/span&gt; &lt;span class='nf'&gt;play!&lt;/span&gt;
+    &lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='mi'&gt;1&lt;/span&gt;&lt;span class='o'&gt;.&lt;/span&gt;&lt;span class='n'&gt;.&lt;/span&gt;&lt;span class='vi'&gt;@steps&lt;/span&gt;&lt;span class='p'&gt;)&lt;/span&gt;&lt;span class='o'&gt;.&lt;/span&gt;&lt;span class='n'&gt;each&lt;/span&gt; &lt;span class='k'&gt;do&lt;/span&gt;
+      &lt;span class='k'&gt;next&lt;/span&gt;&lt;span class='o'&gt;!&lt;/span&gt;
+      &lt;span class='nb'&gt;system&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='s1'&gt;&amp;#39;clear&amp;#39;&lt;/span&gt;&lt;span class='p'&gt;)&lt;/span&gt;
+      &lt;span class='nb'&gt;puts&lt;/span&gt; &lt;span class='nb'&gt;self&lt;/span&gt;
+    &lt;span class='k'&gt;end&lt;/span&gt;
+  &lt;span class='k'&gt;end&lt;/span&gt;
+  
+  &lt;span class='k'&gt;def&lt;/span&gt; &lt;span class='nf'&gt;next!&lt;/span&gt;
+    &lt;span class='vi'&gt;@cells&lt;/span&gt;&lt;span class='o'&gt;.&lt;/span&gt;&lt;span class='n'&gt;each_with_index&lt;/span&gt; &lt;span class='k'&gt;do&lt;/span&gt; &lt;span class='o'&gt;|&lt;/span&gt;&lt;span class='n'&gt;row&lt;/span&gt;&lt;span class='p'&gt;,&lt;/span&gt; &lt;span class='n'&gt;y&lt;/span&gt;&lt;span class='o'&gt;|&lt;/span&gt;
+      &lt;span class='n'&gt;row&lt;/span&gt;&lt;span class='o'&gt;.&lt;/span&gt;&lt;span class='n'&gt;each_with_index&lt;/span&gt; &lt;span class='k'&gt;do&lt;/span&gt; &lt;span class='o'&gt;|&lt;/span&gt;&lt;span class='n'&gt;cell&lt;/span&gt;&lt;span class='p'&gt;,&lt;/span&gt; &lt;span class='n'&gt;x&lt;/span&gt;&lt;span class='o'&gt;|&lt;/span&gt;
+        &lt;span class='n'&gt;cell&lt;/span&gt;&lt;span class='o'&gt;.&lt;/span&gt;&lt;span class='n'&gt;neighbors&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='n'&gt;alive_neighbours&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='n'&gt;y&lt;/span&gt;&lt;span class='p'&gt;,&lt;/span&gt; &lt;span class='n'&gt;x&lt;/span&gt;&lt;span class='p'&gt;)&lt;/span&gt;
+      &lt;span class='k'&gt;end&lt;/span&gt;
+    &lt;span class='k'&gt;end&lt;/span&gt;
+    &lt;span class='vi'&gt;@cells&lt;/span&gt;&lt;span class='o'&gt;.&lt;/span&gt;&lt;span class='n'&gt;each&lt;/span&gt; &lt;span class='p'&gt;{&lt;/span&gt; &lt;span class='o'&gt;|&lt;/span&gt;&lt;span class='n'&gt;row&lt;/span&gt;&lt;span class='o'&gt;|&lt;/span&gt; &lt;span class='n'&gt;row&lt;/span&gt;&lt;span class='o'&gt;.&lt;/span&gt;&lt;span class='n'&gt;each&lt;/span&gt; &lt;span class='p'&gt;{&lt;/span&gt; &lt;span class='o'&gt;|&lt;/span&gt;&lt;span class='n'&gt;cell&lt;/span&gt;&lt;span class='o'&gt;|&lt;/span&gt; &lt;span class='n'&gt;cell&lt;/span&gt;&lt;span class='o'&gt;.&lt;/span&gt;&lt;span class='n'&gt;next!&lt;/span&gt; &lt;span class='p'&gt;}&lt;/span&gt; &lt;span class='p'&gt;}&lt;/span&gt;
+  &lt;span class='k'&gt;end&lt;/span&gt;
+  
+  &lt;span class='k'&gt;def&lt;/span&gt; &lt;span class='nf'&gt;alive_neighbours&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='n'&gt;y&lt;/span&gt;&lt;span class='p'&gt;,&lt;/span&gt; &lt;span class='n'&gt;x&lt;/span&gt;&lt;span class='p'&gt;)&lt;/span&gt;
+    &lt;span class='o'&gt;[[-&lt;/span&gt;&lt;span class='mi'&gt;1&lt;/span&gt;&lt;span class='p'&gt;,&lt;/span&gt; &lt;span class='mi'&gt;0&lt;/span&gt;&lt;span class='o'&gt;]&lt;/span&gt;&lt;span class='p'&gt;,&lt;/span&gt; &lt;span class='o'&gt;[&lt;/span&gt;&lt;span class='mi'&gt;1&lt;/span&gt;&lt;span class='p'&gt;,&lt;/span&gt; &lt;span class='mi'&gt;0&lt;/span&gt;&lt;span class='o'&gt;]&lt;/span&gt;&lt;span class='p'&gt;,&lt;/span&gt; &lt;span class='c1'&gt;# sides&lt;/span&gt;
+     &lt;span class='o'&gt;[-&lt;/span&gt;&lt;span class='mi'&gt;1&lt;/span&gt;&lt;span class='p'&gt;,&lt;/span&gt; &lt;span class='mi'&gt;1&lt;/span&gt;&lt;span class='o'&gt;]&lt;/span&gt;&lt;span class='p'&gt;,&lt;/span&gt; &lt;span class='o'&gt;[&lt;/span&gt;&lt;span class='mi'&gt;0&lt;/span&gt;&lt;span class='p'&gt;,&lt;/span&gt; &lt;span class='mi'&gt;1&lt;/span&gt;&lt;span class='o'&gt;]&lt;/span&gt;&lt;span class='p'&gt;,&lt;/span&gt; &lt;span class='o'&gt;[&lt;/span&gt;&lt;span class='mi'&gt;1&lt;/span&gt;&lt;span class='p'&gt;,&lt;/span&gt; &lt;span class='mi'&gt;1&lt;/span&gt;&lt;span class='o'&gt;]&lt;/span&gt;&lt;span class='p'&gt;,&lt;/span&gt; &lt;span class='c1'&gt;# over&lt;/span&gt;
+     &lt;span class='o'&gt;[-&lt;/span&gt;&lt;span class='mi'&gt;1&lt;/span&gt;&lt;span class='p'&gt;,&lt;/span&gt; &lt;span class='o'&gt;-&lt;/span&gt;&lt;span class='mi'&gt;1&lt;/span&gt;&lt;span class='o'&gt;]&lt;/span&gt;&lt;span class='p'&gt;,&lt;/span&gt; &lt;span class='o'&gt;[&lt;/span&gt;&lt;span class='mi'&gt;0&lt;/span&gt;&lt;span class='p'&gt;,&lt;/span&gt; &lt;span class='o'&gt;-&lt;/span&gt;&lt;span class='mi'&gt;1&lt;/span&gt;&lt;span class='o'&gt;]&lt;/span&gt;&lt;span class='p'&gt;,&lt;/span&gt; &lt;span class='o'&gt;[&lt;/span&gt;&lt;span class='mi'&gt;1&lt;/span&gt;&lt;span class='p'&gt;,&lt;/span&gt; &lt;span class='o'&gt;-&lt;/span&gt;&lt;span class='mi'&gt;1&lt;/span&gt;&lt;span class='o'&gt;]&lt;/span&gt; &lt;span class='c1'&gt;# under&lt;/span&gt;
+    &lt;span class='o'&gt;].&lt;/span&gt;&lt;span class='n'&gt;inject&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='mi'&gt;0&lt;/span&gt;&lt;span class='p'&gt;)&lt;/span&gt; &lt;span class='k'&gt;do&lt;/span&gt; &lt;span class='o'&gt;|&lt;/span&gt;&lt;span class='n'&gt;sum&lt;/span&gt;&lt;span class='p'&gt;,&lt;/span&gt; &lt;span class='n'&gt;pos&lt;/span&gt;&lt;span class='o'&gt;|&lt;/span&gt;
+      &lt;span class='n'&gt;sum&lt;/span&gt; &lt;span class='o'&gt;+&lt;/span&gt; &lt;span class='vi'&gt;@cells&lt;/span&gt;&lt;span class='o'&gt;[&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='n'&gt;y&lt;/span&gt; &lt;span class='o'&gt;+&lt;/span&gt; &lt;span class='n'&gt;pos&lt;/span&gt;&lt;span class='o'&gt;[&lt;/span&gt;&lt;span class='mi'&gt;0&lt;/span&gt;&lt;span class='o'&gt;]&lt;/span&gt;&lt;span class='p'&gt;)&lt;/span&gt; &lt;span class='o'&gt;%&lt;/span&gt; &lt;span class='vi'&gt;@height&lt;/span&gt;&lt;span class='o'&gt;][&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='n'&gt;x&lt;/span&gt; &lt;span class='o'&gt;+&lt;/span&gt; &lt;span class='n'&gt;pos&lt;/span&gt;&lt;span class='o'&gt;[&lt;/span&gt;&lt;span class='mi'&gt;1&lt;/span&gt;&lt;span class='o'&gt;]&lt;/span&gt;&lt;span class='p'&gt;)&lt;/span&gt; &lt;span class='o'&gt;%&lt;/span&gt; &lt;span class='vi'&gt;@width&lt;/span&gt;&lt;span class='o'&gt;].&lt;/span&gt;&lt;span class='n'&gt;to_i&lt;/span&gt;
+    &lt;span class='k'&gt;end&lt;/span&gt;
+  &lt;span class='k'&gt;end&lt;/span&gt;
+  
+  &lt;span class='k'&gt;def&lt;/span&gt; &lt;span class='nf'&gt;to_s&lt;/span&gt;
+    &lt;span class='vi'&gt;@cells&lt;/span&gt;&lt;span class='o'&gt;.&lt;/span&gt;&lt;span class='n'&gt;map&lt;/span&gt; &lt;span class='p'&gt;{&lt;/span&gt; &lt;span class='o'&gt;|&lt;/span&gt;&lt;span class='n'&gt;row&lt;/span&gt;&lt;span class='o'&gt;|&lt;/span&gt; &lt;span class='n'&gt;row&lt;/span&gt;&lt;span class='o'&gt;.&lt;/span&gt;&lt;span class='n'&gt;join&lt;/span&gt; &lt;span class='p'&gt;}&lt;/span&gt;&lt;span class='o'&gt;.&lt;/span&gt;&lt;span class='n'&gt;join&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='s2'&gt;&amp;quot;&lt;/span&gt;&lt;span class='se'&gt;\n&lt;/span&gt;&lt;span class='s2'&gt;&amp;quot;&lt;/span&gt;&lt;span class='p'&gt;)&lt;/span&gt;
+  &lt;span class='k'&gt;end&lt;/span&gt;
+&lt;span class='k'&gt;end&lt;/span&gt;
+
+&lt;span class='no'&gt;Game&lt;/span&gt;&lt;span class='o'&gt;.&lt;/span&gt;&lt;span class='n'&gt;new&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='mi'&gt;100&lt;/span&gt;&lt;span class='p'&gt;,&lt;/span&gt; &lt;span class='mi'&gt;50&lt;/span&gt;&lt;span class='p'&gt;,&lt;/span&gt; &lt;span class='mi'&gt;0&lt;/span&gt;&lt;span class='o'&gt;.&lt;/span&gt;&lt;span class='mi'&gt;1&lt;/span&gt;&lt;span class='p'&gt;,&lt;/span&gt; &lt;span class='mi'&gt;100&lt;/span&gt;&lt;span class='p'&gt;)&lt;/span&gt;&lt;span class='o'&gt;.&lt;/span&gt;&lt;span class='n'&gt;play!&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;</content>
+ <feedburner:origLink>http://bjorkoy.com/2010/05/conways-game-of-life-in-ruby</feedburner:origLink></entry>
+ 
+ <entry>
+   <title>Automatic compilation of Sass and HSS files</title>
+   <link href="http://feedproxy.google.com/~r/bjorkoy/~3/JTpg15abdBE/automatic-compilation-of-sass-and-hss" />
+   <updated>2008-10-21T00:00:00+02:00</updated>
+   <id>http://bjorkoy.com/2008/10/automatic-compilation-of-sass-and-hss</id>
+   <content type="html">&lt;p&gt;&lt;a href='http://haml.hamptoncatlin.com/docs/rdoc/classes/Sass.html'&gt;Sass&lt;/a&gt; and &lt;a href='http://ncannasse.fr/projects/hss'&gt;HSS&lt;/a&gt; are pretty cool tools. They are extensions to CSS that allows you to use variables, arithmetic, nested rules and other goodies in your stylesheets.&lt;/p&gt;
+
+&lt;p&gt;To make this work, both tools use a compiler to transform the Sass and HSS file contents into valid CSS which will work in a browser.&lt;/p&gt;
+
+&lt;h3 id='the_problem'&gt;The problem&lt;/h3&gt;
+
+&lt;p&gt;Running the compiler on each file change when developing a site is a tedious task to do manually, so I patched together a simple Ruby script to do it for me. In the interest of karma, here&amp;#8217;s that script for you to use as you see fit.&lt;/p&gt;
+
+&lt;p&gt;The script can esentially be used in any situation where some files must be observed, and a command run whenever they are changed (saved), be it compiling, compressing, running tests or validation.&lt;/p&gt;
+
+&lt;h3 id='how_to_use_the_script'&gt;How to use the script&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Put the script file in your CSS directory. The script will monitor both that directory and any subdirectories when started.&lt;/li&gt;
+
+&lt;li&gt;Change the configuration options at the top of the script, depending on which tool you are using: Sass, HSS or something else.&lt;/li&gt;
+
+&lt;li&gt;Whenever you are working on your files, have the script running in the background. Start it by running &lt;code&gt;ruby monitor.rb&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Now, whenever you save changes to your Sass or HSS files, the corresponding CSS files will be recompiled from their respective sources. The script will also recompile all observed files at the moment it is started.&lt;/p&gt;
+
+&lt;p&gt;That&amp;#8217;s it! You can now use the CSS extension tool of your choice, while still retaining the sweet ability to refresh your browser to instantly see any changes, all without any annoying extra steps in the process.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;a href='http://files.bjorkoy.com/monitor/monitor.rb'&gt;Download the script&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;</content>
+ <feedburner:origLink>http://bjorkoy.com/2008/10/automatic-compilation-of-sass-and-hss</feedburner:origLink></entry>
+ 
+ <entry>
+   <title>Passing the torch</title>
+   <link href="http://feedproxy.google.com/~r/bjorkoy/~3/Fzo-PrVKVtc/passing-the-torch" />
+   <updated>2008-09-02T00:00:00+02:00</updated>
+   <id>http://bjorkoy.com/2008/09/passing-the-torch</id>
+   <content type="html">&lt;p&gt;Blueprint has had an amazing run so far. Even from the get go, the popularity surpassed anything I could ever have imagined. Dominating the top spots at Delicious, reaching the front pages of both Digg and Reddit, being featured on sites such as Wired, Ajaxian, Daring Fireball, Subtraction and countless others, the numbers speak for themselves.&lt;/p&gt;
+
+&lt;p&gt;Where did all this hype come from? The fact is, it took quite a few months until Blueprint was able to deliver on all its promises, and the initial implementation was far from perfect. But the hype remained nonetheless.&lt;/p&gt;
+
+&lt;p&gt;I have my own theories on how the, at times, unjustified hype came to be: The enticing coupling of the words &amp;#8220;framework&amp;#8221; and &amp;#8220;CSS&amp;#8221;, the void left by having no viable, light-weight competitor to Yahoo UI, and being based on thorough work by industry leaders such as Jeff Croft. All this certainly helped more than any brilliant CSS solutions ever could have.&lt;/p&gt;
+
+&lt;p&gt;Either way, here we are. Blueprint is at sort of a crossroad. Should we be happy with what we have, or has the time come to really ramp up development and aim to deliver on all the expectations the now fading hype has come to expect of us?&lt;/p&gt;
+
+&lt;p&gt;The Blueprint community has grown exceptionally fast. Inversely, my available time for developing the framework and nurturing the community has diminished. The community has continued to grow and has come to expect a lot more than what has been delivered. This is the problem that presents itself when a project grows faster and reaches more people than you could ever have imagined: You have no way to keep working at the same pace to keep the project at this level for a long stretch of time.&lt;/p&gt;
+
+&lt;p&gt;But this is also the beauty of open source: I have done what I can for Blueprint for the time being, and while I&amp;#8217;ll still be a vocal part of the community, the time has come to pass the torch.&lt;/p&gt;
+
+&lt;p&gt;It&amp;#8217;s time for someone else to maintain the project, so that all the brilliant minds who wish to contribute actually get a chance to have their say. Blueprint could be so much more than it is today, and with a few new guys running the show, I&amp;#8217;m certain the framework can reach even the high goals set up by the earlier hype.&lt;/p&gt;
+
+&lt;p&gt;So here we go. For the time being, the new maintainers of Blueprint are:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Christian Montoya&lt;/li&gt;
+
+&lt;li&gt;Joshua Clayton&lt;/li&gt;
+
+&lt;li&gt;Chris Eppstein&lt;/li&gt;
+
+&lt;li&gt;Glenn Rempe&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;They are great guys, who have been working on Blueprint for a long time now. If anyone can take the framework to the next level, they can. The new site, with links to all relevant sources can be found at &lt;a href='http://www.blueprintcss.org/'&gt;blueprintcss.org&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;As mentioned, I&amp;#8217;ll still be around, helping out, and if the time comes, I&amp;#8217;ll be back on the front lines developing the framework. But from now on, these are the people to contact and look to for any news and developments on Blueprint. Best of luck to all of them!&lt;/p&gt;</content>
+ <feedburner:origLink>http://bjorkoy.com/2008/09/passing-the-torch</feedburner:origLink></entry>
+ 
+ <entry>
+   <title>Blueprint 0.7 has arrived</title>
+   <link href="http://feedproxy.google.com/~r/bjorkoy/~3/Zxqp1E0Dsh4/blueprint-07-has-arrived" />
+   <updated>2008-02-20T00:00:00+01:00</updated>
+   <id>http://bjorkoy.com/2008/02/blueprint-07-has-arrived</id>
+   <content type="html">&lt;p&gt;&lt;a href='http://code.google.com/p/blueprintcss/downloads/list'&gt;Blueprint 0.7&lt;/a&gt; has finally been released. Expect a more thorough article on all the new stuff soon. For now, here&amp;#8217;s a quick rundown.&lt;/p&gt;
+
+&lt;p&gt;It&amp;#8217;s been way too long since our last release, so 0.7 is in many ways a pretty daunting upgrade. Lots of things have changed, making the framework more powerful, customizable and nimble than ever before.&lt;/p&gt;
+
+&lt;p&gt;Here&amp;#8217;s the most important new features:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;A powerful new compressor/generator script for customizing every part of Blueprint.&lt;/li&gt;
+
+&lt;li&gt;A new directory structure, way better thought out than what we had in 0.6.&lt;/li&gt;
+
+&lt;li&gt;No more need for the .column class (div + .span-x implies column).&lt;/li&gt;
+
+&lt;li&gt;Lots of bugs fixed.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id='the_new_compressor'&gt;The new compressor&lt;/h3&gt;
+
+&lt;p&gt;So what does it do?&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ ruby compress.rb -h
+Usage: compress.rb [options]
+Blueprint Compressor
+
+options
+  -o, --output_path=OUTPUT_PATH    Define a different path to output 
+                                   generated CSS files to.
+  -n, --namespace=BP_NAMESPACE     Define a namespace prepended to all Blueprint classes 
+                                   (e.g. .your-ns-span-24)
+  -p, --project=PROJECT_NAME       If using the settings.yml file, PROJECT_NAME is the 
+                                   project name you want to export
+  --column_width=COLUMN_WIDTH      Set a new column width (in pixels) for the output grid
+  --gutter_width=GUTTER_WIDTH      Set a new gutter width (in pixels) for the output grid
+  --column_count=COLUMN_COUNT      Set a new column count for the output grid
+  -h, --help                       Show this help message.&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;If you&amp;#8217;re using Blueprint in several projects, you should check out the new settings file for the compressor. Here&amp;#8217;s an example of the new settings file, with most available options:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;my_project:
+  path: /path/to/my/project/stylesheets
+  namespace: custom-namespace-1-
+  custom_css:
+    ie.css:
+      - custom-ie.css
+    print.css:
+      - docs.css
+      - my-print-styles.css
+    screen.css:
+      - subfolder-of-stylesheets/sub_css.css
+  custom_layout:
+    column_count: 12
+    column_width: 70
+    gutter_width: 10
+  plugins:
+    - fancy-type
+    - buttons
+  semantic_classes:
+    &amp;quot;#footer, #header&amp;quot;: &amp;quot;.span-24, div.span-24&amp;quot;
+    &amp;quot;#content&amp;quot;: &amp;quot;.span-17, div.span-17, div.colborder&amp;quot;
+    &amp;quot;#extra-content&amp;quot;: &amp;quot;.span-6, div.span-6&amp;quot;
+    &amp;quot;div#navigation&amp;quot;: &amp;quot;div.span_24, .span-24&amp;quot;
+    &amp;quot;div.section, div.entry, .feeds&amp;quot;: &amp;quot;.span-6 div.span-6&amp;quot;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Yes, you&amp;#8217;re reading that correctly. In order, we have:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Optional custom output path.&lt;/li&gt;
+
+&lt;li&gt;Namespace for Blueprint classes, which even updates the test files.&lt;/li&gt;
+
+&lt;li&gt;Custom CSS appended to Blueprint stylesheets.&lt;/li&gt;
+
+&lt;li&gt;Custom layout settings, almost too easy.&lt;/li&gt;
+
+&lt;li&gt;Automatic compression of plugins which then gets added to the main Blueprint file.&lt;/li&gt;
+
+&lt;li&gt;Semantic class names from BP classes. Just add them to your HTML, remove the old BP classes from the same HTML, and you&amp;#8217;re ready to go!&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Huge thanks to Josh Clayton, the newest member of the Blueprint team, for creating all this. He&amp;#8217;s even written quite an &lt;a href='http://jdclayton.com/blueprints_compress_a_walkthrough.html'&gt;article describing the compressor in detail&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id='further_reading'&gt;Further reading&lt;/h3&gt;
+
+&lt;p&gt;A few links to get you started. As mentioned, I&amp;#8217;ll write a more thorough article on the CSS in 0.7 soon.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href='http://code.google.com/p/blueprintcss/downloads/list'&gt;Download BP 0.7&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href='http://code.google.com/p/blueprintcss/source/browse/blueprint/tags/blueprint-0.7/CHANGELOG'&gt;Complete changelog&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href='http://code.google.com/p/blueprintcss/wiki/Tutorial'&gt;Updated tutorial&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href='http://code.google.com/p/blueprintcss/source/browse/blueprint/tags/blueprint-0.7/README'&gt;Blueprint Readme&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href='http://code.google.com/p/blueprintcss/issues/list'&gt;Post issues and bugs here&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href='http://groups.google.com/group/blueprintcss'&gt;Mailing list for any questions&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href='http://code.google.com/p/blueprintcss/source/browse/blueprint/tags/blueprint-0.7/AUTHORS'&gt;Who to thank for all this&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;em&gt;Update:&lt;/em&gt; We just released a quick bugfix, blueprint 0.7.1, which solves an issue where the compressor was requiring Rubygems in order to work. Rubygems is not required to run the compressor.&lt;/p&gt;</content>
+ <feedburner:origLink>http://bjorkoy.com/2008/02/blueprint-07-has-arrived</feedburner:origLink></entry>
+ 
+ <entry>
+   <title>CSS font shorthand syntax</title>
+   <link href="http://feedproxy.google.com/~r/bjorkoy/~3/WGT8MXyu2h8/css-font-shorthand-syntax" />
+   <updated>2008-01-11T00:00:00+01:00</updated>
+   <id>http://bjorkoy.com/2008/01/css-font-shorthand-syntax</id>
+   <content type="html">&lt;p&gt;The CSS font shorthand property syntax always seem to slip my mind, so here it is, mostly for my own benefit.&lt;/p&gt;
+
+&lt;h3 id='syntax'&gt;Syntax&lt;/h3&gt;
+
+&lt;p&gt;The syntax is:&lt;/p&gt;
+&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='css'&gt;&lt;span class='nt'&gt;font&lt;/span&gt;&lt;span class='o'&gt;:&lt;/span&gt; &lt;span class='nt'&gt;style&lt;/span&gt; &lt;span class='nt'&gt;variant&lt;/span&gt; &lt;span class='nt'&gt;weight&lt;/span&gt; &lt;span class='nt'&gt;size&lt;/span&gt;&lt;span class='o'&gt;/&lt;/span&gt;&lt;span class='nt'&gt;line-height&lt;/span&gt; &lt;span class='nt'&gt;family&lt;/span&gt;&lt;span class='o'&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;The &lt;strong&gt;required&lt;/strong&gt; parts of this shorthand is &lt;strong&gt;size&lt;/strong&gt; and &lt;strong&gt;family&lt;/strong&gt;. You should always &lt;strong&gt;stick with the ordering&lt;/strong&gt; given above, which is what the W3C recommends.&lt;/p&gt;
+
+&lt;h3 id='examples'&gt;Examples&lt;/h3&gt;
+
+&lt;p&gt;Example 1:&lt;/p&gt;
+&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='css'&gt;&lt;span class='nt'&gt;font-size&lt;/span&gt;&lt;span class='o'&gt;:&lt;/span&gt; &lt;span class='nt'&gt;14px&lt;/span&gt;&lt;span class='o'&gt;;&lt;/span&gt;
+&lt;span class='nt'&gt;font-family&lt;/span&gt;&lt;span class='o'&gt;:&lt;/span&gt; &lt;span class='nt'&gt;Helvetica&lt;/span&gt;&lt;span class='o'&gt;,&lt;/span&gt; &lt;span class='nt'&gt;sans-serif&lt;/span&gt;&lt;span class='o'&gt;;&lt;/span&gt;
+
+&lt;span class='c'&gt;/* Combined into one shorthand rule */&lt;/span&gt;
+&lt;span class='nt'&gt;font&lt;/span&gt;&lt;span class='o'&gt;:&lt;/span&gt; &lt;span class='nt'&gt;14px&lt;/span&gt; &lt;span class='nt'&gt;Helvetica&lt;/span&gt;&lt;span class='o'&gt;,&lt;/span&gt; &lt;span class='nt'&gt;sans-serif&lt;/span&gt;&lt;span class='o'&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;Example 2:&lt;/p&gt;
+&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='css'&gt;&lt;span class='nt'&gt;font-weight&lt;/span&gt;&lt;span class='o'&gt;:&lt;/span&gt; &lt;span class='nt'&gt;bold&lt;/span&gt;&lt;span class='o'&gt;;&lt;/span&gt;
+&lt;span class='nt'&gt;font-size&lt;/span&gt;&lt;span class='o'&gt;:&lt;/span&gt; &lt;span class='nt'&gt;14px&lt;/span&gt;&lt;span class='o'&gt;;&lt;/span&gt;
+&lt;span class='nt'&gt;line-height&lt;/span&gt;&lt;span class='o'&gt;:&lt;/span&gt; &lt;span class='nt'&gt;1&lt;/span&gt;&lt;span class='nc'&gt;.5&lt;/span&gt;&lt;span class='o'&gt;;&lt;/span&gt;
+&lt;span class='nt'&gt;font-family&lt;/span&gt;&lt;span class='o'&gt;:&lt;/span&gt; &lt;span class='nt'&gt;Helvetica&lt;/span&gt;&lt;span class='o'&gt;,&lt;/span&gt; &lt;span class='nt'&gt;sans-serif&lt;/span&gt;&lt;span class='o'&gt;;&lt;/span&gt;
+
+&lt;span class='c'&gt;/* Combined into one shorthand rule */&lt;/span&gt;
+&lt;span class='nt'&gt;font&lt;/span&gt;&lt;span class='o'&gt;:&lt;/span&gt; &lt;span class='nt'&gt;bold&lt;/span&gt; &lt;span class='nt'&gt;14px&lt;/span&gt;&lt;span class='o'&gt;/&lt;/span&gt;&lt;span class='nt'&gt;1&lt;/span&gt;&lt;span class='nc'&gt;.5&lt;/span&gt; &lt;span class='nt'&gt;Helvetica&lt;/span&gt;&lt;span class='o'&gt;,&lt;/span&gt; &lt;span class='nt'&gt;sans-serif&lt;/span&gt;&lt;span class='o'&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;Example 3:&lt;/p&gt;
+&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='css'&gt;&lt;span class='nt'&gt;font-style&lt;/span&gt;&lt;span class='o'&gt;:&lt;/span&gt; &lt;span class='nt'&gt;italic&lt;/span&gt;&lt;span class='o'&gt;;&lt;/span&gt;
+&lt;span class='nt'&gt;font-variant&lt;/span&gt;&lt;span class='o'&gt;:&lt;/span&gt; &lt;span class='nt'&gt;small-caps&lt;/span&gt;&lt;span class='o'&gt;;&lt;/span&gt;
+&lt;span class='nt'&gt;font-weight&lt;/span&gt;&lt;span class='o'&gt;:&lt;/span&gt; &lt;span class='nt'&gt;bold&lt;/span&gt;&lt;span class='o'&gt;;&lt;/span&gt;
+&lt;span class='nt'&gt;font-size&lt;/span&gt;&lt;span class='o'&gt;:&lt;/span&gt; &lt;span class='nt'&gt;1em&lt;/span&gt;&lt;span class='o'&gt;;&lt;/span&gt;
+&lt;span class='nt'&gt;line-height&lt;/span&gt;&lt;span class='o'&gt;:&lt;/span&gt; &lt;span class='nt'&gt;140&lt;/span&gt;&lt;span class='o'&gt;%;&lt;/span&gt;
+&lt;span class='nt'&gt;font-family&lt;/span&gt;&lt;span class='o'&gt;:&lt;/span&gt; &lt;span class='nt'&gt;Helvetica&lt;/span&gt;&lt;span class='o'&gt;,&lt;/span&gt; &lt;span class='nt'&gt;sans-serif&lt;/span&gt;&lt;span class='o'&gt;;&lt;/span&gt;
+
+&lt;span class='c'&gt;/* Combined into one shorthand rule */&lt;/span&gt;
+&lt;span class='nt'&gt;font&lt;/span&gt;&lt;span class='o'&gt;:&lt;/span&gt; &lt;span class='nt'&gt;italic&lt;/span&gt; &lt;span class='nt'&gt;small-caps&lt;/span&gt; &lt;span class='nt'&gt;bold&lt;/span&gt; &lt;span class='nt'&gt;1em&lt;/span&gt;&lt;span class='o'&gt;/&lt;/span&gt;&lt;span class='nt'&gt;140&lt;/span&gt;&lt;span class='o'&gt;%&lt;/span&gt; &lt;span class='nt'&gt;Helvetica&lt;/span&gt;&lt;span class='o'&gt;,&lt;/span&gt; &lt;span class='nt'&gt;sans-serif&lt;/span&gt;&lt;span class='o'&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt; &lt;a href='http://www.456bereastreet.com/archive/200502/efficient_css_with_shorthand_properties/'&gt;456 Berea Street on shorthand properties&lt;/a&gt;. (You&amp;#8217;ll find many more timesavers in that article.)&lt;/p&gt;</content>
+ <feedburner:origLink>http://bjorkoy.com/2008/01/css-font-shorthand-syntax</feedburner:origLink></entry>
+ 
+ <entry>
+   <title>How to stop comment spam</title>
+   <link href="http://feedproxy.google.com/~r/bjorkoy/~3/zay7Mb-14ns/bulletproof-protection-against-comment-spam" />
+   <updated>2008-01-06T00:00:00+01:00</updated>
+   <id>http://bjorkoy.com/2008/01/bulletproof-protection-against-comment-spam</id>
+   <content type="html">&lt;p&gt;Comment spam must be the number one threat against an enjoyable blogging experience. Many people quit blogging entirely because they get tired of fighting the ever evolving spam bots. There are, however, ways to win this arms race.&lt;/p&gt;
+
+&lt;p&gt;Below I&amp;#8217;ve outlined the techniques I use to keep this blog spam free. I&amp;#8217;d be very surprised if I ever get spam from bots again - this stack of techniques should be quite bulletproof. The methods are listed in order of usage.&lt;/p&gt;
+
+&lt;p&gt;If a comment passes all these steps without being flagged as spam, it&amp;#8217;s allowed into the database.&lt;/p&gt;
+
+&lt;p&gt;It should be noted that I have no patience for manually approving comments - I feel like I&amp;#8217;m letting the spammers win. For shame! :)&lt;/p&gt;
+
+&lt;h3 id='step_1_do_field'&gt;Step 1: &amp;#8220;Do&amp;#8221; field&lt;/h3&gt;
+
+&lt;p&gt;(This step was initially about referers, but as pointed out in the comments, all browsers do not send referers, making this a bad idea. Here&amp;#8217;s a different method.)&lt;/p&gt;
+
+&lt;p&gt;We&amp;#8217;ll first check if the HTTP POST actually comes from the blog entry in question. This is easily done with a hidden form field called &amp;#8220;do&amp;#8221;, which contains a simple value of your choice.&lt;/p&gt;
+
+&lt;p&gt;When a comment gets posted, you check if the field &amp;#8220;do&amp;#8221; is set and equals the chosen value. As spammers often send POSTs directly to your &amp;#8220;add comment&amp;#8221; URL, this might stop some of the less ambitious culprits. The HTML could look something like this:&lt;/p&gt;
+&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='html'&gt;&lt;span class='nt'&gt;&amp;lt;input&lt;/span&gt; &lt;span class='na'&gt;type=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;hidden&amp;quot;&lt;/span&gt; &lt;span class='na'&gt;name=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;do&amp;quot;&lt;/span&gt; &lt;span class='na'&gt;value=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;some_random_rotated_value&amp;quot;&lt;/span&gt;&lt;span class='nt'&gt;&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;The spam check (in Rails):&lt;/p&gt;
+&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='ruby'&gt;&lt;span class='k'&gt;if&lt;/span&gt; &lt;span class='n'&gt;params&lt;/span&gt;&lt;span class='o'&gt;[&lt;/span&gt;&lt;span class='ss'&gt;:do&lt;/span&gt;&lt;span class='o'&gt;]&lt;/span&gt; &lt;span class='o'&gt;!=&lt;/span&gt; &lt;span class='n'&gt;the_random_rotated_value&lt;/span&gt;
+    &lt;span class='n'&gt;spam&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='kp'&gt;true&lt;/span&gt;
+&lt;span class='k'&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;It won&amp;#8217;t stop all spam, but the philosophy here is that if it can stop &lt;em&gt;any&lt;/em&gt; spam, we&amp;#8217;ll do it. Onwards, to level two!&lt;/p&gt;
+
+&lt;h3 id='step_2_hidden_turing_test'&gt;Step 2: Hidden Turing test&lt;/h3&gt;
+
+&lt;p&gt;A recent trend amongst blogs is to have a simple question as part of the comment posting experience. A simple CAPTCHA, in other words. The user has to answer a question, and the answer is then used to decide if the poster is human. In effect, the Turing test expressed through a single form field.&lt;/p&gt;
+
+&lt;p&gt;The problem is that this diminishes the user experience. Any extra field a user has to fill in order to leave a comment is just another reason for that user not to comment at all. And since you want as many comments as you can from as happy users as possible, we should do something about this.&lt;/p&gt;
+
+&lt;p&gt;Here&amp;#8217;s my take: You use a question field, but with an added twist. Through CSS, hide that field. In your code, check the posted value of this field. If it&amp;#8217;s not empty and does not equal the answer to your test question, the comment is spam.&lt;/p&gt;
+
+&lt;p&gt;You&amp;#8217;ll also want to give the field a name that makes it certain that a spam bot will fill it out. I use &amp;#8220;url&amp;#8221; to store links, so here I&amp;#8217;ve used the name &amp;#8220;website&amp;#8221;. The HTML looks like this:&lt;/p&gt;
+&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='html'&gt;&lt;span class='nt'&gt;&amp;lt;div&lt;/span&gt; &lt;span class='na'&gt;style=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;visibility:hidden; display:none;&amp;quot;&lt;/span&gt;&lt;span class='nt'&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class='nt'&gt;&amp;lt;label&amp;gt;&lt;/span&gt;What is 2+3?
+    &lt;span class='nt'&gt;&amp;lt;input&lt;/span&gt; &lt;span class='na'&gt;type=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;text&amp;quot;&lt;/span&gt; &lt;span class='na'&gt;name=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;website&amp;quot;&lt;/span&gt;&lt;span class='nt'&gt;&amp;gt;&amp;lt;/label&amp;gt;&lt;/span&gt;
+&lt;span class='nt'&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;(Jan Pingel and Jeremy Weathers suggests in the comments that visibility:hidden is needed in addition to display:none in this case, as it will help apps like screen readers to hide the test.)&lt;/p&gt;
+
+&lt;p&gt;And the POST check might look like this (at least in Rails):&lt;/p&gt;
+&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='ruby'&gt;&lt;span class='k'&gt;if&lt;/span&gt; &lt;span class='n'&gt;params&lt;/span&gt;&lt;span class='o'&gt;[&lt;/span&gt;&lt;span class='ss'&gt;:website&lt;/span&gt;&lt;span class='o'&gt;]&lt;/span&gt; &lt;span class='o'&gt;!=&lt;/span&gt; &lt;span class='s1'&gt;&amp;#39;&amp;#39;&lt;/span&gt; &lt;span class='ow'&gt;and&lt;/span&gt; &lt;span class='n'&gt;params&lt;/span&gt;&lt;span class='o'&gt;[&lt;/span&gt;&lt;span class='ss'&gt;:website&lt;/span&gt;&lt;span class='o'&gt;]&lt;/span&gt; &lt;span class='o'&gt;!=&lt;/span&gt; &lt;span class='s1'&gt;&amp;#39;5&amp;#39;&lt;/span&gt;
+    &lt;span class='n'&gt;spam&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='kp'&gt;true&lt;/span&gt;
+&lt;span class='k'&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;We hide the field because common sense says that spam bots probably won&amp;#8217;t parse CSS, and therefore fill in the field based on the name given. A user without CSS turned on will see the field, and fill inn the answer to your question. The vast majority of users, however, will never even see the question, thus making the probability of them leaving a comment higher.&lt;/p&gt;
+
+&lt;p&gt;A truly resilient spam bot might pass this test. It might parse the CSS or understand the question. No matter, on to level three!&lt;/p&gt;
+
+&lt;h3 id='step_3_akismet'&gt;Step 3: Akismet&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href='http://akismet.com/'&gt;Akismet&lt;/a&gt; is a great tool for stopping spam. It&amp;#8217;s basically a web server to which you pass the content of and information about each comment, and it in turn gives you a &amp;#8220;true&amp;#8221; or &amp;#8220;false&amp;#8221; signifying if it thinks the comment is spam. It has a great hit rate, and has worked for a vast herd of now spam free Wordpress bloggers.&lt;/p&gt;
+
+&lt;p&gt;The service is open to everyone, though you&amp;#8217;ll need to create a (free) account on &lt;a href='http://wordpress.com'&gt;wordpress.com&lt;/a&gt;. You&amp;#8217;ll then get an API key which will give you access to the Akismet servers.&lt;/p&gt;
+
+&lt;p&gt;There&amp;#8217;s already been written plugins and API wrappers for many systems and languages. Here&amp;#8217;s a few:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href='http://akismet.com/download/'&gt;Wordpress plugin&lt;/a&gt; (official)&lt;/li&gt;
+
+&lt;li&gt;&lt;a href='http://www.blojsom.com/blog/nerdery/2005/12/02/Akismet-API-in-Ruby.html'&gt;Akismet API wrapper for Ruby&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href='https://rubyforge.org/projects/ror-akismet/'&gt;Ruby on Rails plugin&lt;/a&gt; (uses the above wrapper)&lt;/li&gt;
+
+&lt;li&gt;&lt;a href='http://drupal.org/project/akismet'&gt;Drupal module&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href='http://www.nonplus.net/software/mt/Akismet.htm'&gt;Movable Type plugin&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;(A simple google search for Akismet and your blogging system will likely produce your desired result.)&lt;/p&gt;
+
+&lt;p&gt;In many cases, using Akismet will protect your blog from almost all spam. However, since this is supposed to be a bulletproof setup, I would still recommend using all the techniques mentioned above. Since Akismet is starting to get very popular, spammers might work extra hard to find countermeasures for it, and as it&amp;#8217;s a centralized service, it&amp;#8217;ll probably experience some downtime.&lt;/p&gt;
+
+&lt;p&gt;Still not satisfied? I have one more technique you can try out.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Update:&lt;/strong&gt; Carl Mercier writes in to mention &lt;a href='http://defensio.com/'&gt;Defensio&lt;/a&gt;, which is a service similar to Akismet. I haven&amp;#8217;t tried it, but judging from it&amp;#8217;s website, Defensio might very well be a worthy competitor. You could of course use both, which would be especially useful in case one of them is experiencing downtime.&lt;/p&gt;
+
+&lt;h3 id='step_4_click_test_javascript_required'&gt;Step 4: Click test (Javascript required)&lt;/h3&gt;
+
+&lt;p&gt;This is a technique used by &lt;a href='http://simplelog.net'&gt;SimpleLog&lt;/a&gt;, and requires that Javascript is turned on by the user posting a comment.&lt;/p&gt;
+
+&lt;p&gt;I don&amp;#8217;t use this, as I think websites should always work perfectly without JS. However, if you disagree, or run a site where one of the requirements is that JS must be turned on, this might be just what you&amp;#8217;re looking for.&lt;/p&gt;
+
+&lt;p&gt;First, create a bunch of hidden fields, one for every &lt;em&gt;required&lt;/em&gt; field and the submit button, like this:&lt;/p&gt;
+&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='html'&gt;&lt;span class='nt'&gt;&amp;lt;input&lt;/span&gt; &lt;span class='na'&gt;type=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;hidden&amp;quot;&lt;/span&gt; &lt;span class='na'&gt;name=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;check-1&amp;quot;&lt;/span&gt; &lt;span class='na'&gt;value=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;no&amp;quot;&lt;/span&gt;&lt;span class='nt'&gt;&amp;gt;&lt;/span&gt;
+&lt;span class='nt'&gt;&amp;lt;input&lt;/span&gt; &lt;span class='na'&gt;type=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;hidden&amp;quot;&lt;/span&gt; &lt;span class='na'&gt;name=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;check-2&amp;quot;&lt;/span&gt; &lt;span class='na'&gt;value=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;no&amp;quot;&lt;/span&gt;&lt;span class='nt'&gt;&amp;gt;&lt;/span&gt;
+...
+&lt;span class='nt'&gt;&amp;lt;input&lt;/span&gt; &lt;span class='na'&gt;type=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;hidden&amp;quot;&lt;/span&gt; &lt;span class='na'&gt;name=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;check-n&amp;quot;&lt;/span&gt; &lt;span class='na'&gt;value=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;no&amp;quot;&lt;/span&gt;&lt;span class='nt'&gt;&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;In every required field, create a virtual form value through Javascript, that is only set if the user actually physically (or is that virtually?) entered something in the field, like this:&lt;/p&gt;
+&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='html'&gt;&lt;span class='nt'&gt;&amp;lt;input&lt;/span&gt; &lt;span class='na'&gt;type=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;text&amp;quot;&lt;/span&gt; &lt;span class='na'&gt;name=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;email&amp;quot;&lt;/span&gt; 
+&lt;span class='na'&gt;onkeypress=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;this.form.elements[&amp;#39;check-1&amp;#39;].value = &amp;#39;yes&amp;#39;&amp;quot;&lt;/span&gt;&lt;span class='nt'&gt;&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;Do this for every required field, just change the value &amp;#8220;check-1&amp;#8221; between each new field, so that you get a separate check for each. You should also check if the submit button was really &amp;#8220;clicked&amp;#8221; by the user, like this:&lt;/p&gt;
+&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='html'&gt;&lt;span class='nt'&gt;&amp;lt;input&lt;/span&gt; &lt;span class='na'&gt;class=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;submit&amp;quot;&lt;/span&gt; 
+&lt;span class='na'&gt;onclick=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;this.form.elements[&amp;#39;check-2&amp;#39;].value = &amp;#39;yes&amp;#39;&amp;quot;&lt;/span&gt;&lt;span class='nt'&gt;&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;You can then check in your &amp;#8220;add comment&amp;#8221; method if every one of these fields are set to the correct value (&amp;#8220;yes&amp;#8221;). If they&amp;#8217;re not, the comment is spam. (Or the user has JS turned off, which is the problem I mentioned above.)&lt;/p&gt;
+
+&lt;p&gt;To really annoy spam bots, obfuscate the custom values, like &lt;code&gt;this.form.elements[&amp;#39;ed8mkl32&amp;#39;].value = &amp;#39;9r3w&amp;#39;&lt;/code&gt;. You can then randomize these and place them at different intervals and in different fields, all while checking for the current correct setup in your script.. Am I going too far? :)&lt;/p&gt;
+
+&lt;h3 id='step_5_random_field_names'&gt;Step 5: Random field names&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href='http://www.wp-fun.co.uk/'&gt;Andrew&lt;/a&gt; suggest another simple yet effective method:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;The technique I am using, and which is working very well, is to randomise the names of the form fields.&lt;/p&gt;
+
+&lt;p&gt;When the form is loaded a PHP script generates random names for all the form fields and then adds a hidden element with instructions on which random form name should equal which real form name.&lt;/p&gt;
+
+&lt;p&gt;When the form is submitted the comment handler unscrambles the names and assigns the values. Any form fields submitted that were not included in the unscramble instructions are wiped.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id='spammers_be_gone'&gt;Spammers, be gone!&lt;/h3&gt;
+
+&lt;p&gt;In addition to the techniques mentioned above (except step 4 and 5), I also use a blacklist that comes with SimpleLog as a last measure. I like to think that I&amp;#8217;ve caused at least some frustration in the mind of a spammer at this point. :)&lt;/p&gt;
+
+&lt;p&gt;I&amp;#8217;ve yet to get automated spam after implementing these methods, although I hope no enterprising spammer sees this post as a personal challenge, with its provocative title (in spammer circles) and all.&lt;/p&gt;
+
+&lt;p&gt;If anyone has any techniques to add to this list, enlighten me through the hopefully spam free comments section below.&lt;/p&gt;</content>
+ <feedburner:origLink>http://bjorkoy.com/2008/01/bulletproof-protection-against-comment-spam</feedburner:origLink></entry>
+ 
+ 
+</feed>

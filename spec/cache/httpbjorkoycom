@@ -1,0 +1,570 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Olav Bjørkøy (bjorkoy.com)</title>
+  <meta name="author" content="Olav Bjorkoy">
+  <meta name="description" content="Olav Bjorkoy's blog on CSS, Blueprint, HTML, Ruby and anything in-between.">
+  <meta name="keywords" content="HTML, CSS, JS, Blueprint, Ruby, Rails, Olav Bjorkoy, Olav">
+  
+  <!-- <link href="/atom.xml" rel="alternate" title="bjorkoy.com" type="application/atom+xml"> -->
+  <link href="http://feeds.feedburner.com/bjorkoy" rel="alternate" title="bjorkoy.com" type="application/atom+xml">
+  <meta name="google-site-verification" content="7vDyCyvSym2pZLSBnjl1IrtN-hp00gqMfNG8fbHNXyM">
+  
+  <link rel="icon" type="image/png" href="http://bjorkoy.com/images/icon.png?8">
+  
+  <script type="text/javascript" src="http://use.typekit.com/zmq0szj.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  
+  <link rel="stylesheet" href="/css/reset.css" type="text/css">
+  <link rel="stylesheet" href="/css/syntax.css" type="text/css">
+  <link rel="stylesheet" href="/css/screen2.css" type="text/css" media="screen, projection">
+  <script src="/mentos/?js" type="text/javascript"></script>
+</head>
+<body id="bjorkoy-com">
+<div id="container">
+
+  <a id="logo" href="/"></a>
+  <ul id="menu">
+  <li><a href="http://bjorkoy.com">bjorkoy.com</a></li>
+  <li class="orn">★</li>
+  <li><a href="/archive.html">articles</a></li>
+  <li class="orn">★</li>
+  <li><a href="http://github.com/olav">projects</a></li>
+  <!--<li class="orn">★</li>-->
+  <!--<li><a href="http://twitter.com/vandelay">twitter</a></li>-->
+  <li class="orn">★</li>
+  <li><a href="/about.html">about</a></li>
+</ul>
+
+  
+  
+
+
+  <div class="post">
+    <h2><span><a href="/2010/09/page-width-and-device-independence">Page Width and Device Independence</a></span></h2>
+    <div class="content">
+      <p>Page width has to be one of the most debated aspects of web design. The discussion used to revolve around fixed versus fluid layouts, and in the case of fixed layouts, the maximum width a website could use without invoking the dreaded horizontal scrollbar.</p>
+
+<p>Recently the notion of device-specific layouts and page widths has been all the rage, through the use of media queries, user agent matching and dynamic layouts with Javascript. For instance, by using CSS media queries, a site can serve up different layouts to phones, tablets and computers based on their respective screen sizes.</p>
+
+<p>Altering content based on screen width is a wonderful and powerful feature, but there&#8217;s a few caveats to remember. If you&#8217;re designing a typical website, but have a specific device in mind, you might be doing something wrong.</p>
+
+<p>There&#8217;s an ever increasing spectrum of device screen sizes, and while some devices are more popular than others, using exact matching to customize a layout to a specific device brings back memories of &#8220;this site can only be viewed through IE6 or newer&#8221;. Common sense dictates that the spectrum will become more homogenous over time. Right now, there seems to be three main screen width steps represented by phones, tablets and computers, but new devices will surely pop up in between these ill-defined plateaus.</p>
+
+<p>In designers terms, this means that a site should work fine with any screen width, just as it should work fine with any screen height. We can expect users to scroll vertically, but expecting users to continuously scroll in two dimensions is no solution. Page width has to be device independent, not device-specific.</p>
+
+<p>The ideal solution then seems to be to use a fluid layout, with tools such as media queries to fluidly add, move or remove elements as the screen width changes, but not to identify the actual device in use. This way, the layout is not dependent on any one device or window size, but usable on any current or future device screen.</p>
+    </div>
+    <p class="date">~ 03 Sep 2010</p>    
+  </div>    
+
+  <div class="post">
+    <h2><span><a href="/2010/05/contextual-fluid-grids">Contextual Fluid Grids</a></span></h2>
+    <div class="content">
+      <p>While reading A List Apart&#8217;s latest article on <a href='http://www.alistapart.com/articles/responsive-web-design/'>responsive web design</a>, their particular use of <a href='http://www.alistapart.com/articles/fluidgrids/'>fluid grids</a> from a previous article struck me as odd. There seems to be two ways to create such grids &#8211; trying to work around context or using it to your advantage to create contextual fluid grids.</p>
+
+<p>There are two things that may seem difficult about creating fluid grids: how to use context and how to employ margins. The technique in the ALA article computes widths and margins through calculations given the current context, i.e. by using the width of the closest container element in relation to the total page width. In contrast, I prefer embracing context which results in a system that is as powerful yet simpler to use.</p>
+
+<p>Take a look at <a href='/files/fluid/'>this demo page</a> to see what we&#8217;re trying to accomplish. Try resizing the browser window and the text size.</p>
+
+<h3 id='embrace_context'>Embrace context</h3>
+
+<p>Context can be used by letting every container element define its own sub-grid. For instance, if we have a <code>row</code> element, we can divide this element into a number of columns. <strong>Each of the column elements in the container can again define their own grids with the same number of columns as the first container.</strong> The basic insight is that context can be used without any special computations. Consider the following HTML:</p>
+<div class='highlight'><pre><code class='html'><span class='nt'>&lt;div</span> <span class='na'>class=</span><span class='s'>&quot;row&quot;</span><span class='nt'>&gt;</span>
+  <span class='nt'>&lt;div</span> <span class='na'>class=</span><span class='s'>&quot;span12&quot;</span><span class='nt'>&gt;</span>50%<span class='nt'>&lt;/div&gt;</span>
+  <span class='nt'>&lt;div</span> <span class='na'>class=</span><span class='s'>&quot;span12&quot;</span><span class='nt'>&gt;</span>50%<span class='nt'>&lt;/div&gt;</span>
+<span class='nt'>&lt;/div&gt;</span>
+
+<span class='nt'>&lt;div</span> <span class='na'>class=</span><span class='s'>&quot;row&quot;</span><span class='nt'>&gt;</span>
+  <span class='nt'>&lt;div</span> <span class='na'>class=</span><span class='s'>&quot;span12&quot;</span><span class='nt'>&gt;</span>50%<span class='nt'>&lt;/div&gt;</span>
+  <span class='nt'>&lt;div</span> <span class='na'>class=</span><span class='s'>&quot;span12&quot;</span><span class='nt'>&gt;</span>
+    <span class='nt'>&lt;div</span> <span class='na'>class=</span><span class='s'>&quot;row&quot;</span><span class='nt'>&gt;</span>
+      <span class='nt'>&lt;div</span> <span class='na'>class=</span><span class='s'>&quot;span12&quot;</span><span class='nt'>&gt;</span>25%<span class='nt'>&lt;/div&gt;</span>
+      <span class='nt'>&lt;div</span> <span class='na'>class=</span><span class='s'>&quot;span12&quot;</span><span class='nt'>&gt;</span>25%<span class='nt'>&lt;/div&gt;</span>
+    <span class='nt'>&lt;/div&gt;</span>
+  <span class='nt'>&lt;/div&gt;</span>
+<span class='nt'>&lt;/div&gt;</span>
+</code></pre>
+</div>
+<p>Ignore the lack of semantics, the class names are there for ease of explanation. The first row in this example has two columns spanning 50% of the page width. The second row first has one column spanning half the page width, and then two columns spanning 25% of the page. Pretty simple.</p>
+
+<p>Notice that all spans use the same column numbers. Here, the total number of columns is 24. The second column in the second example spans 50% of the page width, and is divided into 24 new columns. Since the wrapping element is 12 columns wide, 12 columns in the context of this element corresponds to 6 columns, or 25% of the page width. By embracing context, the grid can be as complex as you want without having to calculate precise floats.</p>
+
+<h3 id='programming_the_grid'>Programming the grid</h3>
+
+<p>As I mentioned in a previous post, the task of creating grids lends itself well to CSS extensions such as SASS. This is true both for fixed and fluid setups. By specifying the number of columns each primary and sub-grid should have, creating a semantic and flexible implementation is quite simple. Calculations are done with percentages and EMs to ensure proper fluidity and support for text resizing.</p>
+<div class='highlight'><pre><code class='css'><span class='err'>$</span><span class='nt'>grid_columns</span><span class='o'>:</span> <span class='nt'>24</span><span class='o'>;</span>        <span class='c'>/* number of columns */</span>
+<span class='err'>$</span><span class='nt'>total_max_width</span><span class='o'>:</span> <span class='nt'>950px</span><span class='o'>;</span>  <span class='c'>/* max page width */</span>
+
+<span class='c'>/* compute width of 1 column */</span>
+<span class='err'>$</span><span class='nt'>grid_col_width</span><span class='o'>:</span> <span class='nt'>100</span><span class='o'>%</span> <span class='o'>/</span> <span class='err'>$</span><span class='nt'>grid_columns</span><span class='o'>;</span>
+
+<span class='c'>/* create a div spanning n columns */</span>
+<span class='k'>@mixin</span> <span class='nt'>col</span><span class='o'>(</span><span class='err'>$</span><span class='nt'>n</span><span class='o'>:</span> <span class='nt'>1</span><span class='o'>)</span> <span class='p'>{</span>
+  <span class='nt'>float</span><span class='o'>:</span> <span class='nt'>left</span><span class='o'>;</span>
+  <span class='k'>@include</span> <span class='nt'>span</span><span class='o'>(</span><span class='err'>$</span><span class='nt'>n</span><span class='o'>)</span><span class='p'>;</span>
+<span class='p'>}</span>
+
+<span class='c'>/* make an element span n columns */</span>
+<span class='k'>@mixin</span> <span class='nt'>span</span><span class='o'>(</span><span class='err'>$</span><span class='nt'>n</span><span class='o'>:</span> <span class='nt'>1</span><span class='o'>)</span> <span class='p'>{</span>
+  <span class='nt'>width</span><span class='o'>:</span> <span class='o'>(</span><span class='err'>$</span><span class='nt'>n</span> <span class='o'>*</span> <span class='err'>$</span><span class='nt'>grid_col_width</span><span class='o'>);</span>
+<span class='p'>}</span>
+
+<span class='c'>/* prepend n empty columns */</span>
+<span class='k'>@mixin</span> <span class='nt'>prepend</span><span class='o'>(</span><span class='err'>$</span><span class='nt'>n</span><span class='o'>:</span> <span class='nt'>1</span><span class='o'>)</span> <span class='p'>{</span>
+  <span class='nt'>margin-left</span><span class='o'>:</span> <span class='err'>$</span><span class='nt'>grid_col_width</span> <span class='o'>*</span> <span class='err'>$</span><span class='nt'>n</span>
+<span class='p'>}</span>
+
+<span class='c'>/* append n empty columns */</span>
+<span class='k'>@mixin</span> <span class='nt'>append</span><span class='o'>(</span><span class='err'>$</span><span class='nt'>n</span><span class='o'>:</span> <span class='nt'>1</span><span class='o'>)</span> <span class='p'>{</span>
+  <span class='nt'>margin-right</span><span class='o'>:</span> <span class='err'>$</span><span class='nt'>grid_col_width</span> <span class='o'>*</span> <span class='err'>$</span><span class='nt'>n</span>
+<span class='p'>}</span>
+
+<span class='c'>/* define max width in EMs for proper grid resizing */</span>
+<span class='nt'>body</span> <span class='p'>{</span> 
+  <span class='k'>font-size</span><span class='o'>:</span> <span class='m'>100%</span><span class='p'>;</span> 
+  <span class='k'>max-width</span><span class='o'>:</span> <span class='p'>(</span><span class='err'>$</span><span class='n'>total</span><span class='err'>_</span><span class='n'>max</span><span class='err'>_</span><span class='k'>width</span> <span class='o'>/</span> <span class='m'>16px</span><span class='p'>)</span> <span class='o'>+</span> <span class='n'>em</span><span class='p'>;</span> 
+<span class='p'>}</span> 
+
+<span class='c'>/* a row defines a new grid or subgrid */</span>
+<span class='nc'>.row</span> <span class='p'>{</span> <span class='k'>float</span><span class='o'>:</span> <span class='k'>left</span><span class='p'>;</span> <span class='k'>width</span><span class='o'>:</span> <span class='m'>100%</span><span class='p'>;</span> <span class='p'>}</span>
+
+<span class='c'>/* mixin example usage */</span>
+<span class='nf'>#menu</span> <span class='p'>{</span> <span class='o'>@</span><span class='n'>include</span> <span class='n'>col</span><span class='p'>(</span><span class='m'>5</span><span class='p'>);</span> <span class='p'>}</span>
+<span class='nf'>#side</span> <span class='p'>{</span> <span class='o'>@</span><span class='n'>include</span> <span class='n'>col</span><span class='p'>(</span><span class='m'>5</span><span class='p'>);</span> <span class='p'>}</span>
+<span class='nf'>#main</span> <span class='p'>{</span> 
+  <span class='o'>@</span><span class='n'>include</span> <span class='n'>prepend</span><span class='p'>(</span><span class='m'>1</span><span class='p'>);</span>
+  <span class='o'>@</span><span class='n'>include</span> <span class='n'>col</span><span class='p'>(</span><span class='m'>12</span><span class='p'>);</span> 
+  <span class='o'>@</span><span class='n'>include</span> <span class='n'>append</span><span class='p'>(</span><span class='m'>1</span><span class='p'>);</span>
+<span class='p'>}</span>
+
+<span class='c'>/* For the html example */</span>
+<span class='k'>@for</span> <span class='err'>$</span><span class='nt'>i</span> <span class='nt'>from</span> <span class='nt'>1</span> <span class='nt'>through</span> <span class='err'>$</span><span class='nt'>grid_columns</span> <span class='p'>{</span>
+  <span class='nc'>.span</span><span class='err'>#</span><span class='p'>{</span><span class='err'>$i</span><span class='p'>}</span>    <span class='p'>{</span> <span class='o'>@</span><span class='n'>include</span> <span class='n'>col</span><span class='p'>(</span><span class='err'>$i</span><span class='p'>);</span> <span class='p'>}</span>
+  <span class='nc'>.prepend</span><span class='err'>#</span><span class='p'>{</span><span class='err'>$i</span><span class='p'>}</span> <span class='p'>{</span> <span class='o'>@</span><span class='n'>include</span> <span class='n'>prepend</span><span class='p'>(</span><span class='err'>$i</span><span class='p'>);</span> <span class='p'>}</span>
+  <span class='nc'>.append</span><span class='err'>#</span><span class='p'>{</span><span class='err'>$i</span><span class='p'>}</span>  <span class='p'>{</span> <span class='o'>@</span><span class='n'>include</span> <span class='n'>append</span><span class='p'>(</span><span class='err'>$i</span><span class='p'>);</span> <span class='p'>}</span>
+<span class='p'>}</span>
+</code></pre>
+</div>
+<h3 id='columns_as_margins'>Columns as margins</h3>
+
+<p>You may have noticed that this example does not consider margins as a part of the column definition. Fluid margins is often the aspect that makes creating such a grid difficult. Ensuring that margins span the same width across context, and that the widths they span don&#8217;t get too small to be rendered, can be a pain.</p>
+
+<p><strong>The proper approach is to see margins between columns as empty columns, not as empty gaps between columns.</strong> That is, the columns themselves do not have specified margins. Instead, empty columns are appended or prepended where margins are needed. This makes sense as margins between columns in fluid layouts almost always span greater widths than that of their fixed counterparts. And, if your require fixed margins, they can always be applied to an inner element of a column (as in the demo page).</p>
+
+<p>However, we often need narrow margins, even in fluid layouts. To accomplish this, a high number of columns is needed, as columns now not only specify the width of a column, but also the negative space between them. As always, choosing a number with a high divisor count is essential. The best approach is to use a <a href='http://en.wikipedia.org/wiki/Highly_composite_number'>highly composite number</a> (a positive integer with more divisors than any positive integer smaller than itself) such as 6, 12, 24, 36 or 48. This gives you the most flexibility in creating grids with applicable divisive features.</p>
+
+<p>The result is a simple fluid grid which, because of the use of contextual sub-grids, can be as complex and specific as you need. By using an extension such as SASS, no complex calculations have to be done, or re-done when the design needs a change.</p>
+    </div>
+    <p class="date">~ 25 May 2010</p>    
+  </div>    
+
+  <div class="post">
+    <h2><span><a href="/2010/05/css-grids-with-sass">Semantic CSS Grids With SASS</a></span></h2>
+    <div class="content">
+      <p>You design websites, and since you&#8217;re brimming with empathy, you want to use a grid-based layout to ensure a minimum amount of confused users. Great! However, you also design a lot of websites, and find yourself doing the same operations for setting up a basic grid at each ⌘+N. Not good.</p>
+
+<p>The way to fix this is a sort of design framework. The problem with such a framework has often been mixing presentational logic with your sweet HTML hierarchy. Nuts to that, you say, I&#8217;d like both my CSS and HTML clean and semantically correct. Well, here&#8217;s a way to get the best of both worlds.</p>
+
+<p>Using <a href='http://sass-lang.com/'>SASS</a>, or any other equivalent CSS extensions, defining functions and variables lets you set up a grid while you stay away from anything less than semantically correct. Here&#8217;s a setup of variables and mixins I&#8217;ve been using lately:</p>
+<div class='highlight'><pre><code class='css'><span class='c'>/*</span>
+<span class='c'>  Choose a grid width, the number of columns and the margin between columns.</span>
+<span class='c'>  The result of the following equation has to be an integer, not a fraction:</span>
+<span class='c'>  </span>
+<span class='c'>  (width - (columns - 1) * col_margin) / columns = N</span>
+<span class='c'>*/</span>
+
+<span class='err'>$</span><span class='nt'>width</span><span class='o'>:</span> <span class='nt'>960px</span><span class='o'>;</span>   <span class='c'>/* total with of page */</span>
+<span class='err'>$</span><span class='nt'>columns</span><span class='o'>:</span> <span class='nt'>24</span><span class='o'>;</span>    <span class='c'>/* number of columns */</span>
+<span class='err'>$</span><span class='nt'>col_margin</span><span class='o'>:</span> <span class='nt'>0</span><span class='o'>;</span>  <span class='c'>/* margin between columns */</span>
+
+<span class='c'>/* math magic */</span>
+<span class='err'>$</span><span class='nt'>col_width</span><span class='o'>:</span> <span class='o'>(</span><span class='err'>$</span><span class='nt'>width</span> <span class='nt'>-</span> <span class='o'>(</span><span class='err'>$</span><span class='nt'>col_margin</span> <span class='o'>*</span> <span class='o'>(</span><span class='err'>$</span><span class='nt'>columns</span> <span class='nt'>-</span> <span class='nt'>1</span><span class='o'>)))</span> <span class='o'>/</span> <span class='err'>$</span><span class='nt'>columns</span><span class='o'>;</span>
+<span class='err'>$</span><span class='nt'>col_total_width</span><span class='o'>:</span> <span class='err'>$</span><span class='nt'>col_width</span> <span class='o'>+</span> <span class='err'>$</span><span class='nt'>col_margin</span><span class='o'>;</span>  
+
+<span class='c'>/* create row div */</span>
+<span class='k'>@mixin</span> <span class='nt'>row</span><span class='o'>()</span> <span class='p'>{</span>
+  <span class='nt'>float</span><span class='o'>:</span> <span class='nt'>left</span><span class='o'>;</span>
+  <span class='nt'>clear</span><span class='o'>:</span> <span class='nt'>both</span><span class='o'>;</span>
+  <span class='nt'>width</span><span class='o'>:</span> <span class='err'>$</span><span class='nt'>width</span><span class='o'>;</span>
+<span class='p'>}</span>
+
+<span class='c'>/* create a column div */</span>
+<span class='k'>@mixin</span> <span class='nt'>col</span><span class='o'>(</span><span class='err'>$</span><span class='nt'>n</span><span class='o'>:</span> <span class='nt'>1</span><span class='o'>)</span> <span class='p'>{</span>
+  <span class='nt'>float</span><span class='o'>:</span> <span class='nt'>left</span><span class='o'>;</span>
+  <span class='k'>@include</span> <span class='nt'>span</span><span class='o'>(</span><span class='err'>$</span><span class='nt'>n</span><span class='o'>)</span><span class='p'>;</span>
+<span class='p'>}</span>
+
+<span class='c'>/* make an element span n columns */</span>
+<span class='k'>@mixin</span> <span class='nt'>span</span><span class='o'>(</span><span class='err'>$</span><span class='nt'>n</span><span class='o'>:</span> <span class='nt'>1</span><span class='o'>)</span> <span class='p'>{</span>
+  <span class='nt'>width</span><span class='o'>:</span> <span class='o'>(</span><span class='err'>$</span><span class='nt'>n</span> <span class='o'>*</span> <span class='err'>$</span><span class='nt'>col_width</span><span class='o'>)</span> <span class='o'>+</span> <span class='o'>((</span><span class='err'>$</span><span class='nt'>n</span> <span class='nt'>-</span> <span class='nt'>1</span><span class='o'>)</span> <span class='o'>*</span> <span class='err'>$</span><span class='nt'>col_margin</span><span class='o'>);</span>
+  <span class='k'>@if</span> <span class='err'>$</span><span class='nt'>n</span> <span class='o'>==</span> <span class='err'>$</span><span class='nt'>columns</span> <span class='p'>{</span>
+    <span class='nt'>margin-right</span><span class='o'>:</span> <span class='nt'>0</span><span class='o'>;</span>
+  <span class='p'>}</span> <span class='k'>@else</span> <span class='p'>{</span>
+    <span class='nt'>margin-right</span><span class='o'>:</span> <span class='err'>$</span><span class='nt'>col_margin</span><span class='o'>;</span>
+  <span class='p'>}</span>
+<span class='p'>}</span>
+
+<span class='c'>/* the last column in a row needs this */</span>
+<span class='k'>@mixin</span> <span class='nt'>last</span><span class='o'>()</span> <span class='p'>{</span>
+  <span class='nt'>margin-right</span><span class='o'>:</span> <span class='nt'>0</span><span class='o'>;</span>
+<span class='p'>}</span>
+
+<span class='c'>/* prepend n blank columns  */</span>
+<span class='k'>@mixin</span> <span class='nt'>prepend</span><span class='o'>(</span><span class='err'>$</span><span class='nt'>n</span><span class='o'>:</span> <span class='nt'>1</span><span class='o'>)</span> <span class='p'>{</span>
+  <span class='nt'>margin-left</span><span class='o'>:</span> <span class='err'>$</span><span class='nt'>col_total_width</span> <span class='o'>*</span> <span class='err'>$</span><span class='nt'>n</span>
+<span class='p'>}</span>
+
+<span class='c'>/* append n blank columns */</span>
+<span class='k'>@mixin</span> <span class='nt'>append</span><span class='o'>(</span><span class='err'>$</span><span class='nt'>n</span><span class='o'>:</span> <span class='nt'>1</span><span class='o'>)</span> <span class='p'>{</span>
+  <span class='nt'>margin-right</span><span class='o'>:</span> <span class='err'>$</span><span class='nt'>col_total_width</span> <span class='o'>*</span> <span class='err'>$</span><span class='nt'>n</span> <span class='o'>+</span> <span class='err'>$</span><span class='nt'>col_margin</span>
+<span class='p'>}</span>
+</code></pre>
+</div>
+<p>The attentive reader will note I&#8217;m using the new <a href='http://sass-lang.com/docs/yardoc/file.SASS_CHANGELOG.html#scss_sassy_css'>SCSS</a> syntax found in SASS 3. This is great, since the syntax is completely compatible with CSS (at least CSS 3), ensuring sweet validation of your files. Because these are mixins, your CSS classes and ID&#8217;s can still retain semantic names, and the presentation logic remains where it should be:</p>
+
+<p><div class='highlight'><pre><code class='css'><span class='nc'>.section</span> <span class='p'>{</span> <span class='o'>@</span><span class='n'>include</span> <span class='n'>row</span><span class='p'>;</span> <span class='p'>}</span>
+<span class='nc'>.section</span> <span class='nc'>.main</span> <span class='p'>{</span> <span class='o'>@</span><span class='n'>include</span> <span class='n'>col</span><span class='p'>(</span><span class='m'>18</span><span class='p'>);</span> <span class='p'>}</span>
+<span class='nc'>.section</span> <span class='nc'>.sidebar</span> <span class='p'>{</span> <span class='o'>@</span><span class='n'>include</span> <span class='n'>col</span><span class='p'>(</span><span class='m'>6</span><span class='p'>);</span> <span class='o'>@</span><span class='n'>include</span> <span class='n'>last</span><span class='p'>;</span> <span class='p'>}</span>
+<span class='nc'>.section</span> <span class='nc'>.promo</span> <span class='p'>{</span> 
+  <span class='o'>@</span><span class='n'>include</span> <span class='n'>col</span><span class='p'>(</span><span class='m'>12</span><span class='p'>);</span> 
+  <span class='o'>@</span><span class='n'>include</span> <span class='n'>prepend</span><span class='p'>(</span><span class='m'>6</span><span class='p'>);</span> 
+  <span class='o'>@</span><span class='n'>include</span> <span class='n'>append</span><span class='p'>(</span><span class='m'>6</span><span class='p'>);</span> 
+  <span class='o'>@</span><span class='n'>include</span> <span class='n'>last</span><span class='p'>;</span>
+<span class='p'>}</span>
+</code></pre>
+</div></p>
+
+<p>If you&#8217;re making an extensive site from scratch, or rarely doing new projects, I would suggest using the manual approach. This technique is more for those of us that sometimes needs a conveyor-belt type of web design output. Either way, the point to remember is that a lot of CSS logic lends itself well to programming, and by using an extension such as SASS, much manual labour can be offset by functions and variables.</p>
+    </div>
+    <p class="date">~ 22 May 2010</p>    
+  </div>    
+
+  <div class="post">
+    <h2><span><a href="/2010/05/blogging-with-jekyll-git-and-slicehost">Blogging With Jekyll, Git and a VPS</a></span></h2>
+    <div class="content">
+      <p>Welcome to another installment in the never-ending story of my quest for the perfect blogging setup. This time, we stray far from the conventional use of content management systems, shared hosts and database storage.</p>
+
+<p>Yes, like so many others, I&#8217;m jumping on the bandwagon of using a local setup for generating blog posts, and then publishing the final HTML to my server using Git. Here&#8217;s the setup:</p>
+
+<ol>
+<li>Every blog post is a new file on my machine, ensuring great portability and an easy transition to future systems (yes, it will happen). Post files can be anything from markdown and textile, to html and plain source code.</li>
+
+<li>To generate the final site, each post and page is processed by <a href='http://github.com/mojombo/jekyll'>Jekyll</a>, which has support for layouts, partials, syntax highlighting, automatic regeneration and so forth.</li>
+
+<li>The finished HTML is pushed to a git repository on my <a href='http://www.slicehost.com/'>Slicehost</a> VPS, which gives me full control over the final result.</li>
+</ol>
+
+<p>You can probably see the benefits and drawbacks of this system, so instead of listing pros and cons, I&#8217;ll show you how to set it up.</p>
+
+<p>Jekyll has a great <a href='http://wiki.github.com/mojombo/jekyll/'>wiki</a> describing its many features. You&#8217;ll also find examples of how others have customized their installations in the &#8220;sites&#8221; section. The only mildly interesting thing I did was to make a script for quickly creating new blog post files:</p>
+<div class='highlight'><pre><code class='ruby'><span class='c1'># Create new jekyll post and open in textmate</span>
+<span class='c1'># $ ruby _new.rb This is the title</span>
+
+<span class='c1'># The arguments form the title</span>
+<span class='k'>unless</span> <span class='no'>ARGV</span><span class='o'>[</span><span class='mi'>0</span><span class='o'>]</span>
+  <span class='k'>raise</span> <span class='s2'>&quot;Please provide a post title.&quot;</span>
+<span class='k'>end</span>
+
+<span class='c1'># Create a URL slug from the title</span>
+<span class='k'>def</span> <span class='nf'>slugify</span><span class='p'>(</span><span class='n'>title</span><span class='p'>)</span>
+    <span class='n'>str</span> <span class='o'>=</span> <span class='n'>title</span><span class='o'>.</span><span class='n'>dup</span>
+    <span class='n'>str</span><span class='o'>.</span><span class='n'>gsub!</span><span class='p'>(</span><span class='sr'>/[^a-zA-Z0-9 ]/</span><span class='p'>,</span><span class='s2'>&quot;&quot;</span><span class='p'>)</span>
+    <span class='n'>str</span><span class='o'>.</span><span class='n'>gsub!</span><span class='p'>(</span><span class='sr'>/[ ]+/</span><span class='p'>,</span><span class='s2'>&quot; &quot;</span><span class='p'>)</span>
+    <span class='n'>str</span><span class='o'>.</span><span class='n'>gsub!</span><span class='p'>(</span><span class='sr'>/ /</span><span class='p'>,</span><span class='s2'>&quot;-&quot;</span><span class='p'>)</span>
+    <span class='n'>str</span><span class='o'>.</span><span class='n'>downcase!</span>
+    <span class='n'>str</span>
+<span class='k'>end</span>
+
+<span class='c1'># Create parameters</span>
+<span class='n'>title</span>  <span class='o'>=</span> <span class='no'>ARGV</span><span class='o'>.</span><span class='n'>join</span><span class='p'>(</span><span class='s1'>&#39; &#39;</span><span class='p'>)</span>
+<span class='n'>slug</span>   <span class='o'>=</span> <span class='n'>slugify</span><span class='p'>(</span><span class='n'>title</span><span class='p'>)</span>
+<span class='n'>prefix</span> <span class='o'>=</span> <span class='no'>Time</span><span class='o'>.</span><span class='n'>new</span><span class='o'>.</span><span class='n'>strftime</span><span class='p'>(</span><span class='s2'>&quot;%Y-%m-%d&quot;</span><span class='p'>)</span>
+<span class='n'>file</span>   <span class='o'>=</span> <span class='s2'>&quot;</span><span class='si'>#{</span><span class='n'>prefix</span><span class='si'>}</span><span class='s2'>-</span><span class='si'>#{</span><span class='n'>slug</span><span class='si'>}</span><span class='s2'>.markdown&quot;</span>
+<span class='n'>path</span>   <span class='o'>=</span> <span class='no'>File</span><span class='o'>.</span><span class='n'>join</span><span class='p'>(</span><span class='no'>File</span><span class='o'>.</span><span class='n'>dirname</span><span class='p'>(</span><span class='bp'>__FILE__</span><span class='p'>),</span> <span class='s2'>&quot;_posts/</span><span class='si'>#{</span><span class='n'>year</span><span class='si'>}</span><span class='s2'>/</span><span class='si'>#{</span><span class='n'>filename</span><span class='si'>}</span><span class='s2'>&quot;</span><span class='p'>)</span>
+<span class='n'>text</span>   <span class='o'>=</span> <span class='o'>&lt;&lt;-</span><span class='no'>eos</span>
+<span class='sh'>---</span>
+<span class='sh'>title: #{title}</span>
+<span class='sh'>layout: post</span>
+<span class='sh'>---</span>
+
+<span class='no'>eos</span>
+
+<span class='c1'># Create a new file and open it in textmate</span>
+<span class='no'>File</span><span class='o'>.</span><span class='n'>open</span><span class='p'>(</span><span class='n'>path</span><span class='p'>,</span> <span class='s1'>&#39;w&#39;</span><span class='p'>)</span> <span class='p'>{</span> <span class='o'>|</span><span class='n'>f</span><span class='o'>|</span> <span class='n'>f</span><span class='o'>.</span><span class='n'>write</span><span class='p'>(</span><span class='n'>text</span><span class='p'>)</span> <span class='p'>}</span>
+<span class='nb'>system</span><span class='p'>(</span><span class='s2'>&quot;mate </span><span class='si'>#{</span><span class='n'>path</span><span class='si'>}</span><span class='s2'>&quot;</span><span class='p'>)</span>
+</code></pre>
+</div>
+<p>By the way: Jekyll has built in support for using <a href='http://en.wikipedia.org/wiki/Latent_semantic_indexing'>latent semantic indexing</a> to create lists of related posts. It&#8217;s a slow implementation of a computationally demanding technique, but at the same time, very cool.</p>
+
+<p>When jekyll has generated the html in its &#8220;_site&#8221; folder, it&#8217;s time to upload the new post to the web server.</p>
+
+<p>To upload new content to the server, I use the setup described in <a href='http://matedriven.com.ar/2009/04/28/using-git-to-maintain-your-blog.html'>this guide</a>. Three distinct git repositories are established to provide the perfect workflow, where publishing a post is as easy as committing and pushing the new post to the server.</p>
+
+<p>My local copy is stored in the first repo. On the server, there is a &#8220;live&#8221; repo, which is the site served by apache, and a &#8220;base&#8221; repo which facilitates synchronization between the two other repos. My local changes are pushed to the base repo, which tells the live repo to update its content. The point is to avoid pushing content to a repo containing a working copy - using three repos is way easier. The guide has all the details if you wan&#8217;t more on this setup.</p>
+
+<p>All that&#8217;s left is creating a virtual host in apache, it&#8217;s document root pointing to the &#8220;_site&#8221; folder in the live repo. My server also have PHP and MySQL installed, so that my <a href='http://haveamint.com/'>Mint</a> installation can reside in the same repo as the rest of the jekyll files. Sweet!</p>
+
+<p>There&#8217;s something greatly reassuring about having a separate markdown file for each blog post, a point underlined by the annoying xml-parsing I did to migrate my old posts into this new system. My posts are safer than ever and can be written in any environment I see fit. In the end, this is a system only a programmer would love, but also the only system I, as a programmer, do love.</p>
+    </div>
+    <p class="date">~ 15 May 2010</p>    
+  </div>    
+
+  <div class="post">
+    <h2><span><a href="/2010/05/conways-game-of-life-in-ruby">Conway's Game of Life in Ruby</a></span></h2>
+    <div class="content">
+      <div class='highlight'><pre><code class='ruby'><span class='c1'>#</span>
+<span class='c1'># Conway&#39;s Game of Life in Ruby</span>
+<span class='c1'># http://en.wikipedia.org/wiki/Conway&#39;s_Game_of_Life</span>
+<span class='c1'># </span>
+<span class='c1'># Some code from this excellent article:</span>
+<span class='c1'># http://rubyquiz.strd6.com/quizzes/193-game-of-life</span>
+<span class='c1'>#</span>
+
+<span class='k'>class</span> <span class='nc'>Cell</span>
+  <span class='kp'>attr_writer</span> <span class='ss'>:neighbors</span>
+  
+  <span class='k'>def</span> <span class='nf'>initialize</span><span class='p'>(</span><span class='n'>seed_probability</span><span class='p'>)</span>
+    <span class='vi'>@alive</span> <span class='o'>=</span> <span class='n'>seed_probability</span> <span class='o'>&gt;</span> <span class='nb'>rand</span>
+  <span class='k'>end</span>
+  
+  <span class='k'>def</span> <span class='nf'>next!</span>
+    <span class='vi'>@alive</span> <span class='o'>=</span> <span class='vi'>@alive</span> <span class='p'>?</span> <span class='p'>(</span><span class='mi'>2</span><span class='o'>.</span><span class='n'>.</span><span class='mi'>3</span><span class='p'>)</span> <span class='o'>===</span> <span class='vi'>@neighbors</span> <span class='p'>:</span> <span class='mi'>3</span> <span class='o'>==</span> <span class='vi'>@neighbors</span>
+  <span class='k'>end</span>
+  
+  <span class='k'>def</span> <span class='nf'>to_i</span>
+    <span class='vi'>@alive</span> <span class='p'>?</span> <span class='mi'>1</span> <span class='p'>:</span> <span class='mi'>0</span>
+  <span class='k'>end</span>
+  
+  <span class='k'>def</span> <span class='nf'>to_s</span>
+    <span class='vi'>@alive</span> <span class='p'>?</span> <span class='s1'>&#39;o&#39;</span> <span class='p'>:</span> <span class='s1'>&#39; &#39;</span>
+  <span class='k'>end</span>
+<span class='k'>end</span>
+
+<span class='k'>class</span> <span class='nc'>Game</span>
+  
+  <span class='k'>def</span> <span class='nf'>initialize</span><span class='p'>(</span><span class='n'>width</span><span class='p'>,</span> <span class='n'>height</span><span class='p'>,</span> <span class='n'>seed_probability</span><span class='p'>,</span> <span class='n'>steps</span><span class='p'>)</span>
+    <span class='vi'>@width</span><span class='p'>,</span> <span class='vi'>@height</span><span class='p'>,</span> <span class='vi'>@steps</span> <span class='o'>=</span> <span class='n'>width</span><span class='p'>,</span> <span class='n'>height</span><span class='p'>,</span> <span class='n'>steps</span>
+    <span class='vi'>@cells</span> <span class='o'>=</span> <span class='nb'>Array</span><span class='o'>.</span><span class='n'>new</span><span class='p'>(</span><span class='n'>height</span><span class='p'>)</span> <span class='p'>{</span> 
+      <span class='nb'>Array</span><span class='o'>.</span><span class='n'>new</span><span class='p'>(</span><span class='n'>width</span><span class='p'>)</span> <span class='p'>{</span> <span class='no'>Cell</span><span class='o'>.</span><span class='n'>new</span><span class='p'>(</span><span class='n'>seed_probability</span><span class='p'>)</span> <span class='p'>}</span> <span class='p'>}</span>
+  <span class='k'>end</span>
+  
+  <span class='k'>def</span> <span class='nf'>play!</span>
+    <span class='p'>(</span><span class='mi'>1</span><span class='o'>.</span><span class='n'>.</span><span class='vi'>@steps</span><span class='p'>)</span><span class='o'>.</span><span class='n'>each</span> <span class='k'>do</span>
+      <span class='k'>next</span><span class='o'>!</span>
+      <span class='nb'>system</span><span class='p'>(</span><span class='s1'>&#39;clear&#39;</span><span class='p'>)</span>
+      <span class='nb'>puts</span> <span class='nb'>self</span>
+    <span class='k'>end</span>
+  <span class='k'>end</span>
+  
+  <span class='k'>def</span> <span class='nf'>next!</span>
+    <span class='vi'>@cells</span><span class='o'>.</span><span class='n'>each_with_index</span> <span class='k'>do</span> <span class='o'>|</span><span class='n'>row</span><span class='p'>,</span> <span class='n'>y</span><span class='o'>|</span>
+      <span class='n'>row</span><span class='o'>.</span><span class='n'>each_with_index</span> <span class='k'>do</span> <span class='o'>|</span><span class='n'>cell</span><span class='p'>,</span> <span class='n'>x</span><span class='o'>|</span>
+        <span class='n'>cell</span><span class='o'>.</span><span class='n'>neighbors</span> <span class='o'>=</span> <span class='n'>alive_neighbours</span><span class='p'>(</span><span class='n'>y</span><span class='p'>,</span> <span class='n'>x</span><span class='p'>)</span>
+      <span class='k'>end</span>
+    <span class='k'>end</span>
+    <span class='vi'>@cells</span><span class='o'>.</span><span class='n'>each</span> <span class='p'>{</span> <span class='o'>|</span><span class='n'>row</span><span class='o'>|</span> <span class='n'>row</span><span class='o'>.</span><span class='n'>each</span> <span class='p'>{</span> <span class='o'>|</span><span class='n'>cell</span><span class='o'>|</span> <span class='n'>cell</span><span class='o'>.</span><span class='n'>next!</span> <span class='p'>}</span> <span class='p'>}</span>
+  <span class='k'>end</span>
+  
+  <span class='k'>def</span> <span class='nf'>alive_neighbours</span><span class='p'>(</span><span class='n'>y</span><span class='p'>,</span> <span class='n'>x</span><span class='p'>)</span>
+    <span class='o'>[[-</span><span class='mi'>1</span><span class='p'>,</span> <span class='mi'>0</span><span class='o'>]</span><span class='p'>,</span> <span class='o'>[</span><span class='mi'>1</span><span class='p'>,</span> <span class='mi'>0</span><span class='o'>]</span><span class='p'>,</span> <span class='c1'># sides</span>
+     <span class='o'>[-</span><span class='mi'>1</span><span class='p'>,</span> <span class='mi'>1</span><span class='o'>]</span><span class='p'>,</span> <span class='o'>[</span><span class='mi'>0</span><span class='p'>,</span> <span class='mi'>1</span><span class='o'>]</span><span class='p'>,</span> <span class='o'>[</span><span class='mi'>1</span><span class='p'>,</span> <span class='mi'>1</span><span class='o'>]</span><span class='p'>,</span> <span class='c1'># over</span>
+     <span class='o'>[-</span><span class='mi'>1</span><span class='p'>,</span> <span class='o'>-</span><span class='mi'>1</span><span class='o'>]</span><span class='p'>,</span> <span class='o'>[</span><span class='mi'>0</span><span class='p'>,</span> <span class='o'>-</span><span class='mi'>1</span><span class='o'>]</span><span class='p'>,</span> <span class='o'>[</span><span class='mi'>1</span><span class='p'>,</span> <span class='o'>-</span><span class='mi'>1</span><span class='o'>]</span> <span class='c1'># under</span>
+    <span class='o'>].</span><span class='n'>inject</span><span class='p'>(</span><span class='mi'>0</span><span class='p'>)</span> <span class='k'>do</span> <span class='o'>|</span><span class='n'>sum</span><span class='p'>,</span> <span class='n'>pos</span><span class='o'>|</span>
+      <span class='n'>sum</span> <span class='o'>+</span> <span class='vi'>@cells</span><span class='o'>[</span><span class='p'>(</span><span class='n'>y</span> <span class='o'>+</span> <span class='n'>pos</span><span class='o'>[</span><span class='mi'>0</span><span class='o'>]</span><span class='p'>)</span> <span class='o'>%</span> <span class='vi'>@height</span><span class='o'>][</span><span class='p'>(</span><span class='n'>x</span> <span class='o'>+</span> <span class='n'>pos</span><span class='o'>[</span><span class='mi'>1</span><span class='o'>]</span><span class='p'>)</span> <span class='o'>%</span> <span class='vi'>@width</span><span class='o'>].</span><span class='n'>to_i</span>
+    <span class='k'>end</span>
+  <span class='k'>end</span>
+  
+  <span class='k'>def</span> <span class='nf'>to_s</span>
+    <span class='vi'>@cells</span><span class='o'>.</span><span class='n'>map</span> <span class='p'>{</span> <span class='o'>|</span><span class='n'>row</span><span class='o'>|</span> <span class='n'>row</span><span class='o'>.</span><span class='n'>join</span> <span class='p'>}</span><span class='o'>.</span><span class='n'>join</span><span class='p'>(</span><span class='s2'>&quot;</span><span class='se'>\n</span><span class='s2'>&quot;</span><span class='p'>)</span>
+  <span class='k'>end</span>
+<span class='k'>end</span>
+
+<span class='no'>Game</span><span class='o'>.</span><span class='n'>new</span><span class='p'>(</span><span class='mi'>100</span><span class='p'>,</span> <span class='mi'>50</span><span class='p'>,</span> <span class='mi'>0</span><span class='o'>.</span><span class='mi'>1</span><span class='p'>,</span> <span class='mi'>100</span><span class='p'>)</span><span class='o'>.</span><span class='n'>play!</span>
+</code></pre>
+</div>
+    </div>
+    <p class="date">~ 14 May 2010</p>    
+  </div>    
+
+
+
+<h2 class="section">Previously</h2>
+<ul class="posts">
+  
+    <li>
+      
+            
+      <a href="/2008/10/automatic-compilation-of-sass-and-hss">Automatic compilation of Sass and HSS files</a>
+    </li>
+  
+    <li>
+      
+            
+      <a href="/2008/09/passing-the-torch">Passing the torch</a>
+    </li>
+  
+    <li>
+      
+            
+      <a href="/2008/02/blueprint-07-has-arrived">Blueprint 0.7 has arrived</a>
+    </li>
+  
+    <li>
+      
+            
+      <a href="/2008/01/css-font-shorthand-syntax">CSS font shorthand syntax</a>
+    </li>
+  
+    <li>
+      
+            
+      <a href="/2008/01/bulletproof-protection-against-comment-spam">How to stop comment spam</a>
+    </li>
+  
+    <li>
+      
+            
+      <a href="/2008/01/blueprints-directory-structure-again-again">Blueprint's directory structure</a>
+    </li>
+  
+    <li>
+      
+            
+      <a href="/2008/01/rejoice-the-blog-is-back-again">Rejoice, the blog is back!</a>
+    </li>
+  
+    <li>
+      
+            
+      <a href="/2007/11/evolution">Tools of the trade</a>
+    </li>
+  
+    <li>
+      
+            
+      <a href="/2007/09/blueprint-06-released">Blueprint 0.6 Released</a>
+    </li>
+  
+    <li>
+      
+            
+      <a href="/2007/09/inspiration">Inspiration</a>
+    </li>
+  
+    <li>
+      
+            
+      <a href="/2007/09/css-101-opposing-floats">CSS 101 - Opposing Floats</a>
+    </li>
+  
+    <li>
+      
+            
+      <a href="/2007/09/blueprint-06-stress-test">Blueprint 0.6 stress test</a>
+    </li>
+  
+    <li>
+      
+            
+      <a href="/2007/08/css-101-theres-always-another">CSS 101 - There's always another way</a>
+    </li>
+  
+    <li>
+      
+            
+      <a href="/2007/08/blueprint-05-the-experiment">Blueprint 0.5 - The Experiment</a>
+    </li>
+  
+    <li>
+      
+            
+      <a href="/2007/08/css-101-group-by-layout">CSS 101 - Group by layout</a>
+    </li>
+  
+    <li>
+      
+            
+      <a href="/2007/08/release-blueprint-04">Blueprint 0.4 released</a>
+    </li>
+  
+    <li>
+      
+            
+      <a href="/2007/08/blueprint-the-aftermath">Blueprint - 54548, 6118, 1558, 1217</a>
+    </li>
+  
+    <li>
+      
+            
+      <a href="/2007/08/launch-blueprint-a-css-framework">Launch - Blueprint, a CSS framework</a>
+    </li>
+  
+    <li>
+      
+            
+      <a href="/2007/08/battle-comment-spam-with-an">Battle comment spam with an extra form field</a>
+    </li>
+  
+    <li>
+      
+            
+      <a href="/2007/06/notes-on-the-wwdc-07">Notes on the WWDC '07 Keynote</a>
+    </li>
+  
+    <li>
+      
+            
+      <a href="/2007/05/are-web-designers-out-of-touch">Are web designers out of touch with their audience?</a>
+    </li>
+  
+    <li>
+      
+            
+      <a href="/2007/04/adobe-cs3-web-edition-looks">Adobe CS3 Web Edition looks amazing</a>
+    </li>
+  
+    <li>
+      
+            
+      <a href="/2007/04/displaying-your-todotxt-on-the">Displaying your Todo.txt on the desktop</a>
+    </li>
+  
+    <li>
+      
+            
+      <a href="/2007/04/quakeconsole-style-irc-with-terminal">Quake-console style IRC, with Terminal, Visor, and Irssi</a>
+    </li>
+  
+    <li>
+      
+            
+      <a href="/2007/04/perspectives-gained-by-switching-cms">Perspectives gained from switching CMS and redesigning the blog</a>
+    </li>
+  
+    <li>
+      
+            
+      <a href="/2007/04/twitteriffic">Twitterrific</a>
+    </li>
+  
+    <li>
+      
+            
+      <a href="/2007/04/the-easiest-way-to-png">The easiest way to PNG support in IE6</a>
+    </li>
+  
+    <li>
+      
+            
+      <a href="/2007/04/a-new-hope">A new hope</a>
+    </li>
+  
+  <li><a href="/archive.html"><em>Peruse the archives</em></a></li>
+</ul>
+</div>
+
+</div>
+</body>
+</html>

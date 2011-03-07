@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>W3C News</title>
+    <link rel="alternate" type="text/html" href="http://www.w3.org/" />
+    <link rel="self" type="application/atom+xml" href="http://www.w3.org/News/atom.xml" />
+    <id>tag:www.w3.org,2008-09-29://4</id>
+    <updated>2011-03-01T23:22:38Z</updated>
+    
+    <generator uri="http://www.sixapart.com/movabletype/">Movable Type 4.34-en</generator>
+
+<entry>
+    <title>W3C Launches HTML5 Chinese Interest Group </title>
+    <link rel="alternate" type="text/html" href="http://www.w3.org/News/2011.html#entry-9023" />
+    <id>tag:www.w3.org,2011://4.9023</id>
+
+    <published>2011-03-01T23:19:48Z</published>
+    <updated>2011-03-01T23:19:48Z</updated>
+
+    <summary>W3C has launched the HTML5 Chinese Interest Group, whose mission is to facilitate focused discussion in Chinese of the HTML5 specification and of specifications closely related to HTML5, to gather comments and questions in Chinese about those specifications, to collect...</summary>
+    <author>
+        <name>W3C Staff</name>
+    </author>
+    
+        <category term="Home Page Stories" scheme="http://www.sixapart.com/ns/types#category" />
+    
+        <category term="Web Design and Applications" scheme="http://www.sixapart.com/ns/types#category" />
+    
+    
+    <content type="html" xml:lang="en" xml:base="http://www.w3.org/">
+        
+        <![CDATA[<p>W3C has launched the <a href="http://www.w3.org/html/ig/zh/">HTML5 Chinese Interest Group</a>, whose mission is to facilitate focused discussion in Chinese of the HTML5 specification and of specifications closely related to HTML5, to gather comments and questions in Chinese about those specifications, to collect information about specific use cases in Chinese speaking region for technologies defined in those specifications, and to report the results of its activities as a group back to the <a href="/html/wg/">HTML Working Group</a>, as well as to other relevant groups and to the W3C membership and community. Learn more in the <a href="http://www.w3.org/html/ig/zh/charter.html">charter</a> (available in Chinese as well), <a href="http://www.w3.org/html/ig/zh/#join">join the Interest Group</a>, and learn more about the <a href="/html/">W3C HTML Activity</a>.</p>
+]]>
+    </content>
+</entry>
+
+<entry>
+    <title>Web Notifications First Draft Published</title>
+    <link rel="alternate" type="text/html" href="http://www.w3.org/News/2011.html#entry-9022" />
+    <id>tag:www.w3.org,2011://4.9022</id>
+
+    <published>2011-03-01T17:06:53Z</published>
+    <updated>2011-03-01T17:06:53Z</updated>
+
+    <summary>The Web Notification Working Group has published the First Public Working Draft of Web Notifications. This specification provides an API to generate simple notifications to alert users outside of the web page. It does not specify exactly how a user...</summary>
+    <author>
+        <name>W3C Staff</name>
+    </author>
+    
+        <category term="Home Page Stories" scheme="http://www.sixapart.com/ns/types#category" />
+    
+        <category term="Publication" scheme="http://www.sixapart.com/ns/types#category" />
+    
+        <category term="Web Design and Applications" scheme="http://www.sixapart.com/ns/types#category" />
+    
+    
+    <content type="html" xml:lang="en" xml:base="http://www.w3.org/">
+        
+        <![CDATA[<p>The <a href="/2010/web-notifications/">Web Notification Working Group</a> has published the First Public Working Draft of <a href="/TR/2011/WD-notifications-20110301/">Web Notifications</a>. This specification provides an API to generate simple notifications to alert users outside of the web page. It does not specify exactly how a user agent should display these notifications; the best presentation depends on the device where the user agent is run. When this specificiation refers to displaying notifications on the "desktop", it generally refers to some static display area outside the web page, but may take several forms, including a corner of the user's display, an area within the chrome of the user agent, or the "home" screen of a mobile device. Learn more about the <a href="/2006/rwc/">Rich Web Client Activity</a>.</p>]]>
+    </content>
+</entry>
+
+<entry>
+    <title>Best practices for creating MMI Modality Components Note Published</title>
+    <link rel="alternate" type="text/html" href="http://www.w3.org/News/2011.html#entry-9021" />
+    <id>tag:www.w3.org,2011://4.9021</id>
+
+    <published>2011-03-01T15:34:07Z</published>
+    <updated>2011-03-01T15:34:07Z</updated>
+
+    <summary>The Multimodal Interaction (MMI) Working Group today published Best practices for creating MMI Modality Components as a Group Note. Multimodal access means that people may use diverse &quot;modalities&quot; for interaction with the Web, including screen, keyboard, digital ink, voice, speech...</summary>
+    <author>
+        <name>W3C Staff</name>
+    </author>
+    
+        <category term="Home Page Stories" scheme="http://www.sixapart.com/ns/types#category" />
+    
+        <category term="Publication" scheme="http://www.sixapart.com/ns/types#category" />
+    
+        <category term="Web of Devices" scheme="http://www.sixapart.com/ns/types#category" />
+    
+    
+    <content type="html" xml:lang="en" xml:base="http://www.w3.org/">
+        
+        <![CDATA[<p>The <a href="http://www.w3.org/2002/mmi/">Multimodal Interaction (MMI) Working Group</a> today published <a href="/TR/2011/NOTE-mmi-mcbp-20110301/">Best practices for creating MMI Modality Components</a> as a Group Note. Multimodal access means that people may use diverse "modalities" for interaction with the Web, including screen, keyboard, digital ink, voice, speech output, etc. The Working Group has defined a general and flexible framework providing interoperability among modality-specific components from different vendors - for example, speech recognition from one vendor and handwriting recognition from another. The current Note provides additional informative guidelines for authors of MMI modality components. Its purpose is to help authors create useful  constituents that may be more easily incorporated into a multimodal system. Learn more about the <a href="http://www.w3.org/2002/mmi/Activity.html">Multimodal Interaction Activity</a>.</p>]]>
+    </content>
+</entry>
+
+<entry>
+    <title>CSS Image Values and Replaced Content Module Level 3 Draft Published</title>
+    <link rel="alternate" type="text/html" href="http://www.w3.org/News/2011.html#entry-9018" />
+    <id>tag:www.w3.org,2011://4.9018</id>
+
+    <published>2011-02-17T15:56:43Z</published>
+    <updated>2011-02-17T15:56:43Z</updated>
+
+    <summary>The Cascading Style Sheets (CSS) Working Group has published a Working Draft of CSS Image Values and Replaced Content Module Level 3. This CSS Image Values and Replaced Content module has two parts. First, it defines the syntax for image...</summary>
+    <author>
+        <name>W3C Staff</name>
+    </author>
+    
+        <category term="Web Design and Applications" scheme="http://www.sixapart.com/ns/types#category" />
+    
+        <category term="Publication" scheme="http://www.sixapart.com/ns/types#category" />
+    
+    
+    <content type="html" xml:lang="en" xml:base="http://www.w3.org/">
+        
+        <![CDATA[<p>The <a href="/Style/CSS/members">Cascading Style Sheets (CSS) Working Group</a> has published a Working Draft of <a href="/TR/2011/WD-css3-images-20110217/">CSS Image Values and Replaced Content Module Level 3</a>. This CSS Image Values and Replaced Content module has two parts. First, it defines the syntax for <code>image</code> values in CSS. <code>image</code> values can be a single URI to an image, a list of URIs denoting a series of fallbacks, a reference to an element in the document, or gradients. Second, it defines properties used to control the interaction of replaced content and the CSS layout algorithms. These properties can affect the used image resolution for bitmaps, the replaced object's orientation, and whether and how to preserve the object's aspect ratio. Learn more about the <a href="/Style/">Style Activity</a>.</p>]]>
+    </content>
+</entry>
+
+<entry>
+    <title>Web Content Accessibility Guidelines (WCAG 2.0) Authorized Translations Now in Six Languages</title>
+    <link rel="alternate" type="text/html" href="http://www.w3.org/News/2011.html#entry-9017" />
+    <id>tag:www.w3.org,2011://4.9017</id>
+
+    <published>2011-02-16T17:19:35Z</published>
+    <updated>2011-02-16T17:19:35Z</updated>
+
+    <summary>Today two more Authorized Translations of WCAG 2.0 were published, bringing the total to six languages. These were developed through the Policy for Authorized W3C Translations and they can be used for official purposes. W3C encourages translation of specifications and...</summary>
+    <author>
+        <name>W3C Staff</name>
+    </author>
+    
+        <category term="Web Design and Applications" scheme="http://www.sixapart.com/ns/types#category" />
+    
+    
+    <content type="html" xml:lang="en" xml:base="http://www.w3.org/">
+        
+        <![CDATA[<p>Today two more Authorized Translations of WCAG 2.0 were published, bringing the total to six languages. These were developed through the <a href="http://www.w3.org/2005/02/TranslationPolicy">Policy for Authorized W3C Translations</a> and they can be used for official purposes. W3C encourages translation of specifications and resources into all languages; see <a href="http://www.w3.org/Consortium/Translation/">W3C Translations</a>. The Web Accessibility Initiative (WAI) particularly encourages the development of W3C Authorized Translations of WCAG 2.0 and other technical specifications to facilitate their adoption and implementation internationally;  see <a href="http://www.w3.org/WAI/translation">Translating WAI Documents</a>. To find out if WCAG is available in your language, see the <a href="http://www.w3.org/WAI/WCAG20/translations">WCAG 2.0 Translations list</a>, which also lists unofficial translations. Additional perspectives are in the <a href="http://www.w3.org/QA/2009/06/wcag_20_in_your_mother_tongue.html">"WCAG 2.0 in your mother tongue" blog post</a>. Read about the <a href="http://www.w3.org/WAI/">Web Accessibility Initiative (WAI)</a>.</p>]]>
+    </content>
+</entry>
+
+<entry>
+    <title>W3C Invites Implementations of CSS Backgrounds and Borders Module Level 3; Updates Text Level 3</title>
+    <link rel="alternate" type="text/html" href="http://www.w3.org/News/2011.html#entry-9016" />
+    <id>tag:www.w3.org,2011://4.9016</id>
+
+    <published>2011-02-15T15:50:31Z</published>
+    <updated>2011-02-15T15:50:31Z</updated>
+
+    <summary>The Cascading Style Sheets (CSS) Working Group invites implementation of the Candidate Recommendation of CSS Backgrounds and Borders Module Level 3, which contains the features of CSS Level 3 relating to borders and backgrounds. The main extensions compared to CSS...</summary>
+    <author>
+        <name>W3C Staff</name>
+    </author>
+    
+        <category term="Publication" scheme="http://www.sixapart.com/ns/types#category" />
+    
+        <category term="Web Design and Applications" scheme="http://www.sixapart.com/ns/types#category" />
+    
+    
+    <content type="html" xml:lang="en" xml:base="http://www.w3.org/">
+        
+        <![CDATA[<p>The <a href="/Style/CSS/members">Cascading Style Sheets (CSS) Working Group</a> invites implementation of the Candidate Recommendation of <a href="/TR/2011/CR-css3-background-20110215/">CSS Backgrounds and Borders Module Level 3</a>, which contains the features of CSS Level 3 relating to borders and backgrounds. The main extensions compared to CSS Level 2 are borders consisting of images, boxes with multiple backgrounds, boxes with rounded corners and boxes with shadows. The Working Group also updated a Working Draft of <a href="/TR/2011/WD-css3-text-20110215/">CSS Text Level 3</a>, which defines properties for text manipulation and specifies their processing model. It covers line breaking, justification and alignment, white space handling, text decoration and text transformation. Learn more about the <a href="http://www.w3.org/Style/CSS/Test/">CSS Test Suite</a> and the <a href="/Style/">W3C Style Activity</a>.</p>]]>
+    </content>
+</entry>
+
+<entry>
+    <title>W3C Extends HTML Working Charter: HTML5 Last Call in May 2011 and Recommendation in 2014 </title>
+    <link rel="alternate" type="text/html" href="http://www.w3.org/News/2011.html#entry-9015" />
+    <id>tag:www.w3.org,2011://4.9015</id>
+
+    <published>2011-02-14T13:49:04Z</published>
+    <updated>2011-02-14T13:49:04Z</updated>
+
+    <summary> W3C extends today the charter of the HTML Working Group, reaffirming the commitment for HTML5 to reach Last Call in May 2011, and announcing plans to reach Recommendation by 2014. &quot;Even as innovation continues, advancing HTML5 to Recommendation provides...</summary>
+    <author>
+        <name>W3C Staff</name>
+    </author>
+    
+        <category term="Home Page Stories" scheme="http://www.sixapart.com/ns/types#category" />
+    
+        <category term="Top Story" scheme="http://www.sixapart.com/ns/types#category" />
+    
+        <category term="Web Design and Applications" scheme="http://www.sixapart.com/ns/types#category" />
+    
+    
+    <content type="html" xml:lang="en" xml:base="http://www.w3.org/">
+        
+        <![CDATA[<p> <a class="imageLink" href="/html/logo/"> <img src="/html/logo/downloads/HTML5_Logo_64.png" alt="HTML5" width="64" height="64"/> </a> W3C extends today the <a href="/2007/03/HTML-WG-charter.html">charter</a> of the <a href="/html/wg/">HTML Working Group</a>, reaffirming the commitment for <a href="/TR/html5/">HTML5</a> to reach Last Call in May 2011, and announcing plans to reach Recommendation by 2014. "Even as innovation continues, advancing HTML5 to Recommendation provides the entire Web ecosystem with a stable, tested, interoperable specification," said Jeff Jaffe, W3C CEO. W3C is developing a <a href="http://www.w3.org/html/wiki/Testing">comprehensive test suite</a> to help achieve broad interoperability for the full specification. Stable specifications are useful targets for interoperability at the same time that innovation never ceases. Therefore, to fulfill the W3C HTML Working Group's mission, W3C Director Tim Berners-Lee encourages the participants to begin discussion of requirements for future versions of HTML after HTML5 reaches Last Call. Read more in the <a href="/2011/02/htmlwg-pr.html">press release</a> and learn more <a href="/html/">about HTML</a>.</p> ]]>
+    </content>
+</entry>
+
+<entry>
+    <title>W3C Opens Germany and Austria Office at DFKI</title>
+    <link rel="alternate" type="text/html" href="http://www.w3.org/News/2011.html#entry-9014" />
+    <id>tag:www.w3.org,2011://4.9014</id>
+
+    <published>2011-02-10T11:04:43Z</published>
+    <updated>2011-02-10T11:04:43Z</updated>
+
+    <summary>W3C announces today the opening of a new W3C Germany and Austria Office, hosted at the Project Office Berlin of the German Research Center for Artificial Intelligence (DFKI), the leading German research institute in the field of innovative software technology...</summary>
+    <author>
+        <name>W3C Staff</name>
+    </author>
+    
+    
+    <content type="html" xml:lang="en" xml:base="http://www.w3.org/">
+        
+        <![CDATA[<p>W3C announces today the opening of a new <a href="http://www.w3c.de/">W3C Germany and Austria Office</a>, hosted at the Project Office Berlin of the <a href="http://www.dfki.de/">German Research Center for Artificial Intelligence (DFKI)</a>, the leading German research institute in the field of innovative software technology based on Artificial Intelligence. W3C and DFKI celebrate today this collaborative effort at an <a href="http://www.w3c.de/Events/2011/w3c-office-at-dfki/">opening event</a>, at Theseus Innovation Center in Berlin. "European research and industry have a clear role in shaping the future of the Web," said Dr. Jeff Jaffe, W3C CEO. "Increased participation from key German and Austrian industries will not only impact positively their businesses and innovation strategies, but will also influence W3C's international landscape." Read more in the <a href="http://www.w3.org/2011/02/germany-austria-pr">press release</a> and learn about the <a href="http://www.w3.org/Consortium/Offices/">W3C Offices Program</a>.</p>]]>
+    </content>
+</entry>
+
+<entry>
+    <title>W3C Launches Web Performance Interest Group</title>
+    <link rel="alternate" type="text/html" href="http://www.w3.org/News/2011.html#entry-9012" />
+    <id>tag:www.w3.org,2011://4.9012</id>
+
+    <published>2011-02-08T22:38:49Z</published>
+    <updated>2011-02-08T22:38:49Z</updated>
+
+    <summary>Today W3C launches a new Web Performance Interest Group, whose mission is to create a faster user experience on the Web. The Interest Group will produce use cases and requirements for future deliverables of the Web Performance Working Group. The...</summary>
+    <author>
+        <name>W3C Staff</name>
+    </author>
+    
+        <category term="Web Design and Applications" scheme="http://www.sixapart.com/ns/types#category" />
+    
+    
+    <content type="html" xml:lang="en" xml:base="http://www.w3.org/">
+        
+        <![CDATA[<p>Today W3C launches a new 
+<a href="http://www.w3.org/2010/webperf/ig/">Web Performance Interest Group</a>, whose mission is to create a faster user experience on the Web. The Interest Group will produce use cases and requirements for future deliverables of the <a href="http://www.w3.org/2010/webperf/">Web Performance Working Group</a>. The Interest Group will provide a forum to discuss Web performance initiatives across web publishers, vendors, developers, and users with the goal of identifying areas for standardization. Learn more about the 
+<a href="http://www.w3.org/2006/rwc/Activity.html">Rich Web Client Activity</a>.</p>]]>
+    </content>
+</entry>
+
+<entry>
+    <title>Three WebApps Updates: Web Workers, Web Storage, Server-Side Events</title>
+    <link rel="alternate" type="text/html" href="http://www.w3.org/News/2011.html#entry-9011" />
+    <id>tag:www.w3.org,2011://4.9011</id>
+
+    <published>2011-02-08T21:29:24Z</published>
+    <updated>2011-02-08T21:29:24Z</updated>
+
+    <summary>The Web Applications Working Group updated three Working Drafts today: Web Workers, Web Storage, and Server-side Events. The first defines an API that allows Web application authors to spawn background workers running scripts in parallel to their main page. This...</summary>
+    <author>
+        <name>W3C Staff</name>
+    </author>
+    
+        <category term="Publication" scheme="http://www.sixapart.com/ns/types#category" />
+    
+        <category term="Web Design and Applications" scheme="http://www.sixapart.com/ns/types#category" />
+    
+    
+    <content type="html" xml:lang="en" xml:base="http://www.w3.org/">
+        
+        <![CDATA[<p>The <a href="/2008/webapps/">Web Applications Working Group</a> updated three Working Drafts today: <a href="/TR/2011/WD-workers-20110208/">Web Workers</a>, <a href="http://www.w3.org/TR/2011/WD-webstorage-20110208/">Web Storage</a>, and <a href="http://www.w3.org/TR/2011/WD-eventsource-20110208/">Server-side Events</a>. The first defines an API that allows Web application authors to spawn background workers running scripts in parallel to their main page. This allows for thread-like operation with message-passing as the coordination mechanism. The second defines an API for persistent data storage of key-value pair data in Web clients. The third defines an API for opening an HTTP connection for receiving push notifications from a server in the form of DOM events. The API is designed such that it can be extended to work with other push notification schemes such as Push SMS. Learn more about the <a href="/2006/rwc/">Rich Web Client Activity</a>.</p>]]>
+    </content>
+</entry>
+
+<entry>
+    <title>W3C Launches Web and TV Interest Group</title>
+    <link rel="alternate" type="text/html" href="http://www.w3.org/News/2011.html#entry-9009" />
+    <id>tag:www.w3.org,2011://4.9009</id>
+
+    <published>2011-02-07T22:04:23Z</published>
+    <updated>2011-02-07T22:04:23Z</updated>
+
+    <summary>At the occasion of the Web and TV Workshop in Berlin, W3C announces the creation of a new Web and TV Interest Group. The new group&apos;s mission is to provide a forum for Web and TV technical discussions, to review...</summary>
+    <author>
+        <name>W3C Staff</name>
+    </author>
+    
+        <category term="Web of Devices" scheme="http://www.sixapart.com/ns/types#category" />
+    
+    
+    <content type="html" xml:lang="en" xml:base="http://www.w3.org/">
+        
+        <![CDATA[<p>At the occasion of the <a href="http://www.w3.org/2010/11/web-and-tv/">Web and TV Workshop in Berlin</a>, W3C announces the creation of a new <a href="http://www.w3.org/2011/webtv/">Web and TV Interest Group</a>. The new group's mission is to provide a forum for Web and TV technical discussions, to review existing work, as well as the relationship between services on the Web and TV services, and to identify requirements and potential solutions to ensure that the Web will function well with TV.  See the <a href="http://www.w3.org/2010/09/webTVIGcharter.html">group's charter</a> for more information. Learn more about <a href="http://www.w3.org/standards/webofdevices/tv">Web and TV at W3C</a>.</p>]]>
+    </content>
+</entry>
+
+<entry>
+    <title>CSS Writing Modes Module Level 3 Draft Updated</title>
+    <link rel="alternate" type="text/html" href="http://www.w3.org/News/2011.html#entry-9008" />
+    <id>tag:www.w3.org,2011://4.9008</id>
+
+    <published>2011-02-01T20:31:12Z</published>
+    <updated>2011-02-01T20:31:12Z</updated>
+
+    <summary>The Cascading Style Sheets (CSS) Working Group has published an updated draft of CSS Writing Modes Module Level 3, which specifies the text layout model in CSS and the properties that control it. It covers bidirectional and vertical text. Learn...</summary>
+    <author>
+        <name>W3C Staff</name>
+    </author>
+    
+        <category term="Publication" scheme="http://www.sixapart.com/ns/types#category" />
+    
+        <category term="Web Design and Applications" scheme="http://www.sixapart.com/ns/types#category" />
+    
+    
+    <content type="html" xml:lang="en" xml:base="http://www.w3.org/">
+        
+        <![CDATA[<p>The <a href="/Style/CSS/members">Cascading Style Sheets (CSS) Working Group</a> has published an updated draft of <a href="http://www.w3.org/TR/2011/WD-css3-writing-modes-20110201/">CSS Writing Modes Module Level 3</a>, which specifies the text layout model in CSS and the properties that control it. It covers bidirectional and vertical text. Learn more about the <a href="http://www.w3.org/Style/">Style Activity</a>. </p>]]>
+    </content>
+</entry>
+
+<entry>
+    <title>Alan Bird Joins W3C Staff as Global Business Development Lead </title>
+    <link rel="alternate" type="text/html" href="http://www.w3.org/News/2011.html#entry-9007" />
+    <id>tag:www.w3.org,2011://4.9007</id>
+
+    <published>2011-02-01T20:18:10Z</published>
+    <updated>2011-02-01T20:18:10Z</updated>
+
+    <summary> W3C welcomes J. Alan Bird to the W3C staff as the new Global Business Development Lead. Mr. Bird will lead W3C efforts internationally to strengthen the W3C Membership program, identify business development strategies, and seek new revenue streams to...</summary>
+    <author>
+        <name>W3C Staff</name>
+    </author>
+    
+    
+    <content type="html" xml:lang="en" xml:base="http://www.w3.org/">
+        
+        <![CDATA[<p>
+<a href="/People/AlanBird/" class="imageLink">
+<img width="56" height="79" src="http://www.w3.org/People/AlanBird/alanbird-sm.jpg" alt="AlanBird"/>
+</a>
+W3C welcomes <a href="http://www.w3.org/People/AlanBird/">J. Alan Bird</a> to the W3C staff as the new Global Business Development Lead. Mr. Bird will lead W3C efforts internationally to strengthen the W3C Membership program, identify business development strategies, and seek new revenue streams to support the organization's mission. As the Web creates and transforms a growing number of industries, W3C has created a senior business development position to ensure that a more diverse set of stakeholders can participate in W3C work. Initially, Mr. Bird will focus on development in the areas of Web and Television,and Mobile Web. In addition, he will strengthen our business strategies internationally, working with partners in various regions. Mr. Bird brings 30 years of experience in the IT industry to his new role. In previous roles, Mr. Bird has focused on enterprise systems management and applications development, specializing in building partnerships that benefit end users.</p>
+]]>
+    </content>
+</entry>
+
+<entry>
+    <title>W3C Organizes Workshop on Mobile and Web Technologies in Social and Economic Development</title>
+    <link rel="alternate" type="text/html" href="http://www.w3.org/News/2011.html#entry-9006" />
+    <id>tag:www.w3.org,2011://4.9006</id>
+
+    <published>2011-01-31T17:37:58Z</published>
+    <updated>2011-01-31T17:37:58Z</updated>
+
+    <summary>W3C announces its fourth Workshop on Mobile and Web Technologies in Social and Economic Development, in Dar es Salam, Tanzania on 4-5 June. Today, more than half the world&apos;s population lives on less than $3 a day, and has no...</summary>
+    <author>
+        <name>W3C Staff</name>
+    </author>
+    
+        <category term="Web of Devices" scheme="http://www.sixapart.com/ns/types#category" />
+    
+    
+    <content type="html" xml:lang="en" xml:base="http://www.w3.org/">
+        
+        <![CDATA[<p>W3C announces its fourth 
+<a href="http://public.webfoundation.org/2011/01/MW4D_WS/">Workshop on Mobile and Web Technologies in Social and Economic  Development</a>, in  Dar es Salam, Tanzania on 4-5 June. Today, more than half the world's population lives on less than $3 a day, and has no access to healthcare, education, government services, etc. But the strong growth in the mobile phone use offers new opportunities for improvement. The potential of simple ICT services on mobile devices to increase people's income has been demonstrated. However, there are still many challenges to overcome in order to realize the full potential of mobile and Web technologies in this area. The aim of this Workshop is to explore how to lower the existing barriers and to identify key directions for future exploration. Learn more about <a href="http://public.webfoundation.org/2011/01/MW4D_WS/#Participation">participation</a> in the Workshop as well as 
+<a href="http://public.webfoundation.org/2011/01/MW4D_WS/#Sponsorshi">sponsorship opportunities</a>. This Workshop is jointly organized by W3C and the World Wide Web Foundation. Learn more about W3C's <a href="http://www.w3.org/2008/MW4D/">Mobile Web for Social Development Interest Group</a>.</p>]]>
+    </content>
+</entry>
+
+<entry>
+    <title>Invitation to W3C Germany and Austria Office Opening</title>
+    <link rel="alternate" type="text/html" href="http://www.w3.org/News/2011.html#entry-9004" />
+    <id>tag:www.w3.org,2011://4.9004</id>
+
+    <published>2011-01-26T13:16:58Z</published>
+    <updated>2011-01-26T13:16:58Z</updated>
+
+    <summary>W3C is pleased to announce that the German Research Center for Artifical Intelligence (DFKI), a long-term W3C Member and the leading German research institute in the field of innovative software technology, is the new W3C Office for Germany and Austria....</summary>
+    <author>
+        <name>W3C Staff</name>
+    </author>
+    
+    
+    <content type="html" xml:lang="en" xml:base="http://www.w3.org/">
+        
+        <![CDATA[<p>W3C is pleased to announce that the German
+Research Center for Artifical Intelligence (DFKI), a long-term W3C Member and the leading German research institute in the field of
+innovative software technology, is the new <a href="http://www.w3c.de/">W3C Office for Germany and Austria</a>. To celebrate this new relationship, W3C and DFKI invite people to an <a href="http://www.w3c.de/Events/2011/w3c-office-at-dfki/">opening event</a> in Berlin, Germany on 10 February 2011. The event will be a great opportunity for people to learn how European research and various industries can contribute to and benefit from W3C's open Web platform. Participation is free, but
+<a href="http://www.w3c.de/Events/2011/w3c-office-at-dfki/registration.html">registration is required</a>. The event follows a W3C 
+<a href="http://www.w3.org/2010/11/web-and-tv/">Web and TV Workshop</a>.  W3C Offices promote adoption of W3C work among developers, application builders, and standards setters, and encourage inclusion of stakeholder organizations in the creation of future recommendations by joining W3C. Learn about the <a href="http://www.w3.org/Consortium/Offices/">W3C Offices Program</a>.</p>
+]]>
+    </content>
+</entry>
+
+</feed>

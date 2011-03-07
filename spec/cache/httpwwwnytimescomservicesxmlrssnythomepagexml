@@ -1,0 +1,299 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="/css/rss20.xsl" type="text/xsl"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:nyt="http://www.nytimes.com/namespaces/rss/2.0" version="2.0" xmlns:pheedo="http://www.pheedo.com/namespace/pheedo">
+	<channel>
+		<title>NYT &gt; Home Page</title>
+		<link>http://www.nytimes.com/pages/index.html?partner=rss&amp;emc=rss</link>
+		<description/>
+		<language>en-us</language>
+		<copyright>Copyright 2011  The New York Times Company</copyright>
+		<lastBuildDate>Wed, 02 Mar 2011 03:54:01 GMT </lastBuildDate>
+		<image>
+			<title>NYT &gt; Home Page</title>
+			<url>http://graphics.nytimes.com/images/section/NytSectionHeader.gif</url>
+			<link>http://www.nytimes.com/pages/index.html?partner=rss&amp;emc=rss</link>
+		</image>
+		<atom:link rel="hub" href="http://www.pheedo.com/api/hub/"/>
+		<atom:link rel="self" href="http://feeds.nytimes.com/nyt/rss/HomePage" type="application/rss+xml"/>
+		<item>
+			<title>Libyan Rebels Said to Debate Seeking U.N. Airstrikes</title>
+			<link>http://feeds.nytimes.com/click.phdo?i=cf30d78d440b6e223b9042e153b20803</link>
+			<pheedo:origLink>http://www.nytimes.com/2011/03/02/world/africa/02libya.html?partner=rss&amp;amp;emc=rss</pheedo:origLink>
+			<guid isPermaLink="false">http://www.nytimes.com/2011/03/02/world/africa/02libya.html</guid>
+			<media:content url="http://graphics8.nytimes.com/images/2011/03/02/world/02libya_cnd/02libya_cnd-thumbStandard.jpg" medium="image" height="75" width="75"/>
+			<media:description>New volunteer fighters loyal to the opposition movement attended their first day of training at a base in Benghazi, in eastern Libya, on Tuesday.</media:description>
+			<media:credit>Lynsey Addario for The New York Times</media:credit>
+			<description>The revolutionary council may ask for airstrikes on some of Colonel Muammar el-Qaddafi&#x2019;s most important military assets under a United Nations banner.&lt;br clear=&quot;both&quot; style=&quot;clear: both;&quot;/&gt;
+&lt;br clear=&quot;both&quot; style=&quot;clear: both;&quot;/&gt;
+&lt;a href=&quot;http://ads.pheedo.com/click.phdo?s=cf30d78d440b6e223b9042e153b20803&amp;p=1&quot;&gt;&lt;img alt=&quot;&quot; style=&quot;border: 0;&quot; border=&quot;0&quot; src=&quot;http://ads.pheedo.com/img.phdo?s=cf30d78d440b6e223b9042e153b20803&amp;p=1&quot;/&gt;&lt;/a&gt;
+</description>
+			<dc:creator>By KAREEM FAHIM and DAVID D. KIRKPATRICK</dc:creator>
+			<pubDate>Wed, 02 Mar 2011 03:53:46 GMT</pubDate>
+			<category domain="http://www.nytimes.com/namespaces/nyt_geo">Libya</category>
+			<category domain="http://www.nytimes.com/namespaces/nyt_per">Qaddafi, Muammar el-</category>
+			<category domain="http://www.nytimes.com/namespaces/des">Middle East and North Africa Unrest (2010- )</category>
+			<category domain="http://www.nytimes.com/namespaces/des">Demonstrations, Protests, and Riots</category>
+			<category domain="http://www.nytimes.com/namespaces/des">Defense and Military Forces</category>
+			<category domain="http://www.nytimes.com/namespaces/des">Politics and Government</category>
+			<category domain="http://www.nytimes.com/namespaces/nyt_geo">Zawiyah (Libya)</category>
+			<category domain="http://www.nytimes.com/namespaces/nyt_org_all">United Nations</category>
+		</item>
+		<item>
+			<title>In Labor Clash, N.F.L.&#x2019;s Union Calls Old Play</title>
+			<link>http://feeds.nytimes.com/click.phdo?i=03340e8a5c463804a0e2a3f53facf17d</link>
+			<pheedo:origLink>http://www.nytimes.com/2011/03/02/sports/football/02union.html?partner=rss&amp;amp;emc=rss</pheedo:origLink>
+			<guid isPermaLink="false">http://www.nytimes.com/2011/03/02/sports/football/02union.html</guid>
+			<media:content url="http://graphics8.nytimes.com/images/2011/03/02/sports/JP-UNION/JP-UNION-thumbStandard.jpg" medium="image" height="75" width="75"/>
+			<media:description>N.F.L. Commissioner Roger Goodell has been attending bargaining sessions in Washington, where little progress has been reported.</media:description>
+			<media:credit>Alex Brandon/Associated Press</media:credit>
+			<description>Yet another indication that sports are different: in the N.F.L., management wants to keep the union.&lt;br clear=&quot;both&quot; style=&quot;clear: both;&quot;/&gt;
+&lt;br clear=&quot;both&quot; style=&quot;clear: both;&quot;/&gt;
+&lt;a href=&quot;http://ads.pheedo.com/click.phdo?s=03340e8a5c463804a0e2a3f53facf17d&amp;p=1&quot;&gt;&lt;img alt=&quot;&quot; style=&quot;border: 0;&quot; border=&quot;0&quot; src=&quot;http://ads.pheedo.com/img.phdo?s=03340e8a5c463804a0e2a3f53facf17d&amp;p=1&quot;/&gt;&lt;/a&gt;
+</description>
+			<dc:creator>By JUDY BATTISTA</dc:creator>
+			<pubDate>Wed, 02 Mar 2011 03:14:36 GMT</pubDate>
+			<category domain="http://www.nytimes.com/namespaces/des">Organized Labor</category>
+			<category domain="http://www.nytimes.com/namespaces/des">Football</category>
+			<category domain="http://www.nytimes.com/namespaces/nyt_org_all">National Football League</category>
+			<category domain="http://www.nytimes.com/namespaces/nyt_org_all">National Football League Players Assn</category>
+			<category domain="http://www.nytimes.com/namespaces/des">Antitrust Laws and Competition Issues</category>
+			<category domain="http://www.nytimes.com/namespaces/mdes">Lockouts</category>
+		</item>
+		<item>
+			<title>A Tax Cut May Carve Into the Budgets of 19 States</title>
+			<link>http://feeds.nytimes.com/click.phdo?i=974adb543b73d34a824f111415b18009</link>
+			<pheedo:origLink>http://www.nytimes.com/2011/03/02/us/politics/02taxes.html?partner=rss&amp;amp;emc=rss</pheedo:origLink>
+			<guid isPermaLink="false">http://www.nytimes.com/2011/03/02/us/politics/02taxes.html</guid>
+			<description>States could lose as much as $5.3 billion in an unintended consequence of one of President Obama&#x2019;s tax cuts.&lt;br clear=&quot;both&quot; style=&quot;clear: both;&quot;/&gt;
+&lt;br clear=&quot;both&quot; style=&quot;clear: both;&quot;/&gt;
+&lt;a href=&quot;http://ads.pheedo.com/click.phdo?s=974adb543b73d34a824f111415b18009&amp;p=1&quot;&gt;&lt;img alt=&quot;&quot; style=&quot;border: 0;&quot; border=&quot;0&quot; src=&quot;http://ads.pheedo.com/img.phdo?s=974adb543b73d34a824f111415b18009&amp;p=1&quot;/&gt;&lt;/a&gt;
+</description>
+			<dc:creator>By MICHAEL COOPER</dc:creator>
+			<pubDate>Wed, 02 Mar 2011 03:30:26 GMT</pubDate>
+			<category domain="http://www.nytimes.com/namespaces/des">Taxation</category>
+			<category domain="http://www.nytimes.com/namespaces/des">Federal Taxes (US)</category>
+			<category domain="http://www.nytimes.com/namespaces/mdes">States (US)</category>
+		</item>
+		<item>
+			<title>In London, U.S. Art Enjoys Diplomatic Showcase</title>
+			<link>http://feeds.nytimes.com/click.phdo?i=3d2b9a44ecbe8f867d5943e8a27d4fbb</link>
+			<pheedo:origLink>http://www.nytimes.com/2011/03/02/arts/design/02susman.html?partner=rss&amp;amp;emc=rss</pheedo:origLink>
+			<guid isPermaLink="false">http://www.nytimes.com/2011/03/02/arts/design/02susman.html</guid>
+			<media:content url="http://graphics8.nytimes.com/images/2011/02/28/arts/susman1/susman1-thumbStandard.jpg" medium="image" height="75" width="75"/>
+			<media:description>Ambassador Louis B. Susman and his wife, Marjorie, above with a Mark Rothko work, have filled the embassy residence in Regent&#x2019;s Park, London with contemporary American art.</media:description>
+			<media:credit>Hazel Thompson for The New York Times</media:credit>
+			<description>The United States ambassador to Britain and his wife use their residence as a setting for American art.&lt;br clear=&quot;both&quot; style=&quot;clear: both;&quot;/&gt;
+&lt;br clear=&quot;both&quot; style=&quot;clear: both;&quot;/&gt;
+&lt;a href=&quot;http://ads.pheedo.com/click.phdo?s=3d2b9a44ecbe8f867d5943e8a27d4fbb&amp;p=1&quot;&gt;&lt;img alt=&quot;&quot; style=&quot;border: 0;&quot; border=&quot;0&quot; src=&quot;http://ads.pheedo.com/img.phdo?s=3d2b9a44ecbe8f867d5943e8a27d4fbb&amp;p=1&quot;/&gt;&lt;/a&gt;
+</description>
+			<dc:creator>By CAROL VOGEL</dc:creator>
+			<pubDate>Wed, 02 Mar 2011 03:30:20 GMT</pubDate>
+			<category domain="http://www.nytimes.com/namespaces/des">Art</category>
+			<category domain="http://www.nytimes.com/namespaces/nyt_geo">London (England)</category>
+			<category domain="http://www.nytimes.com/namespaces/nyt_per">Susman, Louis B.</category>
+		</item>
+		<item>
+			<title>City Council Earmarks Flow to Brain Scan Group</title>
+			<link>http://feeds.nytimes.com/click.phdo?i=9dd28cdf51aae82326f44bbdbb200ffe</link>
+			<pheedo:origLink>http://www.nytimes.com/2011/03/02/nyregion/02scan.html?partner=rss&amp;amp;emc=rss</pheedo:origLink>
+			<guid isPermaLink="false">http://www.nytimes.com/2011/03/02/nyregion/02scan.html</guid>
+			<media:content url="http://graphics8.nytimes.com/images/2011/03/02/nyregion/SCAN/SCAN-thumbStandard.jpg" medium="image" height="75" width="75"/>
+			<media:description>Until recently, the tractor-trailer housing the Brain Tumor Foundation&#x2019;s M.R.I. machine had been idle for four months. The foundation provides free brain scans to adults in New York City.</media:description>
+			<media:credit>The Brain Tumor Foundation</media:credit>
+			<description>A favorite of the Council&#x2019;s earmark program gives free brain scans in an effort that has been criticized.&lt;br clear=&quot;both&quot; style=&quot;clear: both;&quot;/&gt;
+&lt;br clear=&quot;both&quot; style=&quot;clear: both;&quot;/&gt;
+&lt;a href=&quot;http://ads.pheedo.com/click.phdo?s=9dd28cdf51aae82326f44bbdbb200ffe&amp;p=1&quot;&gt;&lt;img alt=&quot;&quot; style=&quot;border: 0;&quot; border=&quot;0&quot; src=&quot;http://ads.pheedo.com/img.phdo?s=9dd28cdf51aae82326f44bbdbb200ffe&amp;p=1&quot;/&gt;&lt;/a&gt;
+</description>
+			<dc:creator>By JAVIER C. HERNANDEZ</dc:creator>
+			<pubDate>Wed, 02 Mar 2011 03:38:39 GMT</pubDate>
+			<category domain="http://www.nytimes.com/namespaces/nyt_org_all">City Council (NYC)</category>
+			<category domain="http://www.nytimes.com/namespaces/nyt_org_all">Brain Tumor Foundation</category>
+			<category domain="http://www.nytimes.com/namespaces/mdes">Earmarks (Finance)</category>
+			<category domain="http://www.nytimes.com/namespaces/nyt_keyword">Brain Tumors</category>
+			<category domain="http://www.nytimes.com/namespaces/nyt_per">Kelly, Patrick J</category>
+		</item>
+		<item>
+			<title>Feeling Budget Pinch, States Cut Insurance</title>
+			<link>http://feeds.nytimes.com/click.phdo?i=a21252592037402cf392edac50bdbd58</link>
+			<pheedo:origLink>http://www.nytimes.com/2011/03/02/health/policy/02pennsylvania.html?partner=rss&amp;amp;emc=rss</pheedo:origLink>
+			<guid isPermaLink="false">http://www.nytimes.com/2011/03/02/health/policy/02pennsylvania.html</guid>
+			<media:content url="http://graphics8.nytimes.com/images/2011/03/02/us/PENNSYLVANIA-2/PENNSYLVANIA-2-thumbStandard.jpg" medium="image" height="75" width="75"/>
+			<media:description>Artist Ken Kewley, a single father and homeowner in Easton, Penn., was a participant in Pennsylvania&#x2019;s Adult Basic Health care program and witnessed the program&#x2019;s end on Feb. 28, 2011.</media:description>
+			<media:credit>Matt Rainey for The New York Times</media:credit>
+			<description>Most of the more than 41,000 Pennsylvanians who had been covered by a state-subsidized insurance program have lost it, and other states are making similar cuts.&lt;br clear=&quot;both&quot; style=&quot;clear: both;&quot;/&gt;
+&lt;br clear=&quot;both&quot; style=&quot;clear: both;&quot;/&gt;
+&lt;a href=&quot;http://ads.pheedo.com/click.phdo?s=a21252592037402cf392edac50bdbd58&amp;p=1&quot;&gt;&lt;img alt=&quot;&quot; style=&quot;border: 0;&quot; border=&quot;0&quot; src=&quot;http://ads.pheedo.com/img.phdo?s=a21252592037402cf392edac50bdbd58&amp;p=1&quot;/&gt;&lt;/a&gt;
+</description>
+			<dc:creator>By KEVIN SACK</dc:creator>
+			<pubDate>Wed, 02 Mar 2011 03:09:09 GMT</pubDate>
+			<category domain="http://www.nytimes.com/namespaces/des">Health Insurance and Managed Care</category>
+			<category domain="http://www.nytimes.com/namespaces/nyt_geo">Pennsylvania</category>
+			<category domain="http://www.nytimes.com/namespaces/mdes">States (US)</category>
+			<category domain="http://www.nytimes.com/namespaces/mdes">Budgets and Budgeting</category>
+		</item>
+		<item>
+			<title>Economic Scene: Union Pay Isn&#x2019;t Busting State Budgets</title>
+			<link>http://feeds.nytimes.com/click.phdo?i=c0ff96450daf94fefd3cbc00fb3eb8e7</link>
+			<pheedo:origLink>http://www.nytimes.com/2011/03/02/business/02leonhardt.html?partner=rss&amp;amp;emc=rss</pheedo:origLink>
+			<guid isPermaLink="false">http://www.nytimes.com/2011/03/02/business/02leonhardt.html</guid>
+			<description>The real problem with most union contracts for public workers is not the money &#x2014; it&#x2019;s almost everything else.&lt;br clear=&quot;both&quot; style=&quot;clear: both;&quot;/&gt;
+&lt;br clear=&quot;both&quot; style=&quot;clear: both;&quot;/&gt;
+&lt;a href=&quot;http://ads.pheedo.com/click.phdo?s=c0ff96450daf94fefd3cbc00fb3eb8e7&amp;p=1&quot;&gt;&lt;img alt=&quot;&quot; style=&quot;border: 0;&quot; border=&quot;0&quot; src=&quot;http://ads.pheedo.com/img.phdo?s=c0ff96450daf94fefd3cbc00fb3eb8e7&amp;p=1&quot;/&gt;&lt;/a&gt;
+</description>
+			<dc:creator>By DAVID LEONHARDT</dc:creator>
+			<pubDate>Wed, 02 Mar 2011 02:47:59 GMT</pubDate>
+			<category domain="http://www.nytimes.com/namespaces/mdes">Government Employees</category>
+			<category domain="http://www.nytimes.com/namespaces/mdes">Organized Labor</category>
+			<category domain="http://www.nytimes.com/namespaces/des">Wages and Salaries</category>
+			<category domain="http://www.nytimes.com/namespaces/mdes">Pensions and Retirement Plans</category>
+			<category domain="http://www.nytimes.com/namespaces/mdes">Health Insurance and Managed Care</category>
+		</item>
+		<item>
+			<title>Galliano Case Tests Dior Brand&#x2019;s Future</title>
+			<link>http://feeds.nytimes.com/click.phdo?i=49952d00c5e3e0e5f709137344d4f956</link>
+			<pheedo:origLink>http://www.nytimes.com/2011/03/02/fashion/02galliano-dior.html?partner=rss&amp;amp;emc=rss</pheedo:origLink>
+			<guid isPermaLink="false">http://www.nytimes.com/2011/03/02/fashion/02galliano-dior.html</guid>
+			<media:content url="http://graphics8.nytimes.com/images/2011/03/02/fashion/02galliano-dior2_337/02galliano-dior2_337-thumbStandard.jpg" medium="image" height="75" width="75"/>
+			<media:description>John Galliano appeared at the end of his haute couture spring/summer 2011 fashion show for Dior in January.</media:description>
+			<media:credit>Benoit Tessier/Reuters</media:credit>
+			<description>Troubled by the actions of its star designer John Galliano, Christian Dior acted quickly and decisively in an effort to limit any long-term damage to the brand.&lt;br clear=&quot;both&quot; style=&quot;clear: both;&quot;/&gt;
+&lt;br clear=&quot;both&quot; style=&quot;clear: both;&quot;/&gt;
+&lt;a href=&quot;http://ads.pheedo.com/click.phdo?s=49952d00c5e3e0e5f709137344d4f956&amp;p=1&quot;&gt;&lt;img alt=&quot;&quot; style=&quot;border: 0;&quot; border=&quot;0&quot; src=&quot;http://ads.pheedo.com/img.phdo?s=49952d00c5e3e0e5f709137344d4f956&amp;p=1&quot;/&gt;&lt;/a&gt;
+</description>
+			<dc:creator>By CATHY HORYN</dc:creator>
+			<pubDate>Wed, 02 Mar 2011 03:24:34 GMT</pubDate>
+			<category domain="http://www.nytimes.com/namespaces/nyt_org_all">Christian Dior SA</category>
+			<category domain="http://www.nytimes.com/namespaces/nyt_per">Galliano, John</category>
+			<category domain="http://www.nytimes.com/namespaces/mdes">Suspensions, Dismissals and Resignations</category>
+			<category domain="http://www.nytimes.com/namespaces/mdes">Anti-Semitism</category>
+		</item>
+		<item>
+			<title>House Advances Budget and Cuts $4 Billion</title>
+			<link>http://feeds.nytimes.com/click.phdo?i=d2be2d571e659e296c6cfdac148ffb02</link>
+			<pheedo:origLink>http://www.nytimes.com/2011/03/02/us/politics/02budget.html?partner=rss&amp;amp;emc=rss</pheedo:origLink>
+			<guid isPermaLink="false">http://www.nytimes.com/2011/03/02/us/politics/02budget.html</guid>
+			<description>In a bipartisan vote of 335 to 91, Congress passed a measure that cuts $4 billion in federal spending, but it is good only until March 18.&lt;br clear=&quot;both&quot; style=&quot;clear: both;&quot;/&gt;
+&lt;br clear=&quot;both&quot; style=&quot;clear: both;&quot;/&gt;
+&lt;a href=&quot;http://ads.pheedo.com/click.phdo?s=d2be2d571e659e296c6cfdac148ffb02&amp;p=1&quot;&gt;&lt;img alt=&quot;&quot; style=&quot;border: 0;&quot; border=&quot;0&quot; src=&quot;http://ads.pheedo.com/img.phdo?s=d2be2d571e659e296c6cfdac148ffb02&amp;p=1&quot;/&gt;&lt;/a&gt;
+</description>
+			<dc:creator>By CARL HULSE</dc:creator>
+			<pubDate>Wed, 02 Mar 2011 02:57:07 GMT</pubDate>
+			<category domain="http://www.nytimes.com/namespaces/des">United States Politics and Government</category>
+			<category domain="http://www.nytimes.com/namespaces/des">Federal Budget (US)</category>
+			<category domain="http://www.nytimes.com/namespaces/nyt_org_all">House of Representatives</category>
+		</item>
+		<item>
+			<title>Supreme Court Rules on AT&amp;T Case</title>
+			<link>http://feeds.nytimes.com/click.phdo?i=6961a17fd03cbdcaf33b025e1f3f0f63</link>
+			<pheedo:origLink>http://www.nytimes.com/2011/03/02/us/02scotus.html?partner=rss&amp;amp;emc=rss</pheedo:origLink>
+			<guid isPermaLink="false">http://www.nytimes.com/2011/03/02/us/02scotus.html</guid>
+			<media:content url="http://graphics8.nytimes.com/images/2011/03/02/us/SCOTUS/SCOTUS-thumbStandard.jpg" medium="image" height="75" width="75"/>
+			<media:description>Chief Justice John G. Roberts Jr. wrote the court&#x2019;s decision.</media:description>
+			<media:credit>Brendan Hoffman for The New York Times</media:credit>
+			<description>Chief Justice John G. Roberts Jr. parsed the word &#x201C;personal&#x201D; for AT&amp;T as the company tried to block release of some documents.&lt;br clear=&quot;both&quot; style=&quot;clear: both;&quot;/&gt;
+&lt;br clear=&quot;both&quot; style=&quot;clear: both;&quot;/&gt;
+&lt;a href=&quot;http://ads.pheedo.com/click.phdo?s=6961a17fd03cbdcaf33b025e1f3f0f63&amp;p=1&quot;&gt;&lt;img alt=&quot;&quot; style=&quot;border: 0;&quot; border=&quot;0&quot; src=&quot;http://ads.pheedo.com/img.phdo?s=6961a17fd03cbdcaf33b025e1f3f0f63&amp;p=1&quot;/&gt;&lt;/a&gt;
+</description>
+			<dc:creator>By ADAM LIPTAK</dc:creator>
+			<pubDate>Wed, 02 Mar 2011 03:42:26 GMT</pubDate>
+			<category domain="http://www.nytimes.com/namespaces/nyt_org_all">AT&amp;T Inc|T|NYSE</category>
+			<category domain="http://www.nytimes.com/namespaces/mdes">Privacy</category>
+			<category domain="http://www.nytimes.com/namespaces/mdes">Freedom of Information Act</category>
+			<category domain="http://www.nytimes.com/namespaces/nyt_org_all">Supreme Court</category>
+			<category domain="http://www.nytimes.com/namespaces/des">Decisions and Verdicts</category>
+			<category domain="http://www.nytimes.com/namespaces/nyt_org_all">Federal Communications Commission</category>
+			<category domain="http://www.nytimes.com/namespaces/nyt_per">Roberts, John G Jr</category>
+		</item>
+		<item>
+			<title>Baseball Said to End Big Loans to Mets</title>
+			<link>http://feeds.nytimes.com/click.phdo?i=4623008d80775cb889527955a766ee10</link>
+			<pheedo:origLink>http://www.nytimes.com/2011/03/02/sports/baseball/02wilpon.html?partner=rss&amp;amp;emc=rss</pheedo:origLink>
+			<guid isPermaLink="false">http://www.nytimes.com/2011/03/02/sports/baseball/02wilpon.html</guid>
+			<description>Baseball&#x2019;s decision to restrict the club&#x2019;s access to emergency funds probably leaves the Mets without their best remaining source of cash.&lt;br clear=&quot;both&quot; style=&quot;clear: both;&quot;/&gt;
+&lt;br clear=&quot;both&quot; style=&quot;clear: both;&quot;/&gt;
+&lt;a href=&quot;http://ads.pheedo.com/click.phdo?s=4623008d80775cb889527955a766ee10&amp;p=1&quot;&gt;&lt;img alt=&quot;&quot; style=&quot;border: 0;&quot; border=&quot;0&quot; src=&quot;http://ads.pheedo.com/img.phdo?s=4623008d80775cb889527955a766ee10&amp;p=1&quot;/&gt;&lt;/a&gt;
+</description>
+			<dc:creator>By DAVID WALDSTEIN</dc:creator>
+			<pubDate>Wed, 02 Mar 2011 03:53:46 GMT</pubDate>
+			<category domain="http://www.nytimes.com/namespaces/nyt_org_all">New York Mets</category>
+			<category domain="http://www.nytimes.com/namespaces/nyt_org_all">Major League Baseball</category>
+			<category domain="http://www.nytimes.com/namespaces/nyt_per">Wilpon, Fred</category>
+			<category domain="http://www.nytimes.com/namespaces/nyt_per">Katz, Saul B</category>
+			<category domain="http://www.nytimes.com/namespaces/des">Credit and Debt</category>
+		</item>
+		<item>
+			<title>Plan Would Erase All-Business Town</title>
+			<link>http://feeds.nytimes.com/click.phdo?i=51846ca8d29c140b677fb82e59d85943</link>
+			<pheedo:origLink>http://www.nytimes.com/2011/03/02/us/02vernon.html?partner=rss&amp;amp;emc=rss</pheedo:origLink>
+			<guid isPermaLink="false">http://www.nytimes.com/2011/03/02/us/02vernon.html</guid>
+			<media:content url="http://graphics8.nytimes.com/images/2011/03/02/us/VERNON-4/VERNON-4-thumbStandard.jpg" medium="image" height="75" width="75"/>
+			<media:description>John A. P&#xE9;rez is behind the plan to make Vernon a part of Los Angeles.</media:description>
+			<media:credit>Justin Sullivan/Getty Images</media:credit>
+			<description>A proposal would disincorporate Vernon, a town that is short on residents and has a long history of corruption.&lt;br clear=&quot;both&quot; style=&quot;clear: both;&quot;/&gt;
+&lt;br clear=&quot;both&quot; style=&quot;clear: both;&quot;/&gt;
+&lt;a href=&quot;http://ads.pheedo.com/click.phdo?s=51846ca8d29c140b677fb82e59d85943&amp;p=1&quot;&gt;&lt;img alt=&quot;&quot; style=&quot;border: 0;&quot; border=&quot;0&quot; src=&quot;http://ads.pheedo.com/img.phdo?s=51846ca8d29c140b677fb82e59d85943&amp;p=1&quot;/&gt;&lt;/a&gt;
+</description>
+			<dc:creator>By ADAM NAGOURNEY</dc:creator>
+			<pubDate>Wed, 02 Mar 2011 03:38:39 GMT</pubDate>
+			<category domain="http://www.nytimes.com/namespaces/des">Relocation of Business</category>
+			<category domain="http://www.nytimes.com/namespaces/des">Frauds and Swindling</category>
+			<category domain="http://www.nytimes.com/namespaces/nyt_geo">California</category>
+		</item>
+		<item>
+			<title>Music Director Cancels in Boston</title>
+			<link>http://feeds.nytimes.com/click.phdo?i=b9aec9f2b39017ca95a9062a32962836</link>
+			<pheedo:origLink>http://www.nytimes.com/2011/03/02/arts/music/02levine.html?partner=rss&amp;amp;emc=rss</pheedo:origLink>
+			<guid isPermaLink="false">http://www.nytimes.com/2011/03/02/arts/music/02levine.html</guid>
+			<description>Recurring health problems have forced the conductor James Levine to cancel the rest of his season with the Boston Symphony, where he is music director.&lt;br clear=&quot;both&quot; style=&quot;clear: both;&quot;/&gt;
+&lt;br clear=&quot;both&quot; style=&quot;clear: both;&quot;/&gt;
+&lt;a href=&quot;http://ads.pheedo.com/click.phdo?s=b9aec9f2b39017ca95a9062a32962836&amp;p=1&quot;&gt;&lt;img alt=&quot;&quot; style=&quot;border: 0;&quot; border=&quot;0&quot; src=&quot;http://ads.pheedo.com/img.phdo?s=b9aec9f2b39017ca95a9062a32962836&amp;p=1&quot;/&gt;&lt;/a&gt;
+</description>
+			<dc:creator>By DANIEL J. WAKIN</dc:creator>
+			<pubDate>Wed, 02 Mar 2011 03:21:35 GMT</pubDate>
+			<category domain="http://www.nytimes.com/namespaces/des">Classical Music</category>
+			<category domain="http://www.nytimes.com/namespaces/nyt_per">Levine, James</category>
+			<category domain="http://www.nytimes.com/namespaces/nyt_org_all">Boston Symphony Orchestra</category>
+		</item>
+		<item>
+			<title>Wastewater Recycling No Cure-All in Gas Process</title>
+			<link>http://feeds.nytimes.com/click.phdo?i=6ef8400a43a7d25789b7d03e8cf83f53</link>
+			<pheedo:origLink>http://www.nytimes.com/2011/03/02/us/02gas.html?partner=rss&amp;amp;emc=rss</pheedo:origLink>
+			<guid isPermaLink="false">http://www.nytimes.com/2011/03/02/us/02gas.html</guid>
+			<media:content url="http://graphics8.nytimes.com/images/2011/03/01/us/01gas_cnd/01gas_cnd-thumbStandard.jpg" medium="image" height="75" width="75"/>
+			<media:description>Carl Orso, a truck driver, filled a beaker with wastewater from a natural gas drilling site for testing before unloading at Eureka Resources, a waste water treatment facility, in Williamsport, Penn.</media:description>
+			<media:credit>Jessica Kourkounis for The New York Times</media:credit>
+			<description>Though it has helped the natural gas industry reduce its wastewater, recycling has not eliminated all the hazards.&lt;br clear=&quot;both&quot; style=&quot;clear: both;&quot;/&gt;
+&lt;br clear=&quot;both&quot; style=&quot;clear: both;&quot;/&gt;
+&lt;a href=&quot;http://ads.pheedo.com/click.phdo?s=6ef8400a43a7d25789b7d03e8cf83f53&amp;p=1&quot;&gt;&lt;img alt=&quot;&quot; style=&quot;border: 0;&quot; border=&quot;0&quot; src=&quot;http://ads.pheedo.com/img.phdo?s=6ef8400a43a7d25789b7d03e8cf83f53&amp;p=1&quot;/&gt;&lt;/a&gt;
+</description>
+			<dc:creator>By IAN URBINA</dc:creator>
+			<pubDate>Wed, 02 Mar 2011 03:53:46 GMT</pubDate>
+			<category domain="http://www.nytimes.com/namespaces/des">Waste Materials and Disposal</category>
+			<category domain="http://www.nytimes.com/namespaces/des">Wells</category>
+		</item>
+		<item>
+			<title>Why China Is Nervous About the Arab Revolts</title>
+			<link>http://feeds.nytimes.com/click.phdo?i=b71273f4343d1b5124d1ff577a537b77</link>
+			<pheedo:origLink>http://www.nytimes.com/roomfordebate/2011/02/28/why-is-china-nervous-about-the-arab-uprisings?partner=rss&amp;amp;emc=rss</pheedo:origLink>
+			<guid isPermaLink="false">http://www.nytimes.com/roomfordebate/2011/02/28/why-is-china-nervous-about-the-arab-uprisings</guid>
+			<description>A Room for Debate forum on whether Beijing&#x2019;s leaders can keep broader discontent at bay.&lt;br clear=&quot;both&quot; style=&quot;clear: both;&quot;/&gt;
+&lt;br clear=&quot;both&quot; style=&quot;clear: both;&quot;/&gt;
+&lt;a href=&quot;http://ads.pheedo.com/click.phdo?s=b71273f4343d1b5124d1ff577a537b77&amp;p=1&quot;&gt;&lt;img alt=&quot;&quot; style=&quot;border: 0;&quot; border=&quot;0&quot; src=&quot;http://ads.pheedo.com/img.phdo?s=b71273f4343d1b5124d1ff577a537b77&amp;p=1&quot;/&gt;&lt;/a&gt;
+</description>
+			<dc:creator/>
+			<pubDate>Tue, 01 Mar 2011 06:09:30 GMT</pubDate>
+		</item>
+		<item>
+			<title>Op-Ed: Saving States the Sam&#x2019;s Club Way</title>
+			<link>http://feeds.nytimes.com/click.phdo?i=ae3d8c593cc847cb2b8220f7e4d9bc81</link>
+			<pheedo:origLink>http://www.nytimes.com/2011/03/01/opinion/01Yarkin.html?partner=rss&amp;amp;emc=rss</pheedo:origLink>
+			<guid isPermaLink="false">http://www.nytimes.com/2011/03/01/opinion/01Yarkin.html</guid>
+			<description>How buying in bulk can help narrow budget gaps.&lt;br clear=&quot;both&quot; style=&quot;clear: both;&quot;/&gt;
+&lt;br clear=&quot;both&quot; style=&quot;clear: both;&quot;/&gt;
+&lt;a href=&quot;http://ads.pheedo.com/click.phdo?s=ae3d8c593cc847cb2b8220f7e4d9bc81&amp;p=1&quot;&gt;&lt;img alt=&quot;&quot; style=&quot;border: 0;&quot; border=&quot;0&quot; src=&quot;http://ads.pheedo.com/img.phdo?s=ae3d8c593cc847cb2b8220f7e4d9bc81&amp;p=1&quot;/&gt;&lt;/a&gt;
+</description>
+			<dc:creator/>
+			<pubDate>Tue, 01 Mar 2011 06:06:22 GMT</pubDate>
+		</item>
+	</channel>
+</rss>

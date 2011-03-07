@@ -1,0 +1,1866 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+<head>
+<meta content='iitJxuWLjtoK2cUdZtHd8yn6yWLcf5HRPezdIAwXW50=' name='verify-v1'/>
+<meta content='text/html; charset=UTF-8' http-equiv='Content-Type'/>
+<script type="text/javascript">(function() { var a=window;function c(b){this.t={};this.tick=function(d,i,e){e=e!=undefined?e:(new Date).getTime();this.t[d]=[e,i]};this.tick("start",null,b)}var f=new c;a.jstiming={Timer:c,load:f};try{var g=null;if(a.chrome&&a.chrome.csi)g=Math.floor(a.chrome.csi().pageT);if(g==null)if(a.gtbExternal)g=a.gtbExternal.pageT();if(g==null)if(a.external)g=a.external.pageT;if(g)a.jstiming.pt=g}catch(h){};a.tickAboveFold=function(b){var d=0;if(b.offsetParent){do d+=b.offsetTop;while(b=b.offsetParent)}b=d;b<=750&&a.jstiming.load.tick("aft")};var j=false;function k(){if(!j){j=true;a.jstiming.load.tick("firstScrollTime")}}a.addEventListener?a.addEventListener("scroll",k,false):a.attachEvent("onscroll",k);
+ })();</script>
+<script type="text/javascript">(function(){function b(a){var c=a.split("?");switch(c.length){case 1:return a+"?m=1";case 2:if(c[1].search("(^|&)m=")>=0)return null;return a+"&m=1";default:return null}}var d;var e=navigator.userAgent;d=e.indexOf("Mobile")!=-1&&e.indexOf("WebKit")!=-1&&e.indexOf("iPad")==-1?true:false;if(d){var f=b(window.location.href);f&&window.location.replace(f)};})();
+</script>
+<meta content='true' name='MSSmartTagsPreventParsing'/>
+<meta content='blogger' name='generator'/>
+<link href='http://www.blogger.com/favicon.ico' rel='icon' type='image/vnd.microsoft.icon'/>
+<link href='http://googleblog.blogspot.com/' rel='canonical'/>
+<link rel="alternate" type="application/atom+xml" title="Official Google Blog - Atom" href="http://googleblog.blogspot.com/feeds/posts/default" />
+<link rel="alternate" type="application/rss+xml" title="Official Google Blog - RSS" href="http://googleblog.blogspot.com/feeds/posts/default?alt=rss" />
+<link rel="service.post" type="application/atom+xml" title="Official Google Blog - Atom" href="http://www.blogger.com/feeds/10861780/posts/default" />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.blogger.com/rsd.g?blogID=10861780" />
+<link rel="me" href="http://www.blogger.com/profile/07412689020436815012" />
+<link rel="openid.server" href="http://www.blogger.com/openid-server.g" />
+<!--[if IE]> <script> (function() { var html5 = ("abbr,article,aside,audio,canvas,datalist,details," + "figure,footer,header,hgroup,mark,menu,meter,nav,output," + "progress,section,time,video").split(','); for (var i = 0; i < html5.length; i++) { document.createElement(html5[i]); } })(); </script> <![endif]-->
+<title>Official Google Blog</title>
+<link href='http://www2.blogger.com/widgets/3319451950-blogarchive.css' rel='stylesheet' type='text/css'/><link href='http://www2.blogger.com/widgets/2791266615-blog.css' rel='stylesheet' type='text/css'/><!-- --><link type='text/css' rel='stylesheet' href='http://www.blogger.com/static/v1/widgets/1225290173-widget_css_bundle.css' />
+<link type='text/css' rel='stylesheet' href='http://www.google.com/uds/css/gsearch.css' />
+ <link rel="stylesheet" type="text/css" href="http://www.blogger.com/dyn-css/authorization.css?targetBlogID=10861780&zx=83906aee-03b7-4b95-8cbf-24e1ad2c339d"/>
+<style type="text/css">#navbar-iframe { display:block }
+</style>
+
+<style type='text/css'>@import url('http://www2.blogger.com/css/blog_controls.css');
+@import url('http://www2.blogger.com/dyn-css/authorization.css?blogID=8975829421217267474');
+</style>
+<link href='http://www.google.com/uds/css/gsearch.css' rel='stylesheet' type='text/css'/>
+<style id='page-skin-1' type='text/css'><!--
+/*
+/* Variable definitions
+====================
+<Variable name="bgcolor" description="Page Background Color"
+type="color" default="#fff">
+<Variable name="textcolor" description="Text Color"
+type="color" default="#333">
+<Variable name="linkcolor" description="Link Color"
+type="color" default="#58a">
+<Variable name="pagetitlecolor" description="Blog Title Color"
+type="color" default="#929292">
+<Variable name="pagesubtitlecolor" description="Blog Sub Title Color"
+type="color" default="#929292">
+<Variable name="descriptioncolor" description="Blog Description Color"
+type="color" default="#666666">
+<Variable name="titlecolor" description="Post Title Color"
+type="color" default="#c60">
+<Variable name="bordercolor" description="Border Color"
+type="color" default="#ccc">
+<Variable name="sidebarcolor" description="Sidebar Title Color"
+type="color" default="#000000">
+<Variable name="sidebartextcolor" description="Sidebar Text Color"
+type="color" default="#666">
+<Variable name="visitedlinkcolor" description="Visited Link Color"
+type="color" default="#999">
+<Variable name="bodyfont" description="Text Font"
+type="font" default="normal normal 100% Arial, sans-serif">
+<Variable name="headerfont" description="Sidebar Title Font"
+type="font"
+default="normal normal 95% Arial, sans-serif">
+<Variable name="pagetitlefont" description="Blog Title Font"
+type="font"
+default="normal normal 150% Arial, sans-serif">
+<Variable name="pagesubtitlefont" description="Blog Sub Title Font"
+type="font"
+default="normal normal 50% Arial, sans-serif">
+<Variable name="descriptionfont" description="Blog Description Font"
+type="font"
+default="normal normal 100% Arial, sans-serif">
+<Variable name="postfooterfont" description="Post Footer Font"
+type="font"
+default="normal normal 78% Arial, sans-serif">
+*/
+/* Use this with templates/template-twocol.html */
+body {
+background:#ffffff;
+margin:0;
+color:#333333;
+font-size/* */:/**/small;
+font-size: /**/small;
+text-align: center;
+}
+a img {
+border-width:0;
+}
+/* Header
+-----------------------------------------------
+*/
+#searchcontrol {
+width : 180px;
+}
+#searchResults .gsc-ad-box { display : none; }
+#searchResults {
+margin-right: 25px;
+}
+#searchResults .gsc-control {
+width : 100%;
+}
+#searchResults .gsc-resultsbox-visible {
+border-bottom : 1px solid #e9e9e9;
+margin-bottom : 10px;
+}
+#header-wrapper {
+margin:0 auto 15px;
+min-width:550px;
+}
+#header {
+margin: 5px;
+color:#929292;
+}
+#logo {
+background-image:url('http://photos1.blogger.com/x/blogger2/7380/1325/1600/z/222811/gse_multipart53168.png');
+background-repeat:no-repeat;
+padding-left:225px;
+padding-top:46px;
+height:90px;
+width:550px;
+font: Arial, sans-serif;
+}
+#logo h1 {
+color:#929292;
+padding:0px;
+margin:0px;
+font: Arial, Helvetica, sans-serif;
+font-size:18px;
+font-weight:bold;
+}
+#logo h2 {
+color:#929292;
+padding:0px;
+margin:0px;
+font: Arial, Helvetica, sans-serif;
+font-size:14px;
+}
+#header h1 {
+margin:5px 5px 0;
+padding:15px 20px .25em;
+line-height:1.2em;
+text-transform:uppercase;
+letter-spacing:.2em;
+}
+#header .description {
+margin:0;
+padding:15px 0;
+max-width:700px;
+font: normal normal 100% Arial, sans-serif;
+color: #666666;
+}
+/* Outer-Wrapper
+----------------------------------------------- */
+#outer-wrapper {
+margin:10px 0px 0px 0px;
+padding:0px;
+text-align:left;
+font: normal normal 100% Arial, sans-serif;
+width:760px;
+}
+#main-wrapper {
+width:550px;
+margin:0 0px 5px;
+float:left;
+word-wrap: break-word; /* fix for long text breaking sidebar float in IE */
+}
+#sidebar-wrapper {
+margin-left:10px;
+padding-left:10px;
+width: 180px;
+float:right;
+word-wrap: break-word; /* fix for long text breaking sidebar float in IE */
+overflow: hidden;      /* fix for long non-text content breaking IE sidebar float */
+}
+/* Headings
+----------------------------------------------- */
+h2 {
+margin:1.5em 0 .75em;
+font:normal normal 95% Arial, sans-serif;
+color:#666666;
+}
+/* Posts
+-----------------------------------------------
+*/
+.date-header {
+margin:0;
+padding:0;
+color: #666666;
+}
+.post-author {
+margin:0 0 .5em;
+padding-top:0;
+}
+.byline-author {
+margin: 0;
+padding: 0 0 0 0;
+color: #666666;
+}
+.post {
+margin:.5em 0 1.5em 0;
+border-bottom:1px dotted #cccccc;
+padding-bottom:1.5em;
+}
+.post-body p {
+margin-bottom:0;
+padding-bottom:0;
+}
+.post h2 {
+margin:.25em 0 0 0;
+padding:0;
+font-size:160%;
+font-weight:normal;
+line-height:1.4em;
+color:#cc6600;
+}
+.post h2 a, .post h2 a:visited, .post h2 strong {
+display:block;
+text-decoration:none;
+color:#cc6600;
+font-weight:normal;
+margin-bottom:0;
+padding-bottom:0;
+}
+.post h2 strong, .post h2 a:hover {
+color:#333333;
+}
+.post p {
+}
+.post-footer {
+margin: .75em 0;
+color:#666666;
+font: normal normal 100% Arial, sans-serif;
+line-height: 1.4em;
+}
+.comment-link {
+margin-left:.6em;
+}
+.post img {
+padding:4px;
+border:1px solid #cccccc;
+}
+.post blockquote {
+margin:1em 20px;
+}
+.post blockquote p {
+margin:.75em 0;
+}
+/* Comments
+----------------------------------------------- */
+#comments h4 {
+margin:.25em 0 .5em 0;
+padding:0 0 4px;
+font-size:160%;
+font-weight:normal;
+line-height:1.4em;
+color:#73afdf;
+}
+#comments-block {
+margin:1em 0 1.5em;
+line-height:1.6em;
+}
+#comments-block .comment-author {
+margin:.5em 0;
+}
+#comments-block .comment-body {
+margin:.25em 0 0;
+}
+#comments-block .comment-footer {
+margin:-.25em 0 2em;
+line-height: 1.4em;
+text-transform:uppercase;
+letter-spacing:.1em;
+}
+#comments-block .comment-body p {
+margin:0 0 .75em;
+}
+.deleted-comment {
+font-style:italic;
+color:gray;
+}
+#blog-pager-newer-link {
+float: left;
+}
+#blog-pager-older-link {
+float: right;
+}
+#blog-pager {
+text-align: center;
+}
+.feed-links {
+clear: both;
+line-height: 2.5em;
+}
+/* Sidebar Content
+----------------------------------------------- */
+.sidebar {
+color: #666666;
+line-height: 1.5em;
+}
+.sidebar h2 {
+margin:1em 0 .25em 0;
+padding:7px 0 2px;
+font: Arial, Helvetica, sans-serif;
+font-size:115%;
+font-weight:bold;
+}
+.sidebar ul {
+list-style:none;
+margin:0 0 0 0;
+padding:0 0 0 0;
+text-indent:none;
+}
+.sidebar li {
+margin:0;
+padding:0 0 .25em 0px;
+line-height:1.5em;
+}
+.smalllink {
+font-size:75%;
+color:#666666;
+}
+.listelement {
+margin-bottom: .7em;
+}
+padding:
+.sidebar .widget, .main .widget {
+margin:0 0 1.5em;
+padding:0 0 1.5em;
+}
+.main .Blog {
+border-bottom-width: 0;
+margin-left: 5px;
+}
+/* Profile
+----------------------------------------------- */
+.profile-img {
+float: left;
+margin: 0 5px 5px 0;
+padding: 4px;
+border: 1px solid #cccccc;
+}
+.profile-data {
+margin:0;
+text-transform:uppercase;
+letter-spacing:.1em;
+font: normal normal 78% Arial, sans-serif;
+color: #666666;
+font-weight: bold;
+line-height: 1.6em;
+}
+.profile-datablock {
+margin:.5em 0 .5em;
+}
+.profile-textblock {
+margin: 0.5em 0;
+line-height: 1.6em;
+}
+.profile-link {
+font: normal normal 78% Arial, sans-serif;
+text-transform: uppercase;
+letter-spacing: .1em;
+}
+/* Footer
+----------------------------------------------- */
+#footer {
+margin:0 auto;
+clear:both;
+padding-top:15px;
+line-height: 1.6em;
+text-align: left;
+font: normal normal 100% Arial, sans-serif;
+}
+/** Page structure tweaks for layout editor wireframe */
+body#layout #header {
+margin-left: 0px;
+margin-right: 0px;
+}
+/** share icons */
+.share {float:left; display:block; padding-right:4px; width:16px; height:16px; margin-top:2px;}
+.share-end {display:block; clear:left;}
+.share-bebo, .share-delicious, .share-digg, .share-facebook, .share-generic,
+.share-livespaces, .share-myspace, .share-orkut, .share-twitter, .share-misterwong,
+.share-reader, .share-technorati, .share-meneame, .share-igoogle, .share-buzz{
+background:no-repeat url(http://www.google.com/googleblogs/images/icons/sharepost/sharing-sprite.gif)}
+.share-bebo{background-position: 0 -112px;}
+.share-delicious{background-position: 0 -32px;}
+.share-digg{background-position: 0 -96px;}
+.share-facebook{background-position: 0 0;}
+.share-generic{background-position: 0 -64px;}
+.share-livespaces{background-position: 0 -80px;}
+.share-myspace{background-position: 0 -16px;}
+.share-orkut{background-position: 0 -128px;}
+.share-twitter{background-position: 0 -48px;}
+.share-misterwong{background-position: 0 -144px;}
+.share-reader{background-position: 0 -160px;}
+.share-technorati{background-position: 0 -176px;}
+.share-meneame{background-position: 0 -192px;}
+.share-igoogle{background-position: 0 -208px;}
+.share-buzz{background-position: 0 -224px;}
+ul.gcb-sharelinks {
+display:inline-block;
+margin-left:0;
+padding-left:0;
+}
+ul.gcb-sharelinks li {
+list-style:none;
+float:left;
+padding-right:8px;
+}
+
+--></style>
+<script src='http://www.google.com/uds/api?file=uds.js&v=1.0&key=ABQIAAAA_YJR13Pfd1DLDQs4kgKbQxTxAb0xtwQQCqJhhTH0tdrRSrWJ4RR2PabXite0o1TcEPO2djBsg9GdFg' type='text/javascript'></script>
+<script language='Javascript' type='text/javascript'>
+    //<![CDATA[
+
+function validateAmount(amount){
+       if(amount.value.match( /^[0-9]+(\.([0-9]+))?$/)){
+             if (amount.value >= 5) {
+             return true;
+              }else{
+                alert('Your donation must be at least $5');
+                amount.focus();
+                return false;
+                 }
+       }else{
+               alert('You must enter a valid donation.');
+               amount.focus();
+               return false;
+       }
+}
+
+
+    //]]>
+</script>
+<script type='text/javascript'>
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-18015-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<script type="text/javascript">
+if (window.jstiming) window.jstiming.load.tick('headEnd');
+</script></head>
+<body>
+<div class='navbar section' id='navbar'><div class='widget Navbar' id='Navbar1'><script type="text/javascript">
+    
+    function setAttributeOnload(object, attribute, val) {
+      if(window.addEventListener) {
+        window.addEventListener("load",
+          function(){ object[attribute] = val; }, false);
+      } else {
+        window.attachEvent('onload', function(){ object[attribute] = val; });
+      }
+    }
+    function showRelatedContent() {
+      var el = document.getElementById('related-frame');
+      if (el.style.visibility = 'visible') {
+        return;
+      }
+
+      el.style.visibility = 'visible';
+      el.src = '/related-content.g?q=' /* insert URL here */;
+      showRelatedContent.prevOnClick = document.onclick;
+
+      // Hide related-content dropdown when clicking anywhere but on it.
+      document.onclick = function() {
+        var el = document.getElementById('related-frame');
+        if (el.style.visbility != 'hidden') {
+          el.style.visibility = 'hidden';
+        }
+        document.onclick = showRelatedContent.prevOnClick;
+      };
+    }
+    
+  </script>
+<iframe src="http://www.blogger.com/navbar.g?targetBlogID=10861780&amp;blogName=Official+Google+Blog&amp;publishMode=PUBLISH_MODE_BLOGSPOT&amp;navbarType=LIGHT&amp;layoutType=LAYOUTS&amp;searchRoot=http%3A%2F%2Fgoogleblog.blogspot.com%2Fsearch&amp;blogLocale=en_US&amp;homepageUrl=http%3A%2F%2Fgoogleblog.blogspot.com%2F" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" height="30px" width="100%" id="navbar-iframe" allowtransparency="true" title="Blogger Navigation and Search"></iframe>
+
+<div></div></div></div>
+<center>
+<div id='outer-wrapper'><div id='wrap2'>
+<!-- skip links for text browsers -->
+<span id='skiplinks' style='display:none;'>
+<a href='#main'>skip to main </a> |
+      <a href='#sidebar'>skip to sidebar</a>
+</span>
+<div id='content-wrapper'>
+<div id='main-wrapper'>
+<div class='header-wrapper'>
+<a href='http://googleblog.blogspot.com'><img alt='The Official Google Blog - Insights from Googlers into our products, technology and the Google culture' src='http://www.google.com/googleblogs/images/headers/ogb_header_full.png'/></a>
+<div class='header section' id='header'><div class='widget Header' id='Header1'>
+<p class='description'><span>
+</span></p>
+</div></div>
+</div>
+<div class='main section' id='main'><div class='widget Blog' id='Blog1'>
+<div class='blog-posts'>
+<div class='post uncustomized-post-template'>
+<a name='3092756953811288184'></a>
+<h2 class='post-title'>
+<a href='http://googleblog.blogspot.com/2011/02/finding-more-high-quality-sites-in.html'>Finding more high-quality sites in search</a>
+</h2>
+<div class='post-body'>
+<div class='date-header'>
+2/24/2011 06:50:00 PM
+</div>
+<div><br /></div>Our goal is simple: to give people the most relevant answers to their queries as quickly as possible. This requires constant tuning of our algorithms, as new content&#8212;both good and bad&#8212;comes online all the time.<br /><br />Many of the changes we make are so subtle that very few people notice them. But in the last day or so we launched a pretty big algorithmic improvement to our ranking&#8212;a change that noticeably impacts 11.8% of our queries&#8212;and we wanted to let people know what&#8217;s going on. This update is designed to reduce rankings for low-quality sites&#8212;sites which are low-value add for users, copy content from other websites or sites that are just not very useful. At the same time, it will provide better rankings for high-quality sites&#8212;sites with original content and information such as research, in-depth reports, thoughtful analysis and so on.<br /><br />We can&#8217;t make a major improvement without affecting rankings for many sites. It has to be that some sites will go up and some will go down. Google depends on the high-quality content created by wonderful websites around the world, and we do have a responsibility to encourage a healthy web ecosystem. Therefore, it is important for high-quality sites to be rewarded, and that&#8217;s exactly what this change does.<br /><br />It&#8217;s worth noting that this update does not rely on the feedback we&#8217;ve received from the <a href="https://chrome.google.com/webstore/detail/nolijncfnkgaikbjbdaogikpmpbdcdef">Personal Blocklist Chrome extension</a>, which we launched last week. However, we did compare the Blocklist data we gathered with the sites identified by our algorithm, and we were very pleased that the preferences our users expressed by using the extension are well represented. If you take the top several dozen or so most-blocked domains from the Chrome extension, then this algorithmic change addresses 84% of them, which is strong independent confirmation of the user benefits.<br /><br />So, we&#8217;re very excited about this new ranking improvement because we believe it&#8217;s a big step in the right direction of helping people find ever higher quality in our results. We&#8217;ve been tackling these issues for more than a year, and working on this specific change for the past few months. And we&#8217;re working on many more updates that we believe will substantially improve the quality of the pages in our results.<br /><br />To start with, we&#8217;re launching this change in the U.S. only; we plan to roll it out elsewhere over time. We&#8217;ll keep you posted as we roll this and other changes out, and as always please keep giving us feedback about the quality of our results because it really helps us to improve Google Search.<br /><br /><span class="byline-author">Posted by Amit Singhal, Google Fellow, and Matt Cutts, Principal Engineer</span>
+<div style='clear: both;'></div>
+</div>
+<div class='post-footer'>
+<p class='post-footer-line post-footer-line-1'>
+<span class='post-comment-link'>
+</span>
+<a href='http://googleblog.blogspot.com/2011/02/finding-more-high-quality-sites-in.html' title='permanent link'>Permalink</a>
+<a class='comment-link' href='http://googleblog.blogspot.com/2011/02/finding-more-high-quality-sites-in.html#links'>Links to this post</a>
+<span class='post-icons'>
+<span class='item-action'>
+<a href='http://www.blogger.com/email-post.g?blogID=10861780&postID=3092756953811288184' title='Email Post'>
+<img alt='' class='icon-action' src='http://www.blogger.com/img/icon18_email.gif'/>
+</a>
+</span>
+<span class='item-control blog-admin pid-1782730031'>
+<a href='http://www.blogger.com/post-edit.g?blogID=10861780&postID=3092756953811288184' title='Edit Post'>
+<img alt='' class='icon-action' height='18' src='http://img2.blogblog.com/img/icon18_edit_allbkg.gif' width='18'/>
+</a>
+</span>
+</span>
+</p>
+<p class='post-footer-line'>
+<ul class='gcb-sharelinks'>
+<li>
+<span>Share: </span>
+</li>
+<li>
+<a href='http://www.google.com/buzz/post?url=http://googleblog.blogspot.com/2011/02/finding-more-high-quality-sites-in.html' title='Post on Google Buzz'>
+<span class='share-buzz share'></span></a>
+</li>
+<li>
+<a class='twitter-share-button share' data-count='none' data-counturl='http://googleblog.blogspot.com/2011/02/finding-more-high-quality-sites-in.html' data-text='Finding more high-quality sites in search' data-url='http://googleblog.blogspot.com/2011/02/finding-more-high-quality-sites-in.html' data-via='Official Google Blog' href='http://twitter.com/share'>Tweet</a>
+</li>
+<li>
+<a href='http://www.facebook.com/sharer.php?u=http://googleblog.blogspot.com/2011/02/finding-more-high-quality-sites-in.html&t=Finding more high-quality sites in search' title='Facebook'><span class='share-facebook share'></span></a>
+</li>
+<li>
+<a href='http://www.google.com/reader/link?url=http://googleblog.blogspot.com/2011/02/finding-more-high-quality-sites-in.html&title=Finding more high-quality sites in search' title='Google Reader'><span class='share-reader share'></span>
+</a>
+</li>
+<li>
+<a href='https://www.google.com/bookmarks/mark?op=add&bkmk=http://googleblog.blogspot.com/2011/02/finding-more-high-quality-sites-in.html&title=Finding more high-quality sites in search' title='Google Bookmarks'><span class='share-igoogle share'></span></a>
+</li>
+<li>
+<a href='http://www.digg.com/submit?phase=2&url=http://googleblog.blogspot.com/2011/02/finding-more-high-quality-sites-in.html&title=Finding more high-quality sites in search' title='Digg'>
+<span class='share-digg share'></span></a>
+</li>
+<li>
+<a href='http://delicious.com/save?url=http://googleblog.blogspot.com/2011/02/finding-more-high-quality-sites-in.html&title=Finding more high-quality sites in search' title='Delicious'>
+<span class='share-delicious share'></span></a>
+</li>
+</ul>
+<div class='share-end'></div>
+</p>
+<p class='post-footer-line post-footer-line-2'>
+<span class='post-labels'>
+Labels:
+<a href='http://googleblog.blogspot.com/search/label/search' rel='tag'>search</a>,
+<a href='http://googleblog.blogspot.com/search/label/search%20quality' rel='tag'>search quality</a>
+</span>
+</p>
+<p class='post-footer-line post-footer-line-3'></p>
+</div>
+</div>
+<div class='post uncustomized-post-template'>
+<a name='7737062977966258431'></a>
+<h2 class='post-title'>
+<a href='http://googleblog.blogspot.com/2011/02/join-us-on-bridge-for-international.html'>Join us on the bridge for International Women&#8217;s Day 2011</a>
+</h2>
+<div class='post-body'>
+<div class='date-header'>
+2/24/2011 10:38:00 AM
+</div>
+<i>(Cross-posted on the <a href="http://google-latlong.blogspot.com/2011/02/join-us-on-bridge-for-international.html">LatLong Blog</a>)</i><br />
+<br />
+I lead a global team at Google and travel extensively. When I speak about my work, the questions I get are often about the efforts we make to bring more women into engineering and how I maintain my work/life balance with two young children.  These are very important questions, but I&#8217;m acutely aware that they reflect a certain amount of privilege when it comes to issues of women&#8217;s equality. Despite the incredible advances women have made in the last century, many around the world are still struggling to provide for their families and keep them safe amidst violence and instability.<br />
+<br />
+For the past several years I&#8217;ve been part of a <a href="http://www.womenforwomen.org/sponsor-a-woman/sponsor-a-woman.php">sponsorship program</a> administered by <a href="http://www.womenforwomen.org/">Women for Women International</a>, an organization dedicated to helping women survivors of war rebuild their lives.  Every time I receive a letter from a woman I sponsor, each of whom is determined to improve her life despite the terrible odds she faces, I&#8217;m reminded of why it&#8217;s so important that we all&#8212;women and men alike&#8212;recognize the challenges women continue to face around the world.  <br />
+<br />
+That&#8217;s why I&#8217;m so excited to celebrate the centenary of International Women&#8217;s Day on March 8, 2011.  This year Google is collaborating with Women for Women International on their &#8220;<a href="http://www.google.com/events/iwd2011">Join me on the Bridge</a>&#8221; campaign. Originally conceived of by women from Rwanda and Congo as a sign of solidarity between women in two conflict-ridden countries, last year&#8217;s campaign brought together thousands of women and men at more than 100 bridge events on four continents.  <br />
+<br />
+<iframe allowfullscreen="" frameborder="0" height="349" src="http://www.youtube.com/embed/hUF65dR08ic" title="YouTube video player" width="560"></iframe><br />
+<br />
+This year we&#8217;re making it simple for you, your friends, your classmates and your colleagues to participate in bridge events on International Women&#8217;s Day by offering new online resources.<br />
+<br />
+To attend a bridge event, check our <a href="http://www.google.com/events/iwd2011">map</a> to see all the events that have already been planned.  Or you can use our&nbsp;<a href="https://sites.google.com/site/internationalwomensday2011/home">event toolkit</a> to plan your own event on the bridge of your choice.  You&#8217;ll see that there are two kinds of events&#8212;physical and online; if you&#8217;re not able to attend a bridge event in person on March 8, you can lend your support online by virtually attending an event via Street View in Google Maps.<br />
+<br />
+<div class="separator" style="clear: both; text-align: center;"><a href="http://www.google.com/events/iwd2011" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://1.bp.blogspot.com/--TUPhd0tr_I/TWakWnvt7bI/AAAAAAAAHmo/B8pz9HAjoPA/ParaKate.png" width="500" /></a></div><br />
+Finally, on our <a href="http://www.google.com/events/iwd2011">International Women&#8217;s Day 2011 site</a>, you can to donate to Women for Women International and more than 40 other incredible organizations working in the fields of women&#8217;s economic security, education, empowerment, equality, health and safety.<br />
+<br />
+See you on the bridge on March 8!<br />
+<br />
+<i><b>Update</b> 4:33PM: </i>Added YouTube video.<br />
+<br />
+<span class="byline-author">Posted by Claire Hughes Johnson, VP, Global Online Sales and Chair, Google Women&#8217;s Professional Community</span>
+<div style='clear: both;'></div>
+</div>
+<div class='post-footer'>
+<p class='post-footer-line post-footer-line-1'>
+<span class='post-comment-link'>
+</span>
+<a href='http://googleblog.blogspot.com/2011/02/join-us-on-bridge-for-international.html' title='permanent link'>Permalink</a>
+<a class='comment-link' href='http://googleblog.blogspot.com/2011/02/join-us-on-bridge-for-international.html#links'>Links to this post</a>
+<span class='post-icons'>
+<span class='item-action'>
+<a href='http://www.blogger.com/email-post.g?blogID=10861780&postID=7737062977966258431' title='Email Post'>
+<img alt='' class='icon-action' src='http://www.blogger.com/img/icon18_email.gif'/>
+</a>
+</span>
+<span class='item-control blog-admin pid-1782730031'>
+<a href='http://www.blogger.com/post-edit.g?blogID=10861780&postID=7737062977966258431' title='Edit Post'>
+<img alt='' class='icon-action' height='18' src='http://img2.blogblog.com/img/icon18_edit_allbkg.gif' width='18'/>
+</a>
+</span>
+</span>
+</p>
+<p class='post-footer-line'>
+<ul class='gcb-sharelinks'>
+<li>
+<span>Share: </span>
+</li>
+<li>
+<a href='http://www.google.com/buzz/post?url=http://googleblog.blogspot.com/2011/02/join-us-on-bridge-for-international.html' title='Post on Google Buzz'>
+<span class='share-buzz share'></span></a>
+</li>
+<li>
+<a class='twitter-share-button share' data-count='none' data-counturl='http://googleblog.blogspot.com/2011/02/join-us-on-bridge-for-international.html' data-text='Join us on the bridge for International Women’s Day 2011' data-url='http://googleblog.blogspot.com/2011/02/join-us-on-bridge-for-international.html' data-via='Official Google Blog' href='http://twitter.com/share'>Tweet</a>
+</li>
+<li>
+<a href='http://www.facebook.com/sharer.php?u=http://googleblog.blogspot.com/2011/02/join-us-on-bridge-for-international.html&t=Join us on the bridge for International Women’s Day 2011' title='Facebook'><span class='share-facebook share'></span></a>
+</li>
+<li>
+<a href='http://www.google.com/reader/link?url=http://googleblog.blogspot.com/2011/02/join-us-on-bridge-for-international.html&title=Join us on the bridge for International Women’s Day 2011' title='Google Reader'><span class='share-reader share'></span>
+</a>
+</li>
+<li>
+<a href='https://www.google.com/bookmarks/mark?op=add&bkmk=http://googleblog.blogspot.com/2011/02/join-us-on-bridge-for-international.html&title=Join us on the bridge for International Women’s Day 2011' title='Google Bookmarks'><span class='share-igoogle share'></span></a>
+</li>
+<li>
+<a href='http://www.digg.com/submit?phase=2&url=http://googleblog.blogspot.com/2011/02/join-us-on-bridge-for-international.html&title=Join us on the bridge for International Women’s Day 2011' title='Digg'>
+<span class='share-digg share'></span></a>
+</li>
+<li>
+<a href='http://delicious.com/save?url=http://googleblog.blogspot.com/2011/02/join-us-on-bridge-for-international.html&title=Join us on the bridge for International Women’s Day 2011' title='Delicious'>
+<span class='share-delicious share'></span></a>
+</li>
+</ul>
+<div class='share-end'></div>
+</p>
+<p class='post-footer-line post-footer-line-2'>
+<span class='post-labels'>
+</span>
+</p>
+<p class='post-footer-line post-footer-line-3'></p>
+</div>
+</div>
+<div class='post uncustomized-post-template'>
+<a name='7643909542303201763'></a>
+<h2 class='post-title'>
+<a href='http://googleblog.blogspot.com/2011/02/slice-and-dice-your-recipe-search.html'>Slice and dice your recipe search results</a>
+</h2>
+<div class='post-body'>
+<div class='date-header'>
+2/24/2011 09:00:00 AM
+</div>
+As a second-generation Indian who has grown up in the United States, I&#8217;ve developed a taste for great home-cooked Indian food, but not a knack for how to make it. Somehow my cooking efforts result in foods that taste over-spiced yet bland at the same time. My parents follow the art of cooking by intuition, where the right amount of each spice is measured out by gut feel, but that&#8217;s never worked very well for me. As a math geek and computer engineer, I prefer to work with concrete numbers and instructions, including when cooking, so today I&#8217;m very happy about  a new feature that helps me find recipes online: <a href="http://www.google.com/landing/recipes/">Recipe View</a>.<br /><br />Recipe View lets you narrow your search results to show only recipes, and helps you choose the right recipe amongst the search results by showing clearly marked ratings, ingredients and pictures. To get to Recipe View, click on the &#8220;Recipes&#8221; link in the left-hand panel when searching for a recipe. You can search for specific recipes like [chocolate chip cookies], or more open-ended topics&#8212;like [strawberry] to find recipes that feature strawberries, or even a holiday or event, like [cinco de mayo]. In fact, you can try searching for all kinds of things and still find interesting results: a favorite chef like [ina garten], something very specific like [spicy vegetarian curry with coconut and tofu] or even something obscure like [strange salad].<br /><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://1.bp.blogspot.com/-nHA6X3XVqb8/TWaJBem51RI/AAAAAAAAHmk/YUjvOHKu9DI/s1600/cinco+de+mayo.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://1.bp.blogspot.com/-nHA6X3XVqb8/TWaJBem51RI/AAAAAAAAHmk/YUjvOHKu9DI/cinco+de+mayo.png" width="500" /></a></div><br />In the past, you only had one way to specify your recipe searches&#8212;with the text you type into the Google search box. Now you can also filter search results based on your ideal ingredients, cooking time and calorie count using the recipe tools on the left hand side of the page. For example, I can now find vegetable biryani recipes (an Indian rice dish) that include cauliflower and take less than an hour to make:<br /><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://2.bp.blogspot.com/-4whvjuUu374/TWaJAn3J0HI/AAAAAAAAHmg/jJx5Ewm1e0Y/s1600/biryani.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://2.bp.blogspot.com/-4whvjuUu374/TWaJAn3J0HI/AAAAAAAAHmg/jJx5Ewm1e0Y/biryani.png" width="500" /></a></div><br />We like to &#8220;eat our own dogfood&#8221; at Google&#8212;meaning we like to test our own products and features ourselves before releasing them for public consumption. With Recipe View, we&#8217;ve taken this more literally than usual. Here&#8217;s Google Chef Scott Giambastiani to demonstrate how he uses Recipe View to find great recipes for Googlers:<br /><br /><iframe allowfullscreen="" frameborder="0" height="349" src="http://www.youtube.com/embed/IsUN1dUbbM8" title="YouTube video player" width="560"></iframe><br /><br />Recipe View is based on data from <a href="http://googlewebmastercentral.blogspot.com/2009/05/introducing-rich-snippets.html">rich snippets markup</a>, which we first <a href="http://googleblog.blogspot.com/2009/05/more-search-options-and-other-updates.html">introduced</a> at Searchology in 2009. If you&#8217;re a recipe publisher, you can <a href="http://www.google.com/support/webmasters/bin/answer.py?hl=en&amp;answer=99170">add markup to your webpages</a> so that your content can appear with this improved presentation in regular Google results as well as in Recipe View. Recipe View is part of our <a href="http://googleblog.blogspot.com/2010/05/understanding-web-to-find-short-answers.html">ongoing efforts</a> to enrich the search experience using structured data, and this release is an exciting technical milestone for our team since it&#8217;s first time we&#8217;ve built a brand new set of search tools based off of rich snippets data.<br /><br /><a href="http://www.google.com/landing/recipes/">Recipe View</a> is rolling out now in the U.S. and Japan, and we&#8217;ll be adding more countries in the future. We look forward to making further improvements and building more views so you can &#8220;slice and dice&#8221; your results for other types of searches as well. Bon appetit!<br /><br /><span class="byline-author">Posted by Kavi Goel, Product Manager</span>
+<div style='clear: both;'></div>
+</div>
+<div class='post-footer'>
+<p class='post-footer-line post-footer-line-1'>
+<span class='post-comment-link'>
+</span>
+<a href='http://googleblog.blogspot.com/2011/02/slice-and-dice-your-recipe-search.html' title='permanent link'>Permalink</a>
+<a class='comment-link' href='http://googleblog.blogspot.com/2011/02/slice-and-dice-your-recipe-search.html#links'>Links to this post</a>
+<span class='post-icons'>
+<span class='item-action'>
+<a href='http://www.blogger.com/email-post.g?blogID=10861780&postID=7643909542303201763' title='Email Post'>
+<img alt='' class='icon-action' src='http://www.blogger.com/img/icon18_email.gif'/>
+</a>
+</span>
+<span class='item-control blog-admin pid-1782730031'>
+<a href='http://www.blogger.com/post-edit.g?blogID=10861780&postID=7643909542303201763' title='Edit Post'>
+<img alt='' class='icon-action' height='18' src='http://img2.blogblog.com/img/icon18_edit_allbkg.gif' width='18'/>
+</a>
+</span>
+</span>
+</p>
+<p class='post-footer-line'>
+<ul class='gcb-sharelinks'>
+<li>
+<span>Share: </span>
+</li>
+<li>
+<a href='http://www.google.com/buzz/post?url=http://googleblog.blogspot.com/2011/02/slice-and-dice-your-recipe-search.html' title='Post on Google Buzz'>
+<span class='share-buzz share'></span></a>
+</li>
+<li>
+<a class='twitter-share-button share' data-count='none' data-counturl='http://googleblog.blogspot.com/2011/02/slice-and-dice-your-recipe-search.html' data-text='Slice and dice your recipe search results' data-url='http://googleblog.blogspot.com/2011/02/slice-and-dice-your-recipe-search.html' data-via='Official Google Blog' href='http://twitter.com/share'>Tweet</a>
+</li>
+<li>
+<a href='http://www.facebook.com/sharer.php?u=http://googleblog.blogspot.com/2011/02/slice-and-dice-your-recipe-search.html&t=Slice and dice your recipe search results' title='Facebook'><span class='share-facebook share'></span></a>
+</li>
+<li>
+<a href='http://www.google.com/reader/link?url=http://googleblog.blogspot.com/2011/02/slice-and-dice-your-recipe-search.html&title=Slice and dice your recipe search results' title='Google Reader'><span class='share-reader share'></span>
+</a>
+</li>
+<li>
+<a href='https://www.google.com/bookmarks/mark?op=add&bkmk=http://googleblog.blogspot.com/2011/02/slice-and-dice-your-recipe-search.html&title=Slice and dice your recipe search results' title='Google Bookmarks'><span class='share-igoogle share'></span></a>
+</li>
+<li>
+<a href='http://www.digg.com/submit?phase=2&url=http://googleblog.blogspot.com/2011/02/slice-and-dice-your-recipe-search.html&title=Slice and dice your recipe search results' title='Digg'>
+<span class='share-digg share'></span></a>
+</li>
+<li>
+<a href='http://delicious.com/save?url=http://googleblog.blogspot.com/2011/02/slice-and-dice-your-recipe-search.html&title=Slice and dice your recipe search results' title='Delicious'>
+<span class='share-delicious share'></span></a>
+</li>
+</ul>
+<div class='share-end'></div>
+</p>
+<p class='post-footer-line post-footer-line-2'>
+<span class='post-labels'>
+Labels:
+<a href='http://googleblog.blogspot.com/search/label/search' rel='tag'>search</a>
+</span>
+</p>
+<p class='post-footer-line post-footer-line-3'></p>
+</div>
+</div>
+<div class='post uncustomized-post-template'>
+<a name='6375856313185706895'></a>
+<h2 class='post-title'>
+<a href='http://googleblog.blogspot.com/2011/02/new-ways-to-experience-better.html'>New ways to experience better collaboration with Google Apps</a>
+</h2>
+<div class='post-body'>
+<div class='date-header'>
+2/24/2011 07:44:00 AM
+</div>
+The Google Apps collaboration tools have steadily and swiftly improved over the last couple years, and many companies have found that Google Docs and Google Sites are faster, simpler and more powerful than traditional software for the majority of common tasks, especially tasks where people need to work efficiently together.  Today, we&#8217;re launching two new initiatives to help more people experience the productivity benefits of web-powered collaboration.<br /><br />First, <a href="http://tools.google.com/dlpage/cloudconnect#utm_campaign=launch&amp;utm_source=en-na-us-ogb-GCC-Appsperience_02242011&amp;utm_medium=blog">Google Cloud Connect for Microsoft Office</a> is now available worldwide.  This plugin for Microsoft Office is available to anyone with a Google Account, and brings multi-person collaboration to the Microsoft Word, Excel and PowerPoint applications that you may still need from time to time.  The plugin syncs your work through Google&#8217;s cloud, so everyone can contribute to the same version of a file at the same time.  Learning the benefits of web-powered collaboration will help more people make a faster transition to <a href="http://googleenterprise.blogspot.com/2010/12/nothing-but-web.html">100% web</a> collaboration tools.<br /><br /><iframe title="YouTube video player" width="560" height="349" src="http://www.youtube.com/embed/H12teRzulW0?rel=0" frameborder="0" allowfullscreen=""></iframe><br /><br />We&#8217;re also introducing the <a href="http://www.google.com/apps/intl/en/business/appsperience.html#utm_campaign=launch&amp;utm_source=en-na-us-ogb-GCC-Appsperience_02242011&amp;utm_medium=blog">90-Day Appsperience</a> program, a way for companies that currently use cumbersome legacy systems to see how web-powered tools help their teams work together more effectively.  A nominal fee covers 90-day access to Google Docs, Google Sites, Google Cloud Connect and more, as well as assistance from Google experts to help coworkers quickly become more productive together. And companies trying Google Apps can use the new collaboration dashboard in the Google Apps control panel to assess the value of our tools.  The dashboard provides data on how people are using Apps to collaborate more efficiently without the hassles of document versions, check-in/check-out or attachments.<br /><br /><div style="text-align: center;"><a href="http://1.bp.blogspot.com/-DayKAmAj3g8/TWZ6Ug0LT7I/AAAAAAAAHmc/gYNkKtW5Ke4/s1600/collaboration+dashboard.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://1.bp.blogspot.com/-DayKAmAj3g8/TWZ6Ug0LT7I/AAAAAAAAHmc/gYNkKtW5Ke4/collaboration+dashboard.png" width="500" /></a></div><div style="text-align: center;"><br /></div>If you&#8217;re curious how your company could become more agile, efficient and innovative with better tools for teams to work together, read more about these updates on the <a href="http://googleenterprise.blogspot.com/2011/02/teach-your-old-docs-new-tricks-with.html">Google Enterprise Blog</a>.<br /><br /><span class="byline-author">Posted by Shan Sinha, Google Apps Product Manager</span>
+<div style='clear: both;'></div>
+</div>
+<div class='post-footer'>
+<p class='post-footer-line post-footer-line-1'>
+<span class='post-comment-link'>
+</span>
+<a href='http://googleblog.blogspot.com/2011/02/new-ways-to-experience-better.html' title='permanent link'>Permalink</a>
+<a class='comment-link' href='http://googleblog.blogspot.com/2011/02/new-ways-to-experience-better.html#links'>Links to this post</a>
+<span class='post-icons'>
+<span class='item-action'>
+<a href='http://www.blogger.com/email-post.g?blogID=10861780&postID=6375856313185706895' title='Email Post'>
+<img alt='' class='icon-action' src='http://www.blogger.com/img/icon18_email.gif'/>
+</a>
+</span>
+<span class='item-control blog-admin pid-1782730031'>
+<a href='http://www.blogger.com/post-edit.g?blogID=10861780&postID=6375856313185706895' title='Edit Post'>
+<img alt='' class='icon-action' height='18' src='http://img2.blogblog.com/img/icon18_edit_allbkg.gif' width='18'/>
+</a>
+</span>
+</span>
+</p>
+<p class='post-footer-line'>
+<ul class='gcb-sharelinks'>
+<li>
+<span>Share: </span>
+</li>
+<li>
+<a href='http://www.google.com/buzz/post?url=http://googleblog.blogspot.com/2011/02/new-ways-to-experience-better.html' title='Post on Google Buzz'>
+<span class='share-buzz share'></span></a>
+</li>
+<li>
+<a class='twitter-share-button share' data-count='none' data-counturl='http://googleblog.blogspot.com/2011/02/new-ways-to-experience-better.html' data-text='New ways to experience better collaboration with Google Apps' data-url='http://googleblog.blogspot.com/2011/02/new-ways-to-experience-better.html' data-via='Official Google Blog' href='http://twitter.com/share'>Tweet</a>
+</li>
+<li>
+<a href='http://www.facebook.com/sharer.php?u=http://googleblog.blogspot.com/2011/02/new-ways-to-experience-better.html&t=New ways to experience better collaboration with Google Apps' title='Facebook'><span class='share-facebook share'></span></a>
+</li>
+<li>
+<a href='http://www.google.com/reader/link?url=http://googleblog.blogspot.com/2011/02/new-ways-to-experience-better.html&title=New ways to experience better collaboration with Google Apps' title='Google Reader'><span class='share-reader share'></span>
+</a>
+</li>
+<li>
+<a href='https://www.google.com/bookmarks/mark?op=add&bkmk=http://googleblog.blogspot.com/2011/02/new-ways-to-experience-better.html&title=New ways to experience better collaboration with Google Apps' title='Google Bookmarks'><span class='share-igoogle share'></span></a>
+</li>
+<li>
+<a href='http://www.digg.com/submit?phase=2&url=http://googleblog.blogspot.com/2011/02/new-ways-to-experience-better.html&title=New ways to experience better collaboration with Google Apps' title='Digg'>
+<span class='share-digg share'></span></a>
+</li>
+<li>
+<a href='http://delicious.com/save?url=http://googleblog.blogspot.com/2011/02/new-ways-to-experience-better.html&title=New ways to experience better collaboration with Google Apps' title='Delicious'>
+<span class='share-delicious share'></span></a>
+</li>
+</ul>
+<div class='share-end'></div>
+</p>
+<p class='post-footer-line post-footer-line-2'>
+<span class='post-labels'>
+Labels:
+<a href='http://googleblog.blogspot.com/search/label/apps' rel='tag'>apps</a>,
+<a href='http://googleblog.blogspot.com/search/label/enterprise' rel='tag'>enterprise</a>
+</span>
+</p>
+<p class='post-footer-line post-footer-line-3'></p>
+</div>
+</div>
+<div class='post uncustomized-post-template'>
+<a name='4084148636205931562'></a>
+<h2 class='post-title'>
+<a href='http://googleblog.blogspot.com/2011/02/three-laws-of-display-advertising.html'>The three laws of display advertising physics</a>
+</h2>
+<div class='post-body'>
+<div class='date-header'>
+2/23/2011 09:38:00 AM
+</div>
+It&#8217;s not just the Android team that is <a href="http://googlemobile.blogspot.com/2010/12/android-in-spaaaace.html">exploring the outer reaches of our galaxy</a>. In recent years, advertising technology has had its own &#8220;Big Bang": a rapid onset of incredible growth and expansion in the display advertising universe.<br /><br />Display advertising is one of <a href="http://googleblog.blogspot.com/2010/09/what-does-future-of-display-advertising.html">our big focus areas</a>. Better display advertising helps to fund the websites and content we all use and read, provides useful and engaging commercial information, and helps large and small advertisers to reach new customers, increase sales and grow their businesses.<br /><br />Just as the laws of physics have helped us make sense of our own expanding universe, we think that there are three &#8220;laws of display advertising physics&#8221; to help advertisers and agencies thrive. We&#8217;ve laid out these laws and what they mean for advertisers and agencies on our <a href="http://adwordsagency.blogspot.com/2011/02/three-laws-of-display-advertising.html">Agency Ad Solutions Blog</a>:<br /><ol><li><b>The Theory of Relativity</b>: The distinction between different advertising technologies (like ad networks and demand side platforms) is blurring.  Each of these technologies provides similar ways to achieve your marketing goals, depending on how you want to manage your campaign.<br /><br /></li><li><b>Fusion Theory</b>:  There&#8217;s a few different ways to deliver ads to people. Each on their own is powerful, but combining these different ways unlocks the best results.<br /><br /></li><li><b>The Law of Perpetual Motion</b>: New technology is driving rapid change in display advertising&#8212;which is constantly improving marketers&#8217; creative palettes and the way that ads are bought and sold. Embracing new media and technology provides a key way for marketers to differentiate and grow their businesses in a new universe.</li></ol>The expansion in the advertising industry is leading towards a future with a better advertising universe for everyone&#8212;where people see more relevant, useful ads, publishers get better returns to fund their content and marketers can run more effective campaigns.<br /><br /><span class="byline-author">Posted by Neal Mohan, Vice President of Product Management</span>
+<div style='clear: both;'></div>
+</div>
+<div class='post-footer'>
+<p class='post-footer-line post-footer-line-1'>
+<span class='post-comment-link'>
+</span>
+<a href='http://googleblog.blogspot.com/2011/02/three-laws-of-display-advertising.html' title='permanent link'>Permalink</a>
+<a class='comment-link' href='http://googleblog.blogspot.com/2011/02/three-laws-of-display-advertising.html#links'>Links to this post</a>
+<span class='post-icons'>
+<span class='item-action'>
+<a href='http://www.blogger.com/email-post.g?blogID=10861780&postID=4084148636205931562' title='Email Post'>
+<img alt='' class='icon-action' src='http://www.blogger.com/img/icon18_email.gif'/>
+</a>
+</span>
+<span class='item-control blog-admin pid-1782730031'>
+<a href='http://www.blogger.com/post-edit.g?blogID=10861780&postID=4084148636205931562' title='Edit Post'>
+<img alt='' class='icon-action' height='18' src='http://img2.blogblog.com/img/icon18_edit_allbkg.gif' width='18'/>
+</a>
+</span>
+</span>
+</p>
+<p class='post-footer-line'>
+<ul class='gcb-sharelinks'>
+<li>
+<span>Share: </span>
+</li>
+<li>
+<a href='http://www.google.com/buzz/post?url=http://googleblog.blogspot.com/2011/02/three-laws-of-display-advertising.html' title='Post on Google Buzz'>
+<span class='share-buzz share'></span></a>
+</li>
+<li>
+<a class='twitter-share-button share' data-count='none' data-counturl='http://googleblog.blogspot.com/2011/02/three-laws-of-display-advertising.html' data-text='The three laws of display advertising physics' data-url='http://googleblog.blogspot.com/2011/02/three-laws-of-display-advertising.html' data-via='Official Google Blog' href='http://twitter.com/share'>Tweet</a>
+</li>
+<li>
+<a href='http://www.facebook.com/sharer.php?u=http://googleblog.blogspot.com/2011/02/three-laws-of-display-advertising.html&t=The three laws of display advertising physics' title='Facebook'><span class='share-facebook share'></span></a>
+</li>
+<li>
+<a href='http://www.google.com/reader/link?url=http://googleblog.blogspot.com/2011/02/three-laws-of-display-advertising.html&title=The three laws of display advertising physics' title='Google Reader'><span class='share-reader share'></span>
+</a>
+</li>
+<li>
+<a href='https://www.google.com/bookmarks/mark?op=add&bkmk=http://googleblog.blogspot.com/2011/02/three-laws-of-display-advertising.html&title=The three laws of display advertising physics' title='Google Bookmarks'><span class='share-igoogle share'></span></a>
+</li>
+<li>
+<a href='http://www.digg.com/submit?phase=2&url=http://googleblog.blogspot.com/2011/02/three-laws-of-display-advertising.html&title=The three laws of display advertising physics' title='Digg'>
+<span class='share-digg share'></span></a>
+</li>
+<li>
+<a href='http://delicious.com/save?url=http://googleblog.blogspot.com/2011/02/three-laws-of-display-advertising.html&title=The three laws of display advertising physics' title='Delicious'>
+<span class='share-delicious share'></span></a>
+</li>
+</ul>
+<div class='share-end'></div>
+</p>
+<p class='post-footer-line post-footer-line-2'>
+<span class='post-labels'>
+Labels:
+<a href='http://googleblog.blogspot.com/search/label/ads' rel='tag'>ads</a>,
+<a href='http://googleblog.blogspot.com/search/label/display%20advertising' rel='tag'>display advertising</a>
+</span>
+</p>
+<p class='post-footer-line post-footer-line-3'></p>
+</div>
+</div>
+<div class='post uncustomized-post-template'>
+<a name='7397397310137842699'></a>
+<h2 class='post-title'>
+<a href='http://googleblog.blogspot.com/2011/02/investing-in-news-innovation-in-europe.html'>Investing in news innovation in Europe</a>
+</h2>
+<div class='post-body'>
+<div class='date-header'>
+2/23/2011 08:45:00 AM
+</div>
+<div><i>(Cross-posted from the <a href="http://googlepolicyeurope.blogspot.com/2011/02/investing-in-news-innovation-in-europe.html">European Public Policy Blog</a>)</i></div><div><br /></div>Journalism is changing fast. And as news businesses experiment with new ways of creating and delivering journalism in the digital age, Google is keen to play its part on the technology side. Over the last year, we&#8217;ve been partnering with publishers around the world to <a href="http://googleblog.blogspot.com/2009/09/read-news-fast-with-google-fast-flip.html">develop</a> <a href="http://googleblog.blogspot.com/2009/09/read-news-fast-with-google-fast-flip.html">technological</a> <a href="http://googlenewsblog.blogspot.com/2009/12/update-to-first-click-free.html">solutions</a>&#8212;including, most recently, <a href="http://googlepolicyeurope.blogspot.com/2011/02/simple-way-for-publishers-to-manage.html">One Pass</a>&#8212;to find new and engaging ways of presenting stories online and to generate greater revenues.<br /><br />As well as our focus on technological experimentation, we&#8217;re also investing at the grassroots level. <a href="http://googleblog.blogspot.com/2010/10/5-million-to-encourage-innovation-in.html">Last October</a> we announced that we would be giving $5 million in grants to non-profit organisations working on developing new approaches to journalism. At that time, we allocated around 40% of the total fund to the <a href="http://www.knightfoundation.org/">Knight Foundation</a> in the U.S.<br /><br />Today, we awarded a <a href="http://www.freemedia.at/singleview/5363/">$2.7 million grant</a> to the International Press Institute, based in Vienna, which will be used to sponsor the <a href="http://www.ipinewscontest.org/"><i>IPI News Innovation Contest</i></a>. The contest seeks to find and fund breakthrough ideas that will have a lasting impact on the future of digital news in communities across Europe, the Middle East and Africa.<br /><br />Grants will be awarded to both non-profit and for-profit organisations working on digital journalism initiatives, including open-source and mobile technology projects created by or for journalists and distributed in the public interest. From today until June 1, <a href="http://www.ipinewscontest.org/apply/faq/">the IPI will invite proposals</a> from around the region for projects devoted to online innovation in journalism, new economic models for news and training in digital reporting.<br /><br />The IPI has a long tradition of working on innovation in journalism, freedom of expression and other important issues. We&#8217;re sure they&#8217;ll be able to find and advance some great digital journalism projects over the next couple of years&#8212;and we encourage anyone with innovative ideas, large or small, to <a href="http://www.ipinewscontest.org/index.php?id=810">apply for a grant</a> from the IPI. In the meantime, we&#8217;ll continue to work with the news industry to help develop new projects, products and experiments that make it possible for journalism to thrive online.<br /><br /><span class="byline-author">Posted by Peter Barron, Director of External Relations, Google EMEA</span>
+<div style='clear: both;'></div>
+</div>
+<div class='post-footer'>
+<p class='post-footer-line post-footer-line-1'>
+<span class='post-comment-link'>
+</span>
+<a href='http://googleblog.blogspot.com/2011/02/investing-in-news-innovation-in-europe.html' title='permanent link'>Permalink</a>
+<a class='comment-link' href='http://googleblog.blogspot.com/2011/02/investing-in-news-innovation-in-europe.html#links'>Links to this post</a>
+<span class='post-icons'>
+<span class='item-action'>
+<a href='http://www.blogger.com/email-post.g?blogID=10861780&postID=7397397310137842699' title='Email Post'>
+<img alt='' class='icon-action' src='http://www.blogger.com/img/icon18_email.gif'/>
+</a>
+</span>
+<span class='item-control blog-admin pid-1782730031'>
+<a href='http://www.blogger.com/post-edit.g?blogID=10861780&postID=7397397310137842699' title='Edit Post'>
+<img alt='' class='icon-action' height='18' src='http://img2.blogblog.com/img/icon18_edit_allbkg.gif' width='18'/>
+</a>
+</span>
+</span>
+</p>
+<p class='post-footer-line'>
+<ul class='gcb-sharelinks'>
+<li>
+<span>Share: </span>
+</li>
+<li>
+<a href='http://www.google.com/buzz/post?url=http://googleblog.blogspot.com/2011/02/investing-in-news-innovation-in-europe.html' title='Post on Google Buzz'>
+<span class='share-buzz share'></span></a>
+</li>
+<li>
+<a class='twitter-share-button share' data-count='none' data-counturl='http://googleblog.blogspot.com/2011/02/investing-in-news-innovation-in-europe.html' data-text='Investing in news innovation in Europe' data-url='http://googleblog.blogspot.com/2011/02/investing-in-news-innovation-in-europe.html' data-via='Official Google Blog' href='http://twitter.com/share'>Tweet</a>
+</li>
+<li>
+<a href='http://www.facebook.com/sharer.php?u=http://googleblog.blogspot.com/2011/02/investing-in-news-innovation-in-europe.html&t=Investing in news innovation in Europe' title='Facebook'><span class='share-facebook share'></span></a>
+</li>
+<li>
+<a href='http://www.google.com/reader/link?url=http://googleblog.blogspot.com/2011/02/investing-in-news-innovation-in-europe.html&title=Investing in news innovation in Europe' title='Google Reader'><span class='share-reader share'></span>
+</a>
+</li>
+<li>
+<a href='https://www.google.com/bookmarks/mark?op=add&bkmk=http://googleblog.blogspot.com/2011/02/investing-in-news-innovation-in-europe.html&title=Investing in news innovation in Europe' title='Google Bookmarks'><span class='share-igoogle share'></span></a>
+</li>
+<li>
+<a href='http://www.digg.com/submit?phase=2&url=http://googleblog.blogspot.com/2011/02/investing-in-news-innovation-in-europe.html&title=Investing in news innovation in Europe' title='Digg'>
+<span class='share-digg share'></span></a>
+</li>
+<li>
+<a href='http://delicious.com/save?url=http://googleblog.blogspot.com/2011/02/investing-in-news-innovation-in-europe.html&title=Investing in news innovation in Europe' title='Delicious'>
+<span class='share-delicious share'></span></a>
+</li>
+</ul>
+<div class='share-end'></div>
+</p>
+<p class='post-footer-line post-footer-line-2'>
+<span class='post-labels'>
+</span>
+</p>
+<p class='post-footer-line post-footer-line-3'></p>
+</div>
+</div>
+<div class='post uncustomized-post-template'>
+<a name='7243997508217482702'></a>
+<h2 class='post-title'>
+<a href='http://googleblog.blogspot.com/2011/02/speech-technology-at-google-teaching.html'>Speech technology at Google: teaching machines to talk and listen</a>
+</h2>
+<div class='post-body'>
+<div class='date-header'>
+2/22/2011 11:16:00 AM
+</div>
+<i>This is the latest post in our <a href="http://googleblog.blogspot.com/search/label/entrepreneurs%20at%20Google">series</a> profiling entrepreneurial Googlers working on products across the company and around the world. Here, you&#8217;ll get a behind-the-scenes look at how one Googler built an entire R&amp;D team around voice technology that has gone on to power products like YouTube transcriptions and Voice Search. - Ed.</i><br /><br />When I first interviewed at Google during the summer of 2004, mobile was just making its way onto the company&#8217;s radar. My passion was speech technology, the field in which I&#8217;d already worked for 20 years.  After 10 years of speech research at SRI, followed by 10 years helping build Nuance Communications, the company I co-founded in 1994, I was ready for a new challenge. I felt that mobile was an area ripe for innovation, with a need for speech technology, and destined to be a key platform for delivery of services.<br /><br />During my interview, I shared my desire to pursue the mobile space and mentioned that if Google didn&#8217;t have any big plans for mobile, then I probably wouldn&#8217;t be a good fit for the company. Well, I got the job, and I started soon after, without a team or even a defined role. In classic Google fashion, I was encouraged to explore the company, learn about what various teams were working on and figure out what was needed.<br /><br />After a few months, I presented an idea to senior management to build a telephone-based spoken interface to local search.  Although there was a diversity of opinion at the meeting about what applications made the most sense for Google, all agreed that I should start to build a team focused on speech technology.  With help from a couple of Google colleagues who also had speech backgrounds, I began recruiting, and within a few months people were busily building our own speech recognition system.<br /><br />Six years later, I&#8217;m excited by how far we&#8217;ve come and, in turn, how our long-term goals have expanded. When I started, I had to sell other teams on the value of speech technology to Google's mission.  Now, I&#8217;m constantly approached by other teams with ideas and needs for speech.  The biggest challenge is scaling our effort to meet the opportunities.  We've advanced from GOOG-411, our first speech-driven service, to <a href="http://www.google.com/mobile/voice-search/">Voice Search</a>, <a href="http://www.google.com/support/mobile/bin/answer.py?hl=en&amp;answer=168586">Voice Input</a>, <a href="http://googlemobile.blogspot.com/2010/08/just-speak-it-introducing-voice-actions.html">Voice Actions</a>, a <a href="http://code.google.com/p/google-voice-java/">Voice API</a> for Android developers, <a href="http://googleblog.blogspot.com/2009/11/automatic-captions-in-youtube.html">automatic captioning of YouTube videos</a>, <a href="http://www.google.com/support/voice/bin/answer.py?hl=en&amp;answer=115986">automatic transcription of voicemail for Google Voice</a> and <a href="http://googleblog.blogspot.com/2011/01/new-look-for-google-translate-for.html">speech-to-speech translation</a>, amongst others.  In the past year alone, we&#8217;ve ported our technology to more than 20 languages.<br /><br /><iframe title="YouTube video player" width="560" height="349" src="http://www.youtube.com/embed/laOlkD8LmZw" frameborder="0" allowfullscreen=""></iframe><br /><br />Speech technology requires an enormous amount of data to feed our statistical models and lots of computing power to train our systems&#8212;and Google is the ideal place to pursue such technical approaches. With large amounts of data, computing power and an infrastructure focused on supporting large-scale services, we&#8217;re encouraged to launch quickly and iterate based on real-time feedback.<br /><br />I&#8217;ve been exploring speech technology for nearly three decades, yet I see huge potential for further innovation. We envision a comprehensive interface for voice and text communication that defies all barriers of modality and language and makes information truly universally accessible. And it&#8217;s here at Google that I think we have the best chance to make this future a reality.<br /><br /><div><span style="font-style: italic; "><span style="font-weight: bold; ">Update</span> 9:39 PM</span>: Changed title of post to clarify that speech technology is not only used on mobile phones but also for transcription tasks like YouTube captioning and voicemail transcription. -Ed.<br /><br /><span class="byline-author">Posted by Mike Cohen, Manager, Speech Technology</span></div>
+<div style='clear: both;'></div>
+</div>
+<div class='post-footer'>
+<p class='post-footer-line post-footer-line-1'>
+<span class='post-comment-link'>
+</span>
+<a href='http://googleblog.blogspot.com/2011/02/speech-technology-at-google-teaching.html' title='permanent link'>Permalink</a>
+<a class='comment-link' href='http://googleblog.blogspot.com/2011/02/speech-technology-at-google-teaching.html#links'>Links to this post</a>
+<span class='post-icons'>
+<span class='item-action'>
+<a href='http://www.blogger.com/email-post.g?blogID=10861780&postID=7243997508217482702' title='Email Post'>
+<img alt='' class='icon-action' src='http://www.blogger.com/img/icon18_email.gif'/>
+</a>
+</span>
+<span class='item-control blog-admin pid-1782730031'>
+<a href='http://www.blogger.com/post-edit.g?blogID=10861780&postID=7243997508217482702' title='Edit Post'>
+<img alt='' class='icon-action' height='18' src='http://img2.blogblog.com/img/icon18_edit_allbkg.gif' width='18'/>
+</a>
+</span>
+</span>
+</p>
+<p class='post-footer-line'>
+<ul class='gcb-sharelinks'>
+<li>
+<span>Share: </span>
+</li>
+<li>
+<a href='http://www.google.com/buzz/post?url=http://googleblog.blogspot.com/2011/02/speech-technology-at-google-teaching.html' title='Post on Google Buzz'>
+<span class='share-buzz share'></span></a>
+</li>
+<li>
+<a class='twitter-share-button share' data-count='none' data-counturl='http://googleblog.blogspot.com/2011/02/speech-technology-at-google-teaching.html' data-text='Speech technology at Google: teaching machines to talk and listen' data-url='http://googleblog.blogspot.com/2011/02/speech-technology-at-google-teaching.html' data-via='Official Google Blog' href='http://twitter.com/share'>Tweet</a>
+</li>
+<li>
+<a href='http://www.facebook.com/sharer.php?u=http://googleblog.blogspot.com/2011/02/speech-technology-at-google-teaching.html&t=Speech technology at Google: teaching machines to talk and listen' title='Facebook'><span class='share-facebook share'></span></a>
+</li>
+<li>
+<a href='http://www.google.com/reader/link?url=http://googleblog.blogspot.com/2011/02/speech-technology-at-google-teaching.html&title=Speech technology at Google: teaching machines to talk and listen' title='Google Reader'><span class='share-reader share'></span>
+</a>
+</li>
+<li>
+<a href='https://www.google.com/bookmarks/mark?op=add&bkmk=http://googleblog.blogspot.com/2011/02/speech-technology-at-google-teaching.html&title=Speech technology at Google: teaching machines to talk and listen' title='Google Bookmarks'><span class='share-igoogle share'></span></a>
+</li>
+<li>
+<a href='http://www.digg.com/submit?phase=2&url=http://googleblog.blogspot.com/2011/02/speech-technology-at-google-teaching.html&title=Speech technology at Google: teaching machines to talk and listen' title='Digg'>
+<span class='share-digg share'></span></a>
+</li>
+<li>
+<a href='http://delicious.com/save?url=http://googleblog.blogspot.com/2011/02/speech-technology-at-google-teaching.html&title=Speech technology at Google: teaching machines to talk and listen' title='Delicious'>
+<span class='share-delicious share'></span></a>
+</li>
+</ul>
+<div class='share-end'></div>
+</p>
+<p class='post-footer-line post-footer-line-2'>
+<span class='post-labels'>
+Labels:
+<a href='http://googleblog.blogspot.com/search/label/entrepreneurs%20at%20Google' rel='tag'>entrepreneurs at Google</a>
+</span>
+</p>
+<p class='post-footer-line post-footer-line-3'></p>
+</div>
+</div>
+<div class='post uncustomized-post-template'>
+<a name='7277822754032669127'></a>
+<h2 class='post-title'>
+<a href='http://googleblog.blogspot.com/2011/02/data-viz-challenge-can-you-make-tax.html'>The Data Viz Challenge: can you make tax data exciting?</a>
+</h2>
+<div class='post-body'>
+<div class='date-header'>
+2/22/2011 09:20:00 AM
+</div>
+<div><i>(Cross-posted on the <a href="http://googlecode.blogspot.com/2011/02/data-viz-challenge-can-you-make-tax.html">Code Blog</a>)</i></div><div><br /></div>This time of year, everyone in the United States is starting to fill out&#8212;with varying levels of enthusiasm&#8212;our federal income tax forms. Yet, after we write our checks to the IRS, most of us don&#8217;t really know exactly where our money is going.<br /><br />Fortunately, there&#8217;s a new online tool to help us find out. Last year, Andrew Johnson and Louis Garcia, two developers from Minneapolis, Minn., created a website called <a href="http://whatwepayfor.com/">whatwepayfor.com</a> that uses public data to estimate how our tax money is spent. You enter your income and filing status on the site, and it creates a formatted table of numbers showing your contributions to the federal budget&#8212;down to the penny:<br /><br /><a href="http://4.bp.blogspot.com/-LK1nqBmDMS0/TWPvEhDcqVI/AAAAAAAAHmM/g9T2ok2z3cQ/s1600/what%2Bwe%2Bpay%2Bfor.png"><img style="display:block; margin:0px auto 10px; text-align:center;cursor:pointer; cursor:hand;width: 500px;" src="http://4.bp.blogspot.com/-LK1nqBmDMS0/TWPvEhDcqVI/AAAAAAAAHmM/g9T2ok2z3cQ/what%2Bwe%2Bpay%2Bfor.png" border="0" alt="" id="BLOGGER_PHOTO_ID_5576563624486152530" /></a><br />We&#8217;re impressed by what the website uncovers. In 2010, for example, a married couple making $40,000 a year contributed approximately $14.07 to space operations, $6.83 to aviation security and $0.91 to the Peace Corps&#8230;and those are just a few of the hundreds of expenditures revealed on the site. As we spent time exploring all of these details, it got us thinking: how we could make the information even more accessible? So we created a simple interactive data visualization:<br /><br /><a href="http://datavizchallenge.org/examples"><img style="display:block; margin:0px auto 10px; text-align:center;cursor:pointer; cursor:hand;width: 500px;" src="http://3.bp.blogspot.com/-5SMO-mBHvg8/TWPvE6ASrxI/AAAAAAAAHmU/KvmqXR9IbxI/datavizchallenge-screenshot.png" border="0" alt="" id="BLOGGER_PHOTO_ID_5576563631183802130" /></a><br />Click the image above to try the interactive version&#8212;it lets you drag the bubbles around, change the income level and so on. You can now look at the data in a new way, and it&#8217;s a little more fun to explore. Of course, there are lots of ways to visualize the data, and we&#8217;re very sure there are many talented designers and developers around the country who can do it even better than we have.<br /><br />To make that happen, we&#8217;ve teamed up with <a href="http://www.eyebeam.org/">Eyebeam</a>, a not-for-profit art and technology center, to host what we&#8217;re calling the <a href="http://datavizchallenge.org/">Data Viz Challenge</a>. Andrew and Louis have built an <a href="http://datavizchallenge.org/using-api">API</a> to let anyone access the data, so now you can choose how to display it. Could you create a better animated chart? Something in 3D? An interactive website? A physical display somewhere in the real world? We want you to show everyone how data visualization can be a powerful tool for turning information into understanding.<br /><br />You can enter the challenge at <a href="http://datavizchallenge.org/">datavizchallenge.org</a>, where you&#8217;ll also find more information about challenge and the data. The challenge starts today and ends March 27, 2011, and is open to the U.S. only. The top visualization, as chosen by a <a href="http://datavizchallenge.org/questions-and-answers#j2">jury</a>, will receive a $5,000 award and a shout-out on the site and this blog. We&#8217;ll announce the shortlist on the week of April 11, and the winners on April 18, a.k.a. Tax Day.<br /><br />If you&#8217;re a data viz enthusiast, we hope you&#8217;ll take a look at the data and build your own creative visualization. But even if you&#8217;re not, hopefully the results will help you appreciate what data visualization can do, and its usefulness in turning raw information&#8212;like federal income tax numbers&#8212;into something you can explore and understand.<br /><br /><span class="byline-author">Posted by Valdean Klump, Creative Lab</span>
+<div style='clear: both;'></div>
+</div>
+<div class='post-footer'>
+<p class='post-footer-line post-footer-line-1'>
+<span class='post-comment-link'>
+</span>
+<a href='http://googleblog.blogspot.com/2011/02/data-viz-challenge-can-you-make-tax.html' title='permanent link'>Permalink</a>
+<a class='comment-link' href='http://googleblog.blogspot.com/2011/02/data-viz-challenge-can-you-make-tax.html#links'>Links to this post</a>
+<span class='post-icons'>
+<span class='item-action'>
+<a href='http://www.blogger.com/email-post.g?blogID=10861780&postID=7277822754032669127' title='Email Post'>
+<img alt='' class='icon-action' src='http://www.blogger.com/img/icon18_email.gif'/>
+</a>
+</span>
+<span class='item-control blog-admin pid-1782730031'>
+<a href='http://www.blogger.com/post-edit.g?blogID=10861780&postID=7277822754032669127' title='Edit Post'>
+<img alt='' class='icon-action' height='18' src='http://img2.blogblog.com/img/icon18_edit_allbkg.gif' width='18'/>
+</a>
+</span>
+</span>
+</p>
+<p class='post-footer-line'>
+<ul class='gcb-sharelinks'>
+<li>
+<span>Share: </span>
+</li>
+<li>
+<a href='http://www.google.com/buzz/post?url=http://googleblog.blogspot.com/2011/02/data-viz-challenge-can-you-make-tax.html' title='Post on Google Buzz'>
+<span class='share-buzz share'></span></a>
+</li>
+<li>
+<a class='twitter-share-button share' data-count='none' data-counturl='http://googleblog.blogspot.com/2011/02/data-viz-challenge-can-you-make-tax.html' data-text='The Data Viz Challenge: can you make tax data exciting?' data-url='http://googleblog.blogspot.com/2011/02/data-viz-challenge-can-you-make-tax.html' data-via='Official Google Blog' href='http://twitter.com/share'>Tweet</a>
+</li>
+<li>
+<a href='http://www.facebook.com/sharer.php?u=http://googleblog.blogspot.com/2011/02/data-viz-challenge-can-you-make-tax.html&t=The Data Viz Challenge: can you make tax data exciting?' title='Facebook'><span class='share-facebook share'></span></a>
+</li>
+<li>
+<a href='http://www.google.com/reader/link?url=http://googleblog.blogspot.com/2011/02/data-viz-challenge-can-you-make-tax.html&title=The Data Viz Challenge: can you make tax data exciting?' title='Google Reader'><span class='share-reader share'></span>
+</a>
+</li>
+<li>
+<a href='https://www.google.com/bookmarks/mark?op=add&bkmk=http://googleblog.blogspot.com/2011/02/data-viz-challenge-can-you-make-tax.html&title=The Data Viz Challenge: can you make tax data exciting?' title='Google Bookmarks'><span class='share-igoogle share'></span></a>
+</li>
+<li>
+<a href='http://www.digg.com/submit?phase=2&url=http://googleblog.blogspot.com/2011/02/data-viz-challenge-can-you-make-tax.html&title=The Data Viz Challenge: can you make tax data exciting?' title='Digg'>
+<span class='share-digg share'></span></a>
+</li>
+<li>
+<a href='http://delicious.com/save?url=http://googleblog.blogspot.com/2011/02/data-viz-challenge-can-you-make-tax.html&title=The Data Viz Challenge: can you make tax data exciting?' title='Delicious'>
+<span class='share-delicious share'></span></a>
+</li>
+</ul>
+<div class='share-end'></div>
+</p>
+<p class='post-footer-line post-footer-line-2'>
+<span class='post-labels'>
+</span>
+</p>
+<p class='post-footer-line post-footer-line-3'></p>
+</div>
+</div>
+<div class='post uncustomized-post-template'>
+<a name='513444453835267496'></a>
+<h2 class='post-title'>
+<a href='http://googleblog.blogspot.com/2011/02/google-apps-highlights-21811.html'>Google Apps highlights &#8211; 2/18/11</a>
+</h2>
+<div class='post-body'>
+<div class='date-header'>
+2/18/2011 11:24:00 AM
+</div>
+<i>This is part of a regular series of Google Apps updates that we post every couple of weeks. Look for the label &#8220;<a href="http://googleblog.blogspot.com/search/label/Google%20Apps%20highlights">Google Apps highlights</a>" and subscribe to the series. - Ed.</i><br /><br />This Friday update includes improvements to the Gmail mobile web app and Google Docs interfaces, a feature long-sought-after by many Google Voice fans, a powerful account security improvement and stories from several of the companies and government agencies that have recently moved to Google Apps.<br /><br /><b>Priority Inbox for Gmail mobile web app</b><br />Keeping what&#8217;s most important front and center is especially helpful on the smaller screen of your mobile device, so we were happy to release <a href="http://gmailblog.blogspot.com/2011/02/priority-inbox-in-gmail-for-mobile.html">Priority Inbox in the Gmail mobile web app</a>.  If your phone&#8217;s browser supports HTML5, you&#8217;ll see the familiar Priority Inbox sections and message importance markers when you visit gmail.com.<div><br /><a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://2.bp.blogspot.com/-Z1Tx03wVKKM/TV7GQnabemI/AAAAAAAAHmA/MQLPxVVkAlU/s1600/priorityinboxmobile.png"><img style="display:block; margin:0px auto 10px; text-align:center;cursor:pointer; cursor:hand;width: 313px; height: 400px;" src="http://2.bp.blogspot.com/-Z1Tx03wVKKM/TV7GQnabemI/AAAAAAAAHmA/MQLPxVVkAlU/s400/priorityinboxmobile.png" border="0" alt="" id="BLOGGER_PHOTO_ID_5575111377491294818" /></a><br /><b>Doc list refresh</b><br /><a href="http://googledocs.blogspot.com/2011/01/refresh-to-documents-list.html">The documents list in Google Docs</a> got a visual makeover and tune-up on Monday. We added a helpful set of filters to quickly narrow down search results, a right-side preview panel to show details about a selected file and the ability to view uploaded media like photos and videos.  What we previously called &#8220;Folders&#8221; are now called &#8220;Collections,&#8221; and we&#8217;re making the whole interface snappier to save you time.<br /><br /><a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://4.bp.blogspot.com/-HMs4dc1y_tU/TV7GQBML76I/AAAAAAAAHl4/yVAU5gQZJ-s/s1600/newdocslist.jpg"><img style="display:block; margin:0px auto 10px; text-align:center;cursor:pointer; cursor:hand;width: 400px; height: 131px;" src="http://4.bp.blogspot.com/-HMs4dc1y_tU/TV7GQBML76I/AAAAAAAAHl4/yVAU5gQZJ-s/s400/newdocslist.jpg" border="0" alt="" id="BLOGGER_PHOTO_ID_5575111367231008674" /></a><br /><b>Port numbers to Google Voice</b><br />Last month, we updated Google Voice in response to one of our top user requests: the ability to <a href="http://googlevoiceblog.blogspot.com/2011/01/port-your-existing-mobile-number-to.html">port existing phone numbers to Google Voice</a>.  If you have a beloved phone number that you want to keep as your primary digits, but want Google Voice to ring multiple phones when someone calls, Number Porting might be for you. There&#8217;s a $20 charge for Number Porting, and your wireless carrier may charge an early termination fee, so we recommend that you check with your carrier before porting.  For more details, check the <a href="http://www.google.com/support/voice/bin/answer.py?hl=en&amp;answer=1065667">Google Voice Help Center</a>.<br /><br /><iframe title="YouTube video player" width="560" height="349" src="http://www.youtube.com/embed/NdQmGLjvMGo" frameborder="0" allowfullscreen=""></iframe><br /><br /><b>2-Step Verification available to all</b><br />Now everyone can help keep their account safer with <a href="http://gmailblog.blogspot.com/2011/02/advanced-sign-in-security-for-your.html">2-Step Verification</a>, which we released to Google Apps business customers last year. This advanced security feature works by requiring you to sign in with something you <i>know</i> (your password) plus something you <i>have</i> (a code from your mobile phone).  2-Step Verification helps ensure that the person trying to access your account is the real you.<br /><br /><a href="http://3.bp.blogspot.com/-ZXVilAWBeko/TV7GQLK2D5I/AAAAAAAAHlw/dkwfGnhagRg/s1600/2step.png"><img style="display:block; margin:0px auto 10px; text-align:center;cursor:pointer; cursor:hand;width: 500px;" src="http://3.bp.blogspot.com/-ZXVilAWBeko/TV7GQLK2D5I/AAAAAAAAHlw/dkwfGnhagRg/2step.png" border="0" alt="" id="BLOGGER_PHOTO_ID_5575111369909735314" /></a><br /><b>New setup wizard for Google Apps administrators</b><br />Organizations using Google Apps often get up and running in under an hour, but we wanted the setup experience to be even faster and easier.  Last week we added a new <a href="http://googleenterprise.blogspot.com/2011/02/go-google-in-record-speed.html">Google Apps setup wizard</a> to the administrative control panel, which gives guided help for creating user accounts, migrating existing mail to Gmail, routing user email to Gmail and more.<br /><br /><a href="http://3.bp.blogspot.com/-TLOE4sD_Zbc/TV7GP5XDkWI/AAAAAAAAHlo/FkipGqP8MGc/s1600/setupwizard.png"><img style="display:block; margin:0px auto 10px; text-align:center;cursor:pointer; cursor:hand;width: 500px;" src="http://3.bp.blogspot.com/-TLOE4sD_Zbc/TV7GP5XDkWI/AAAAAAAAHlo/FkipGqP8MGc/setupwizard.png" border="0" alt="" id="BLOGGER_PHOTO_ID_5575111365129113954" /></a><br /><b>Who&#8217;s gone Google?</b><br />Recently we&#8217;ve seen a surge in new public sector customers&#8212;including the <a href="http://googleenterprise.blogspot.com/2011/02/promoting-innovation-and-collaboration.html">Administrative Conference of the United States</a>, the <a href="http://googleenterprise.blogspot.com/2011/02/kansas-department-of-wildlife-and-parks.html">Kansas Department of Wildlife and Parks</a> and the <a href="http://googleenterprise.blogspot.com/2011/02/city-of-rochester-hills-goes-google-to.html">City of Rochester Hills</a>.  These organizations are not only saving taxpayer dollars with Google Apps, but also boosting the productivity of their ranks.<br /><br />More than 50,000 businesses have also started using Google Apps in the last three weeks.  <a href="http://googleenterprise.blogspot.com/2011/02/family-owned-pithy-little-wine-co-runs.html">Pithy Little Wine Co.</a>, <a href="http://googleenterprise.blogspot.com/2011/02/going-google-across-50-states-missouri.html">DeyFischer Consulting</a>, <a href="http://googleenterprise.blogspot.com/2011/02/sap-streamwork-and-google-docs.html">Manna on Main Street</a> and <a href="http://googleenterprise.blogspot.com/2011/02/window-of-opportunity-hunter-douglas.html">Hunter Douglas</a> are just a few of the businesses we&#8217;ve profiled recently who are are going <a href="http://googleenterprise.blogspot.com/2010/12/nothing-but-web.html">100% web</a>.<br /><br />I hope these product updates and customer stories help you and your organization get even more from Google Apps. For more details and the latest news, check out the <a href="http://googleapps.blogspot.com/">Google Apps Blog</a>.<br /><br /><span class="byline-author">Posted by  Jeremy Milo, Google Apps Marketing Manager</span></div>
+<div style='clear: both;'></div>
+</div>
+<div class='post-footer'>
+<p class='post-footer-line post-footer-line-1'>
+<span class='post-comment-link'>
+</span>
+<a href='http://googleblog.blogspot.com/2011/02/google-apps-highlights-21811.html' title='permanent link'>Permalink</a>
+<a class='comment-link' href='http://googleblog.blogspot.com/2011/02/google-apps-highlights-21811.html#links'>Links to this post</a>
+<span class='post-icons'>
+<span class='item-action'>
+<a href='http://www.blogger.com/email-post.g?blogID=10861780&postID=513444453835267496' title='Email Post'>
+<img alt='' class='icon-action' src='http://www.blogger.com/img/icon18_email.gif'/>
+</a>
+</span>
+<span class='item-control blog-admin pid-1782730031'>
+<a href='http://www.blogger.com/post-edit.g?blogID=10861780&postID=513444453835267496' title='Edit Post'>
+<img alt='' class='icon-action' height='18' src='http://img2.blogblog.com/img/icon18_edit_allbkg.gif' width='18'/>
+</a>
+</span>
+</span>
+</p>
+<p class='post-footer-line'>
+<ul class='gcb-sharelinks'>
+<li>
+<span>Share: </span>
+</li>
+<li>
+<a href='http://www.google.com/buzz/post?url=http://googleblog.blogspot.com/2011/02/google-apps-highlights-21811.html' title='Post on Google Buzz'>
+<span class='share-buzz share'></span></a>
+</li>
+<li>
+<a class='twitter-share-button share' data-count='none' data-counturl='http://googleblog.blogspot.com/2011/02/google-apps-highlights-21811.html' data-text='Google Apps highlights – 2/18/11' data-url='http://googleblog.blogspot.com/2011/02/google-apps-highlights-21811.html' data-via='Official Google Blog' href='http://twitter.com/share'>Tweet</a>
+</li>
+<li>
+<a href='http://www.facebook.com/sharer.php?u=http://googleblog.blogspot.com/2011/02/google-apps-highlights-21811.html&t=Google Apps highlights – 2/18/11' title='Facebook'><span class='share-facebook share'></span></a>
+</li>
+<li>
+<a href='http://www.google.com/reader/link?url=http://googleblog.blogspot.com/2011/02/google-apps-highlights-21811.html&title=Google Apps highlights – 2/18/11' title='Google Reader'><span class='share-reader share'></span>
+</a>
+</li>
+<li>
+<a href='https://www.google.com/bookmarks/mark?op=add&bkmk=http://googleblog.blogspot.com/2011/02/google-apps-highlights-21811.html&title=Google Apps highlights – 2/18/11' title='Google Bookmarks'><span class='share-igoogle share'></span></a>
+</li>
+<li>
+<a href='http://www.digg.com/submit?phase=2&url=http://googleblog.blogspot.com/2011/02/google-apps-highlights-21811.html&title=Google Apps highlights – 2/18/11' title='Digg'>
+<span class='share-digg share'></span></a>
+</li>
+<li>
+<a href='http://delicious.com/save?url=http://googleblog.blogspot.com/2011/02/google-apps-highlights-21811.html&title=Google Apps highlights – 2/18/11' title='Delicious'>
+<span class='share-delicious share'></span></a>
+</li>
+</ul>
+<div class='share-end'></div>
+</p>
+<p class='post-footer-line post-footer-line-2'>
+<span class='post-labels'>
+Labels:
+<a href='http://googleblog.blogspot.com/search/label/app' rel='tag'>app</a>,
+<a href='http://googleblog.blogspot.com/search/label/Google%20Apps%20highlights' rel='tag'>Google Apps highlights</a>
+</span>
+</p>
+<p class='post-footer-line post-footer-line-3'></p>
+</div>
+</div>
+<div class='post uncustomized-post-template'>
+<a name='4582239644618934008'></a>
+<h2 class='post-title'>
+<a href='http://googleblog.blogspot.com/2011/02/explore-our-us-presidents-on-map.html'>Explore our U.S. Presidents on a map</a>
+</h2>
+<div class='post-body'>
+<div class='date-header'>
+2/18/2011 09:02:00 AM
+</div>
+<i>(Cross-posted from the <a href="http://googleforstudents.blogspot.com/2011/02/explore-our-us-presidents-on-map.html">Students Blog</a> and <a href="http://google-latlong.blogspot.com/2011/02/explore-our-us-presidents-on-map.html">Lat Long Blog</a>)</i><div><br /></div><div>When I was in elementary school, I got two days off every February; one for George Washington and another for Abraham Lincoln. I remember classrooms were usually wallpapered with a potpourri of decorations left over from Valentine&#8217;s Day and token silhouettes of these two Presidents thumb-tacked to the bulletin board. My teachers would talk about the significance of the holiday during class but with lack of visuals to pique my interest, it was always hard to retain (and fully enjoy!) the information. With that in mind, we&#8217;re pleased to celebrate the President&#8217;s Day holiday in the U.S. by letting you go back in time to learn more about our past presidents in a visually fun and interactive way.<br /><br />We&#8217;ve created a <a href="http://www.google.com/earth/explore/showcase/uspresidents.html">U.S. Presidents Showcase</a> to map the birthplaces of all 44 presidents, and provide details about their presidential terms, using the <a href="http://www.google.com/earth">Google Earth</a> plug-in. You can also see the states that voted during each president&#8217;s election by clicking on the tours in the left column of the showcase.<br /><br /><a href="http://4.bp.blogspot.com/-ctIxpZH_vR0/TV36VRbXUEI/AAAAAAAAANo/51c3hRr9CuQ/s1600/lincoln.jpg"><img style="display: block; margin: 0px auto 10px; text-align: center; cursor: pointer; width: 320px; height: 214px;" src="http://4.bp.blogspot.com/-ctIxpZH_vR0/TV36VRbXUEI/AAAAAAAAANo/51c3hRr9CuQ/s320/lincoln.jpg" alt="" id="BLOGGER_PHOTO_ID_5574887157116915778" border="0" /></a><br />Whether you&#8217;re a history buff or simply curious to learn more about U.S. presidents, we hope you enjoy exploring a little further using Google Earth. In addition to the <a href="http://www.google.com/earth/explore/showcase/uspresidents.html">U.S. Presidents map</a>, educators can use some of our other <a href="http://sitescontent.google.com/google-earth-for-educators/classroom-resources/lesson-plan-library">resources</a> in their classroom to explore more aspects of history. Here are a few ideas:<br /><ul><li>Explore the White House, Washington Monument, Lincoln Memorial and other <a href="http://www.google.com/earth/explore/showcase/uspresidents.html#white_house">historical monuments in 3D</a> and have students explain how architecture is used to honor people, concepts and establishments</li><li>View a 3D model of <a href="http://sketchup.google.com/3dwarehouse/details?mid=11ac52d6ccbeacd78279e833efe42865&amp;prevstart=0">Valley Forge National Park</a> in Google Earth</li><li>View a copy of the <a href="http://docsteach.org/documents/299998/detail?menu=closed&amp;mode=search&amp;sortBy=relevance&amp;q=emancipation+proclamation&amp;commit=Go">Emancipation Proclamation</a> signed by Abraham Lincoln and map the areas where slavery ended, as well as the areas that were not initially covered by this executive order</li><li>Discuss the famous painting &#8220;<a href="http://www.google.com/search?hl=en&amp;q=Washington+Crossing+the+Delaware&amp;aq=f&amp;aqi=&amp;aql=&amp;oq=">Washington Crossing the Delaware</a>&#8221; by German American artist Emanuel Gottlieb Leutze and use the <a href="http://www.google.com/intl/en/earth/learn/beginner.html#drawing-and-measuring">ruler tool</a> in Google Earth to measure the width of the Delaware River<br /></li></ul>We hope you have fun <a href="http://www.google.com/earth/explore/showcase/uspresidents.html">exploring and learning</a> a little more of the history behind the President&#8217;s Day holiday. And when you&#8217;re done, go out and enjoy your day off!<br /><br /><span class="byline-author">Posted by Tina Ornduff, Geo Education Program Manager</span></div>
+<div style='clear: both;'></div>
+</div>
+<div class='post-footer'>
+<p class='post-footer-line post-footer-line-1'>
+<span class='post-comment-link'>
+</span>
+<a href='http://googleblog.blogspot.com/2011/02/explore-our-us-presidents-on-map.html' title='permanent link'>Permalink</a>
+<a class='comment-link' href='http://googleblog.blogspot.com/2011/02/explore-our-us-presidents-on-map.html#links'>Links to this post</a>
+<span class='post-icons'>
+<span class='item-action'>
+<a href='http://www.blogger.com/email-post.g?blogID=10861780&postID=4582239644618934008' title='Email Post'>
+<img alt='' class='icon-action' src='http://www.blogger.com/img/icon18_email.gif'/>
+</a>
+</span>
+<span class='item-control blog-admin pid-1782730031'>
+<a href='http://www.blogger.com/post-edit.g?blogID=10861780&postID=4582239644618934008' title='Edit Post'>
+<img alt='' class='icon-action' height='18' src='http://img2.blogblog.com/img/icon18_edit_allbkg.gif' width='18'/>
+</a>
+</span>
+</span>
+</p>
+<p class='post-footer-line'>
+<ul class='gcb-sharelinks'>
+<li>
+<span>Share: </span>
+</li>
+<li>
+<a href='http://www.google.com/buzz/post?url=http://googleblog.blogspot.com/2011/02/explore-our-us-presidents-on-map.html' title='Post on Google Buzz'>
+<span class='share-buzz share'></span></a>
+</li>
+<li>
+<a class='twitter-share-button share' data-count='none' data-counturl='http://googleblog.blogspot.com/2011/02/explore-our-us-presidents-on-map.html' data-text='Explore our U.S. Presidents on a map' data-url='http://googleblog.blogspot.com/2011/02/explore-our-us-presidents-on-map.html' data-via='Official Google Blog' href='http://twitter.com/share'>Tweet</a>
+</li>
+<li>
+<a href='http://www.facebook.com/sharer.php?u=http://googleblog.blogspot.com/2011/02/explore-our-us-presidents-on-map.html&t=Explore our U.S. Presidents on a map' title='Facebook'><span class='share-facebook share'></span></a>
+</li>
+<li>
+<a href='http://www.google.com/reader/link?url=http://googleblog.blogspot.com/2011/02/explore-our-us-presidents-on-map.html&title=Explore our U.S. Presidents on a map' title='Google Reader'><span class='share-reader share'></span>
+</a>
+</li>
+<li>
+<a href='https://www.google.com/bookmarks/mark?op=add&bkmk=http://googleblog.blogspot.com/2011/02/explore-our-us-presidents-on-map.html&title=Explore our U.S. Presidents on a map' title='Google Bookmarks'><span class='share-igoogle share'></span></a>
+</li>
+<li>
+<a href='http://www.digg.com/submit?phase=2&url=http://googleblog.blogspot.com/2011/02/explore-our-us-presidents-on-map.html&title=Explore our U.S. Presidents on a map' title='Digg'>
+<span class='share-digg share'></span></a>
+</li>
+<li>
+<a href='http://delicious.com/save?url=http://googleblog.blogspot.com/2011/02/explore-our-us-presidents-on-map.html&title=Explore our U.S. Presidents on a map' title='Delicious'>
+<span class='share-delicious share'></span></a>
+</li>
+</ul>
+<div class='share-end'></div>
+</p>
+<p class='post-footer-line post-footer-line-2'>
+<span class='post-labels'>
+</span>
+</p>
+<p class='post-footer-line post-footer-line-3'></p>
+</div>
+</div>
+</div>
+<div class='blog-pager' id='blog-pager'>
+<span id='blog-pager-older-link'>
+<a class='blog-pager-older-link' href='http://googleblog.blogspot.com/search?updated-max=2011-02-18T09%3A02%3A00-08%3A00&max-results=10' id='Blog1_blog-pager-older-link' title='Older Posts'>Older Posts</a>
+</span>
+<a class='home-link' href='http://googleblog.blogspot.com/'>Home</a>
+</div>
+<div class='clear'></div>
+</div></div>
+</div>
+<div id='sidebar-wrapper'>
+<script language='Javascript' type='text/javascript'>OnLoad();</script>
+<div class='sidebar section' id='sidebar'><div class='widget CustomSearch' id='CustomSearch1'>
+<h2 class='title'>Search This Blog</h2>
+<div class='widget-content'>
+<div id='CustomSearch1_form'>
+<span class='cse-status'>Loading...</span>
+</div>
+</div>
+<style type='text/css'>
+      #uds-searchControl .gs-result .gs-title,
+      #uds-searchControl .gs-result .gs-title *,
+      #uds-searchControl .gsc-results .gsc-trailing-more-results,
+      #uds-searchControl .gsc-results .gsc-trailing-more-results * {
+        color:#5588aa;
+      }
+
+      #uds-searchControl .gs-result .gs-title a:visited,
+      #uds-searchControl .gs-result .gs-title a:visited * {
+        color:#999999;
+      }
+
+      #uds-searchControl .gs-relativePublishedDate,
+      #uds-searchControl .gs-publishedDate {
+        color: #666666;
+      }
+
+      #uds-searchControl .gs-result a.gs-visibleUrl,
+      #uds-searchControl .gs-result .gs-visibleUrl {
+        color: #cc6600;
+      }
+
+      #uds-searchControl .gsc-results {
+        border-color: #cccccc;
+        background-color: #ffffff;
+      }
+
+      #uds-searchControl .gsc-tabhActive {
+        border-color: #cccccc;
+        border-top-color: #cc6600;
+        background-color: #ffffff;
+        color: #333333;
+      }
+
+      #uds-searchControl .gsc-tabhInactive {
+        border-color: #cccccc;
+        background-color: transparent;
+        color: #5588aa;
+      }
+
+      #uds-searchClearResults {
+        border-color: #cccccc;
+      }
+
+      #uds-searchClearResults:hover {
+        border-color: #cc6600;
+      }
+
+      #uds-searchControl .gsc-cursor-page {
+        color: #5588aa;
+      }
+
+      #uds-searchControl .gsc-cursor-current-page {
+        color: #333333;
+      }
+    </style>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='http://www.blogger.com/rearrange?blogID=10861780&widgetType=CustomSearch&widgetId=CustomSearch1&action=editWidget&sectionId=sidebar' onclick='return _WidgetManager._PopupConfig(document.getElementById("CustomSearch1"));' target='configCustomSearch1' title='Edit'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div><div class='widget HTML' id='HTML4'>
+<div class='widget-content'>
+<a href="http://googleblog.blogspot.com/atom.xml"><img alt="Site Feed" src="http://www.google.com/images/feed-icon.gif" /></a> <a href="http://googleblog.blogspot.com/atom.xml">Site Feed</a><br />
+<a href="http://fusion.google.com/add?feedurl=http%3A//googleblog.blogspot.com/atom.xml" onclick="javascript:urchinTracker('/outgoing/add_to_google_btn');"><img border="0" alt="Add to Google" style="padding-top:5px;" width="104" src="http://www.google.com/googleblogs/images/icons/add_to_google_btn.gif" height="17" /></a>
+<br />
+<a href="http://feeds.feedburner.com/blogspot/MKuf"><img width="88" style="border:0" alt="" src="http://feeds.feedburner.com/~fc/blogspot/MKuf?bg=99CCFF&amp;fg=444444&amp;anim=0" height="26" /></a>
+</div>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='http://www.blogger.com/rearrange?blogID=10861780&widgetType=HTML&widgetId=HTML4&action=editWidget&sectionId=sidebar' onclick='return _WidgetManager._PopupConfig(document.getElementById("HTML4"));' target='configHTML4' title='Edit'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div><div class='widget HTML' id='HTML9'>
+<div class='widget-content'>
+<p><img src=" http://www.google.com/images/mgyhp_sm.png" />&nbsp;<a href="http://www.google.com/intl/en_us/services/hp/index.html#utm_campaign=dhp&utm_medium=et&utm_source=en_OGB">Make Google your homepage</a></p>
+</div>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='http://www.blogger.com/rearrange?blogID=10861780&widgetType=HTML&widgetId=HTML9&action=editWidget&sectionId=sidebar' onclick='return _WidgetManager._PopupConfig(document.getElementById("HTML9"));' target='configHTML9' title='Edit'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div><div class='widget BlogArchive' id='BlogArchive1'>
+<h2>Blog Archive</h2>
+<div class='widget-content'>
+<div id='ArchiveList'>
+<div id='BlogArchive1_ArchiveList'>
+<select id='BlogArchive1_ArchiveMenu'>
+<option value=''>Blog Archive</option>
+<option value='http://googleblog.blogspot.com/2011_02_01_archive.html'>February (37)</option>
+<option value='http://googleblog.blogspot.com/2011_01_01_archive.html'>January (33)</option>
+<option value='http://googleblog.blogspot.com/2010_12_01_archive.html'>December (52)</option>
+<option value='http://googleblog.blogspot.com/2010_11_01_archive.html'>November (32)</option>
+<option value='http://googleblog.blogspot.com/2010_10_01_archive.html'>October (38)</option>
+<option value='http://googleblog.blogspot.com/2010_09_01_archive.html'>September (37)</option>
+<option value='http://googleblog.blogspot.com/2010_08_01_archive.html'>August (31)</option>
+<option value='http://googleblog.blogspot.com/2010_07_01_archive.html'>July (38)</option>
+<option value='http://googleblog.blogspot.com/2010_06_01_archive.html'>June (45)</option>
+<option value='http://googleblog.blogspot.com/2010_05_01_archive.html'>May (46)</option>
+<option value='http://googleblog.blogspot.com/2010_04_01_archive.html'>April (37)</option>
+<option value='http://googleblog.blogspot.com/2010_03_01_archive.html'>March (44)</option>
+<option value='http://googleblog.blogspot.com/2010_02_01_archive.html'>February (29)</option>
+<option value='http://googleblog.blogspot.com/2010_01_01_archive.html'>January (25)</option>
+<option value='http://googleblog.blogspot.com/2009_12_01_archive.html'>December (51)</option>
+<option value='http://googleblog.blogspot.com/2009_11_01_archive.html'>November (47)</option>
+<option value='http://googleblog.blogspot.com/2009_10_01_archive.html'>October (55)</option>
+<option value='http://googleblog.blogspot.com/2009_09_01_archive.html'>September (27)</option>
+<option value='http://googleblog.blogspot.com/2009_08_01_archive.html'>August (23)</option>
+<option value='http://googleblog.blogspot.com/2009_07_01_archive.html'>July (26)</option>
+<option value='http://googleblog.blogspot.com/2009_06_01_archive.html'>June (34)</option>
+<option value='http://googleblog.blogspot.com/2009_05_01_archive.html'>May (38)</option>
+<option value='http://googleblog.blogspot.com/2009_04_01_archive.html'>April (34)</option>
+<option value='http://googleblog.blogspot.com/2009_03_01_archive.html'>March (34)</option>
+<option value='http://googleblog.blogspot.com/2009_02_01_archive.html'>February (25)</option>
+<option value='http://googleblog.blogspot.com/2009_01_01_archive.html'>January (29)</option>
+<option value='http://googleblog.blogspot.com/2008_12_01_archive.html'>December (25)</option>
+<option value='http://googleblog.blogspot.com/2008_11_01_archive.html'>November (31)</option>
+<option value='http://googleblog.blogspot.com/2008_10_01_archive.html'>October (43)</option>
+<option value='http://googleblog.blogspot.com/2008_09_01_archive.html'>September (54)</option>
+<option value='http://googleblog.blogspot.com/2008_08_01_archive.html'>August (23)</option>
+<option value='http://googleblog.blogspot.com/2008_07_01_archive.html'>July (27)</option>
+<option value='http://googleblog.blogspot.com/2008_06_01_archive.html'>June (24)</option>
+<option value='http://googleblog.blogspot.com/2008_05_01_archive.html'>May (30)</option>
+<option value='http://googleblog.blogspot.com/2008_04_01_archive.html'>April (27)</option>
+<option value='http://googleblog.blogspot.com/2008_03_01_archive.html'>March (33)</option>
+<option value='http://googleblog.blogspot.com/2008_02_01_archive.html'>February (36)</option>
+<option value='http://googleblog.blogspot.com/2008_01_01_archive.html'>January (15)</option>
+<option value='http://googleblog.blogspot.com/2007_12_01_archive.html'>December (30)</option>
+<option value='http://googleblog.blogspot.com/2007_11_01_archive.html'>November (23)</option>
+<option value='http://googleblog.blogspot.com/2007_10_01_archive.html'>October (30)</option>
+<option value='http://googleblog.blogspot.com/2007_09_01_archive.html'>September (17)</option>
+<option value='http://googleblog.blogspot.com/2007_08_01_archive.html'>August (18)</option>
+<option value='http://googleblog.blogspot.com/2007_07_01_archive.html'>July (22)</option>
+<option value='http://googleblog.blogspot.com/2007_06_01_archive.html'>June (28)</option>
+<option value='http://googleblog.blogspot.com/2007_05_01_archive.html'>May (25)</option>
+<option value='http://googleblog.blogspot.com/2007_04_01_archive.html'>April (31)</option>
+<option value='http://googleblog.blogspot.com/2007_03_01_archive.html'>March (35)</option>
+<option value='http://googleblog.blogspot.com/2007_02_01_archive.html'>February (21)</option>
+<option value='http://googleblog.blogspot.com/2007_01_01_archive.html'>January (20)</option>
+<option value='http://googleblog.blogspot.com/2006_12_01_archive.html'>December (24)</option>
+<option value='http://googleblog.blogspot.com/2006_11_01_archive.html'>November (31)</option>
+<option value='http://googleblog.blogspot.com/2006_10_01_archive.html'>October (33)</option>
+<option value='http://googleblog.blogspot.com/2006_09_01_archive.html'>September (26)</option>
+<option value='http://googleblog.blogspot.com/2006_08_01_archive.html'>August (32)</option>
+<option value='http://googleblog.blogspot.com/2006_07_01_archive.html'>July (18)</option>
+<option value='http://googleblog.blogspot.com/2006_06_01_archive.html'>June (25)</option>
+<option value='http://googleblog.blogspot.com/2006_05_01_archive.html'>May (19)</option>
+<option value='http://googleblog.blogspot.com/2006_04_01_archive.html'>April (20)</option>
+<option value='http://googleblog.blogspot.com/2006_03_01_archive.html'>March (20)</option>
+<option value='http://googleblog.blogspot.com/2006_02_01_archive.html'>February (26)</option>
+<option value='http://googleblog.blogspot.com/2006_01_01_archive.html'>January (18)</option>
+<option value='http://googleblog.blogspot.com/2005_12_01_archive.html'>December (18)</option>
+<option value='http://googleblog.blogspot.com/2005_11_01_archive.html'>November (20)</option>
+<option value='http://googleblog.blogspot.com/2005_10_01_archive.html'>October (20)</option>
+<option value='http://googleblog.blogspot.com/2005_09_01_archive.html'>September (27)</option>
+<option value='http://googleblog.blogspot.com/2005_08_01_archive.html'>August (20)</option>
+<option value='http://googleblog.blogspot.com/2005_07_01_archive.html'>July (14)</option>
+<option value='http://googleblog.blogspot.com/2005_06_01_archive.html'>June (11)</option>
+<option value='http://googleblog.blogspot.com/2005_05_01_archive.html'>May (18)</option>
+<option value='http://googleblog.blogspot.com/2005_04_01_archive.html'>April (16)</option>
+<option value='http://googleblog.blogspot.com/2005_03_01_archive.html'>March (21)</option>
+<option value='http://googleblog.blogspot.com/2005_02_01_archive.html'>February (7)</option>
+<option value='http://googleblog.blogspot.com/2005_01_01_archive.html'>January (7)</option>
+<option value='http://googleblog.blogspot.com/2004_12_01_archive.html'>December (11)</option>
+<option value='http://googleblog.blogspot.com/2004_11_01_archive.html'>November (6)</option>
+<option value='http://googleblog.blogspot.com/2004_10_01_archive.html'>October (15)</option>
+<option value='http://googleblog.blogspot.com/2004_09_01_archive.html'>September (7)</option>
+<option value='http://googleblog.blogspot.com/2004_08_01_archive.html'>August (2)</option>
+<option value='http://googleblog.blogspot.com/2004_07_01_archive.html'>July (4)</option>
+<option value='http://googleblog.blogspot.com/2004_06_01_archive.html'>June (5)</option>
+<option value='http://googleblog.blogspot.com/2004_05_01_archive.html'>May (7)</option>
+<option value='http://googleblog.blogspot.com/2004_04_01_archive.html'>April (1)</option>
+</select>
+</div>
+</div>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='http://www.blogger.com/rearrange?blogID=10861780&widgetType=BlogArchive&widgetId=BlogArchive1&action=editWidget&sectionId=sidebar' onclick='return _WidgetManager._PopupConfig(document.getElementById("BlogArchive1"));' target='configBlogArchive1' title='Edit'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div>
+</div><div class='widget Label' id='Label1'>
+<h2>Labels</h2>
+<div class='widget-content list-label-widget-content'>
+<ul>
+<li>
+<a dir='ltr' href='http://googleblog.blogspot.com/search/label/accessibility'>accessibility</a>
+<span dir='ltr'>(28)</span>
+</li>
+<li>
+<a dir='ltr' href='http://googleblog.blogspot.com/search/label/acquisition'>acquisition</a>
+<span dir='ltr'>(17)</span>
+</li>
+<li>
+<a dir='ltr' href='http://googleblog.blogspot.com/search/label/ads'>ads</a>
+<span dir='ltr'>(90)</span>
+</li>
+<li>
+<a dir='ltr' href='http://googleblog.blogspot.com/search/label/Africa'>Africa</a>
+<span dir='ltr'>(2)</span>
+</li>
+<li>
+<a dir='ltr' href='http://googleblog.blogspot.com/search/label/Android'>Android</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://googleblog.blogspot.com/search/label/apps'>apps</a>
+<span dir='ltr'>(349)</span>
+</li>
+<li>
+<a dir='ltr' href='http://googleblog.blogspot.com/search/label/April%201'>April 1</a>
+<span dir='ltr'>(3)</span>
+</li>
+<li>
+<a dir='ltr' href='http://googleblog.blogspot.com/search/label/Asia'>Asia</a>
+<span dir='ltr'>(10)</span>
+</li>
+<li>
+<a dir='ltr' href='http://googleblog.blogspot.com/search/label/books%20%2B%20book%20search'>books + book search</a>
+<span dir='ltr'>(41)</span>
+</li>
+<li>
+<a dir='ltr' href='http://googleblog.blogspot.com/search/label/developers'>developers</a>
+<span dir='ltr'>(98)</span>
+</li>
+<li>
+<a dir='ltr' href='http://googleblog.blogspot.com/search/label/diversity'>diversity</a>
+<span dir='ltr'>(10)</span>
+</li>
+<li>
+<a dir='ltr' href='http://googleblog.blogspot.com/search/label/education'>education</a>
+<span dir='ltr'>(65)</span>
+</li>
+<li>
+<a dir='ltr' href='http://googleblog.blogspot.com/search/label/enterprise'>enterprise</a>
+<span dir='ltr'>(74)</span>
+</li>
+<li>
+<a dir='ltr' href='http://googleblog.blogspot.com/search/label/entrepreneurs%20at%20Google'>entrepreneurs at Google</a>
+<span dir='ltr'>(2)</span>
+</li>
+<li>
+<a dir='ltr' href='http://googleblog.blogspot.com/search/label/Europe'>Europe</a>
+<span dir='ltr'>(25)</span>
+</li>
+<li>
+<a dir='ltr' href='http://googleblog.blogspot.com/search/label/faster%20web'>faster web</a>
+<span dir='ltr'>(14)</span>
+</li>
+<li>
+<a dir='ltr' href='http://googleblog.blogspot.com/search/label/free%20expression'>free expression</a>
+<span dir='ltr'>(44)</span>
+</li>
+<li>
+<a dir='ltr' href='http://googleblog.blogspot.com/search/label/gadgets'>gadgets</a>
+<span dir='ltr'>(5)</span>
+</li>
+<li>
+<a dir='ltr' href='http://googleblog.blogspot.com/search/label/Geo'>Geo</a>
+<span dir='ltr'>(81)</span>
+</li>
+<li>
+<a dir='ltr' href='http://googleblog.blogspot.com/search/label/Google%20Apps%20highlights'>Google Apps highlights</a>
+<span dir='ltr'>(27)</span>
+</li>
+<li>
+<a dir='ltr' href='http://googleblog.blogspot.com/search/label/Google%20at%2010'>Google at 10</a>
+<span dir='ltr'>(14)</span>
+</li>
+<li>
+<a dir='ltr' href='http://googleblog.blogspot.com/search/label/google.org'>google.org</a>
+<span dir='ltr'>(46)</span>
+</li>
+<li>
+<a dir='ltr' href='http://googleblog.blogspot.com/search/label/googlenew'>googlenew</a>
+<span dir='ltr'>(5)</span>
+</li>
+<li>
+<a dir='ltr' href='http://googleblog.blogspot.com/search/label/googlers%20and%20culture'>googlers and culture</a>
+<span dir='ltr'>(159)</span>
+</li>
+<li>
+<a dir='ltr' href='http://googleblog.blogspot.com/search/label/green'>green</a>
+<span dir='ltr'>(56)</span>
+</li>
+<li>
+<a dir='ltr' href='http://googleblog.blogspot.com/search/label/healthcare'>healthcare</a>
+<span dir='ltr'>(21)</span>
+</li>
+<li>
+<a dir='ltr' href='http://googleblog.blogspot.com/search/label/India'>India</a>
+<span dir='ltr'>(11)</span>
+</li>
+<li>
+<a dir='ltr' href='http://googleblog.blogspot.com/search/label/Latin%20America'>Latin America</a>
+<span dir='ltr'>(7)</span>
+</li>
+<li>
+<a dir='ltr' href='http://googleblog.blogspot.com/search/label/Mac'>Mac</a>
+<span dir='ltr'>(2)</span>
+</li>
+<li>
+<a dir='ltr' href='http://googleblog.blogspot.com/search/label/measurement'>measurement</a>
+<span dir='ltr'>(9)</span>
+</li>
+<li>
+<a dir='ltr' href='http://googleblog.blogspot.com/search/label/mobile'>mobile</a>
+<span dir='ltr'>(92)</span>
+</li>
+<li>
+<a dir='ltr' href='http://googleblog.blogspot.com/search/label/online%20safety'>online safety</a>
+<span dir='ltr'>(13)</span>
+</li>
+<li>
+<a dir='ltr' href='http://googleblog.blogspot.com/search/label/open%20source'>open source</a>
+<span dir='ltr'>(10)</span>
+</li>
+<li>
+<a dir='ltr' href='http://googleblog.blogspot.com/search/label/personalization'>personalization</a>
+<span dir='ltr'>(69)</span>
+</li>
+<li>
+<a dir='ltr' href='http://googleblog.blogspot.com/search/label/photos'>photos</a>
+<span dir='ltr'>(29)</span>
+</li>
+<li>
+<a dir='ltr' href='http://googleblog.blogspot.com/search/label/policy%20and%20issues'>policy and issues</a>
+<span dir='ltr'>(119)</span>
+</li>
+<li>
+<a dir='ltr' href='http://googleblog.blogspot.com/search/label/politics'>politics</a>
+<span dir='ltr'>(51)</span>
+</li>
+<li>
+<a dir='ltr' href='http://googleblog.blogspot.com/search/label/privacy'>privacy</a>
+<span dir='ltr'>(58)</span>
+</li>
+<li>
+<a dir='ltr' href='http://googleblog.blogspot.com/search/label/recipe'>recipe</a>
+<span dir='ltr'>(8)</span>
+</li>
+<li>
+<a dir='ltr' href='http://googleblog.blogspot.com/search/label/recruiting%20and%20hiring'>recruiting and hiring</a>
+<span dir='ltr'>(30)</span>
+</li>
+<li>
+<a dir='ltr' href='http://googleblog.blogspot.com/search/label/research'>research</a>
+<span dir='ltr'>(6)</span>
+</li>
+<li>
+<a dir='ltr' href='http://googleblog.blogspot.com/search/label/scholarships'>scholarships</a>
+<span dir='ltr'>(25)</span>
+</li>
+<li>
+<a dir='ltr' href='http://googleblog.blogspot.com/search/label/search'>search</a>
+<span dir='ltr'>(396)</span>
+</li>
+<li>
+<a dir='ltr' href='http://googleblog.blogspot.com/search/label/search%20quality'>search quality</a>
+<span dir='ltr'>(19)</span>
+</li>
+<li>
+<a dir='ltr' href='http://googleblog.blogspot.com/search/label/search%20stories'>search stories</a>
+<span dir='ltr'>(8)</span>
+</li>
+<li>
+<a dir='ltr' href='http://googleblog.blogspot.com/search/label/search%20trends'>search trends</a>
+<span dir='ltr'>(2)</span>
+</li>
+<li>
+<a dir='ltr' href='http://googleblog.blogspot.com/search/label/security'>security</a>
+<span dir='ltr'>(22)</span>
+</li>
+<li>
+<a dir='ltr' href='http://googleblog.blogspot.com/search/label/small%20business'>small business</a>
+<span dir='ltr'>(11)</span>
+</li>
+<li>
+<a dir='ltr' href='http://googleblog.blogspot.com/search/label/This%20Week%20in%20Search'>This Week in Search</a>
+<span dir='ltr'>(49)</span>
+</li>
+<li>
+<a dir='ltr' href='http://googleblog.blogspot.com/search/label/user%20experience%20and%20usability'>user experience and usability</a>
+<span dir='ltr'>(34)</span>
+</li>
+<li>
+<a dir='ltr' href='http://googleblog.blogspot.com/search/label/video'>video</a>
+<span dir='ltr'>(93)</span>
+</li>
+<li>
+<a dir='ltr' href='http://googleblog.blogspot.com/search/label/yourgooglestories'>yourgooglestories</a>
+<span dir='ltr'>(5)</span>
+</li>
+<li>
+<a dir='ltr' href='http://googleblog.blogspot.com/search/label/youtube%20highlights'>youtube highlights</a>
+<span dir='ltr'>(10)</span>
+</li>
+</ul>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='http://www.blogger.com/rearrange?blogID=10861780&widgetType=Label&widgetId=Label1&action=editWidget&sectionId=sidebar' onclick='return _WidgetManager._PopupConfig(document.getElementById("Label1"));' target='configLabel1' title='Edit'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div>
+</div><div class='widget HTML' id='HTML7'>
+<h2 class='title'>More blogs from Google</h2>
+<div class='widget-content'>
+Visit our <a href="http://www.google.com/press/blogs/directory.html#tab0"> directory</a> for more information about Google blogs.
+</div>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='http://www.blogger.com/rearrange?blogID=10861780&widgetType=HTML&widgetId=HTML7&action=editWidget&sectionId=sidebar' onclick='return _WidgetManager._PopupConfig(document.getElementById("HTML7"));' target='configHTML7' title='Edit'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div><div class='widget HTML' id='HTML8'>
+<h2 class='title'>Follow Google on Twitter</h2>
+<div class='widget-content'>
+Visit our <a href="http://www.google.com/press/twitter_directory.html">Twitter directory</a> for more information.
+</div>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='http://www.blogger.com/rearrange?blogID=10861780&widgetType=HTML&widgetId=HTML8&action=editWidget&sectionId=sidebar' onclick='return _WidgetManager._PopupConfig(document.getElementById("HTML8"));' target='configHTML8' title='Edit'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div><div class='widget HTML' id='HTML2'>
+<div class='widget-content'>
+<br />
+<form action="http://feedburner.google.com/fb/a/mailverify" style="border:1px solid #ccc;padding:3px;text-align:center;" target="popupwindow" method="post" onsubmit="window.open('http://feedburner.google.com/fb/a/mailverify?uri=blogspot/MKuf', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true"><p>Sign up to get our posts via email. No more than one message per day.</p><p><input style="width:140px" name="email" type="text" /></p><input value="blogspot/MKuf" name="uri" type="hidden" /><input value="en_US" name="loc" type="hidden" /><input value="Subscribe" type="submit" /><p>Delivered by <a href="http://feedburner.google.com" target="_blank">FeedBurner</a></p></form>
+</div>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='http://www.blogger.com/rearrange?blogID=10861780&widgetType=HTML&widgetId=HTML2&action=editWidget&sectionId=sidebar' onclick='return _WidgetManager._PopupConfig(document.getElementById("HTML2"));' target='configHTML2' title='Edit'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div><div class='widget HTML' id='HTML3'>
+<h2 class='title'>Recent posts from our blogs</h2>
+<div class='widget-content'>
+<div id="blog_posts">
+
+<script type="text/javascript">
+
+function build_posts(data) {
+  var container = document.getElementById('blog_posts');
+  var list = document.createElement('div');
+  // Loop through all data items returned
+  for (var i=0; i < data.items.length; i++) {
+  	
+    var item = data.items[i];
+var listElement= document.createElement('div');
+listElement.className="listelement";
+
+		var link = document.createElement('a');
+		link.appendChild(document.createTextNode(item.title));
+
+	link.href = item.alternate.href;
+        listElement.appendChild(link)
+	listElement.appendChild(document.createElement('br'));    
+       
+
+
+var bloglink = document.createElement('a');
+bloglink.appendChild(document.createTextNode(item.origin.title));
+bloglink.href = item.origin.htmlUrl;
+bloglink.className="smalllink";
+listElement.appendChild(bloglink);
+list.appendChild(listElement);
+
+
+ }
+  container.appendChild(list);
+}
+</script>
+
+<script src="http://www.google.com/reader/public/javascript/user/10949413115399023739/label/officialgoogleblogs-all?n=5&callback=build_posts" type="text/javascript"></script>
+</div>
+</div>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='http://www.blogger.com/rearrange?blogID=10861780&widgetType=HTML&widgetId=HTML3&action=editWidget&sectionId=sidebar' onclick='return _WidgetManager._PopupConfig(document.getElementById("HTML3"));' target='configHTML3' title='Edit'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div><div class='widget HTML' id='HTML6'>
+<h2 class='title'>We Love Feedback</h2>
+<div class='widget-content'>
+Do you want to comment on a post? <a href="mailto:gblog@google.com">Send us some email</a>.
+</div>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='http://www.blogger.com/rearrange?blogID=10861780&widgetType=HTML&widgetId=HTML6&action=editWidget&sectionId=sidebar' onclick='return _WidgetManager._PopupConfig(document.getElementById("HTML6"));' target='configHTML6' title='Edit'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div><div class='widget HTML' id='HTML5'>
+<div class='widget-content'>
+<br/>Google Blog is powered by Blogger. <a href="http://www.blogger.com/">Start your own weblog</a>.<br/><br/>
+</div>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='http://www.blogger.com/rearrange?blogID=10861780&widgetType=HTML&widgetId=HTML5&action=editWidget&sectionId=sidebar' onclick='return _WidgetManager._PopupConfig(document.getElementById("HTML5"));' target='configHTML5' title='Edit'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div></div>
+<br/><br/><br/>
+</div>
+<!-- spacer for skins that want sidebar and main to be the same height-->
+</div><!-- end content-wrapper -->
+<div class='footer'>
+<div class='section' id='footer'><div class='widget HTML' id='HTML1'>
+<div class='widget-content'>
+Copyright &#169; 2011 Google Inc. All rights reserved.<br />
+   <a href="http://www.google.com/privacy.html">Privacy Policy</a> | 
+	      <a href="http://www.google.com/terms_of_service.html">Terms of Service</a>
+</div>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='http://www.blogger.com/rearrange?blogID=10861780&widgetType=HTML&widgetId=HTML1&action=editWidget&sectionId=footer' onclick='return _WidgetManager._PopupConfig(document.getElementById("HTML1"));' target='configHTML1' title='Edit'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div></div>
+</div>
+</div></div>
+</center><!-- end outer-wrapper -->
+<script charset='utf-8' src='http://bit.ly/javascript-api.js?version=latest&login=tweettrackjs&apiKey=R_7e9987b2fd13d7e4e881f9cbb168f523' type='text/javascript'></script>
+<script charset='utf-8' src='http://s.bit.ly/TweetAndTrack.js?v=1.01' type='text/javascript'></script>
+<script src='http://platform.twitter.com/widgets.js' type='text/javascript'></script>
+<script type="text/javascript">
+if (window.jstiming) window.jstiming.load.tick('widgetJsBefore');
+</script><script type="text/javascript" src="http://www.blogger.com/static/v1/widgets/4078044573-widgets.js"></script>
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+<script type='text/javascript'>
+if (typeof(BLOG_attachCsiOnload) != 'undefined' && BLOG_attachCsiOnload != null) { window['blogger_templates_experiment_id'] = "templatesV1";window['blogger_blog_id'] = '10861780';BLOG_attachCsiOnload(''); }_WidgetManager._Init('http://www.blogger.com/rearrange?blogID=10861780','http://googleblog.blogspot.com/','10861780');
+_WidgetManager._SetPageActionUrl('http://www.blogger.com/display?blogID=10861780','APq4FmBYz1MAYCVtBjfF8iRggssmCqIKD1WENWT_ZnzmdclCCkNZgwq91FO7QCDgLN3RpE88E-UuH67rTJCMeQD11dBML3HcWw==','AOuZoY7shaiaueh-RnDCbvfvDQVD3C2A-w:1299008808299');
+_WidgetManager._SetDataContext([{'name': 'blog', 'data': {'title': 'Official Google Blog', 'pageType': 'index', 'url': 'http://googleblog.blogspot.com/', 'canonicalUrl': 'http://googleblog.blogspot.com/', 'homepageUrl': 'http://googleblog.blogspot.com/', 'enabledCommentProfileImages': true, 'searchLabel': '', 'searchQuery': '', 'pageName': '', 'pageTitle': 'Official Google Blog', 'encoding': 'UTF-8', 'locale': 'en-US', 'isPrivate': false, 'isMobile': false, 'mobileClass': '', 'languageDirection': 'ltr', 'feedLinks': '\74link rel\75\42alternate\42 type\75\42application/atom+xml\42 title\75\42Official Google Blog - Atom\42 href\75\42http://googleblog.blogspot.com/feeds/posts/default\42 /\76\n\74link rel\75\42alternate\42 type\75\42application/rss+xml\42 title\75\42Official Google Blog - RSS\42 href\75\42http://googleblog.blogspot.com/feeds/posts/default?alt\75rss\42 /\76\n\74link rel\75\42service.post\42 type\75\42application/atom+xml\42 title\75\42Official Google Blog - Atom\42 href\75\42http://www.blogger.com/feeds/10861780/posts/default\42 /\76\n\74link rel\75\42EditURI\42 type\75\42application/rsd+xml\42 title\75\42RSD\42 href\75\42http://www.blogger.com/rsd.g?blogID\07510861780\42 /\076', 'meTag': '\74link rel\75\42me\42 href\75\42http://www.blogger.com/profile/07412689020436815012\42 /\76\n', 'openIdOpTag': '\74link rel\75\42openid.server\42 href\75\42http://www.blogger.com/openid-server.g\42 /\76\n', 'imageSrcTag': '', 'latencyHeadScript': '\74script type\75\42text/javascript\42\76(function() { var a\75window;function c(b){this.t\75{};this.tick\75function(d,i,e){e\75e!\75undefined?e:(new Date).getTime();this.t[d]\75[e,i]};this.tick(\42start\42,null,b)}var f\75new c;a.jstiming\75{Timer:c,load:f};try{var g\75null;if(a.chrome\46\46a.chrome.csi)g\75Math.floor(a.chrome.csi().pageT);if(g\75\75null)if(a.gtbExternal)g\75a.gtbExternal.pageT();if(g\75\75null)if(a.external)g\75a.external.pageT;if(g)a.jstiming.pt\75g}catch(h){};a.tickAboveFold\75function(b){var d\0750;if(b.offsetParent){do d+\75b.offsetTop;while(b\75b.offsetParent)}b\75d;b\74\075750\46\46a.jstiming.load.tick(\42aft\42)};var j\75false;function k(){if(!j){j\75true;a.jstiming.load.tick(\42firstScrollTime\42)}}a.addEventListener?a.addEventListener(\42scroll\42,k,false):a.attachEvent(\42onscroll\42,k);\n })();\74/script\076', 'mobileHeadScript': '\74script type\75\42text/javascript\42\76(function(){function b(a){var c\75a.split(\42?\42);switch(c.length){case 1:return a+\42?m\0751\42;case 2:if(c[1].search(\42(^|\46)m\75\42)\76\0750)return null;return a+\42\46m\0751\42;default:return null}}var d;var e\75navigator.userAgent;d\75e.indexOf(\42Mobile\42)!\75-1\46\46e.indexOf(\42WebKit\42)!\75-1\46\46e.indexOf(\42iPad\42)\75\75-1?true:false;if(d){var f\75b(window.location.href);f\46\46window.location.replace(f)};})();\n\74/script\076'}}]);
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML1', 'footer', null, document.getElementById('HTML1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_CustomSearchView', new _WidgetInfo('CustomSearch1', 'sidebar', null, document.getElementById('CustomSearch1'), {'title': 'Search This Blog', 'includeBlog': true, 'includePostLinks': true, 'includeWeb': false, 'linkLists': [], 'blogUrl': 'http://googleblog.blogspot.com/', 'loadingMsg': 'Loading...', 'thisBlogMsg': 'This Blog', 'linkedFromHereMsg': 'Linked From Here', 'theWebMsg': 'The Web', 'backgroundColor': '#ffffff', 'textColor': '#333333', 'dateColor': '#666666', 'linkColor': '#5588aa', 'urlColor': '#cc6600', 'visitedLinkColor': '#999999', 'borderColor': '#cccccc', 'activeBorderColor': '#cc6600'}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML4', 'sidebar', null, document.getElementById('HTML4'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML9', 'sidebar', null, document.getElementById('HTML9'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_BlogArchiveView', new _WidgetInfo('BlogArchive1', 'sidebar', null, document.getElementById('BlogArchive1'), {'languageDirection': 'ltr'}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_LabelView', new _WidgetInfo('Label1', 'sidebar', null, document.getElementById('Label1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML7', 'sidebar', null, document.getElementById('HTML7'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML8', 'sidebar', null, document.getElementById('HTML8'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML2', 'sidebar', null, document.getElementById('HTML2'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML3', 'sidebar', null, document.getElementById('HTML3'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML6', 'sidebar', null, document.getElementById('HTML6'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML5', 'sidebar', null, document.getElementById('HTML5'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HeaderView', new _WidgetInfo('Header1', 'header'));
+_WidgetManager._RegisterWidget('_NavbarView', new _WidgetInfo('Navbar1', 'navbar'));
+_WidgetManager._RegisterWidget('_BlogView', new _WidgetInfo('Blog1', 'main'));
+</script>
+</body>
+</html>
